@@ -1,4 +1,82 @@
 ---
 title: "Getting started"
+execute:
+  eval: true
 ---
+
+The tutorial below will help you get started with basic data analysis in `R`. To follow along, you can download `R` and Rstudio. `R` is freely available at [http://www.r-project.org/](http://www.r-project.org/). RStudio, the popular IDE for `R`, is freely available at [https://posit.co/downloads/](https://posit.co/downloads/).
+
+::: callout-note
+It's important to test the usefulness of sophisticated models against more basic alternatives. The following may serve as a simple baseline comparator.
+:::
+
+## Step 1: Collecting data
+
+1a. install a package to scrape NCAA data
+
+```{r}
+#| eval: false
+# install.packages("devtools")
+devtools::install_github("lbenz730/ncaahoopR")
+```
+
+1b. load the package
+
+```{r}
+#| warning: false
+#| message: false
+library(ncaahoopR)
+```
+
+1c. glimpse at a particular team's schedule
+
+```{r}
+# look at a team's schedule
+get_schedule("Duke", "2022-23") %>%
+  glimpse()
+```
+
+1d. check out documentation at [https://github.com/lbenz730/ncaahoopR](https://github.com/lbenz730/ncaahoopR).
+
+## Step 2: Basic prediction
+
+Imagine you wish to predict the point spread in match-ups between Duke, UNC and NC State in the Spring 2023 using data from Fall 2022. We can build a simple (poor) naive model that assumes each team scores a normally distributed amount of points per game.
+
+```{r}
+pt_df = NULL
+for(teamName in c("Duke", "UNC", "NC State")) {
+pt_df = rbind(pt_df, get_schedule(teamName, "2022-23") %>%
+  filter(date < "2023-01-01") %>% # look at only Fall games
+  summarize(mean_pts = mean(team_score),
+            var_pts = var(team_score)) %>%
+  mutate(team = teamName))
+}
+
+pt_df
+```
+
+Using this, we can make naive predictions about the outcome of each matchup. 
+
+```{r}
+getCI95 = function(m, s) {
+  return(toString(
+    c(m - (qnorm(0.975) * s), m + (qnorm(0.975) * s))
+  ))
+}
+  
+lookup <- c(team1 = "V1", team2= "V2")
+combn(pt_df$team, 2) %>%
+  t() %>%
+  as.data.frame() %>%
+  rename(all_of(lookup)) %>%
+  rowwise() %>%
+  mutate(pt_spread = 
+           pt_df$mean_pts[pt_df["team"] == team1] - 
+            pt_df$mean_pts[pt_df["team"] == team2]) %>%
+  mutate(spread_sd = 
+           sqrt(pt_df$var_pts[pt_df["team"] == team1] +
+            pt_df$var_pts[pt_df["team"] == team2])) %>%
+  mutate(spread_CI_95 = getCI95(pt_spread, spread_sd)) %>%
+  select(-spread_sd)
+```
 
