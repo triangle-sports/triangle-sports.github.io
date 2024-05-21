@@ -2,6 +2,10 @@
 title: "Triangle Sports Analytics Competition"
 ---
 
+### Statement of purpose
+
+The Triangle Sports Analytics Competition aims to bring together students who love sports analytics to compete in a prediction contest. Students may work individually or in a team of 2-5. All submissions are due January TBD, 2025. Read details about the contest on the [Task](/task) page
+
 ### Timeline
 
 Dates to be finalized. 
