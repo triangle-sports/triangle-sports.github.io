@@ -4,4 +4,23 @@ title: "Task"
 
 ## 2024-2025
 
-Details coming soon.
+#### Objective
+
+Predict `point spread` together with a `95% confidence interval` in the 2025 NCAA conference games for Duke, NC State and UNC, Chapel Hill. 
+
+#### Instructions
+
+1. Download a copy of the google sheet [here]().
+
+2. **Only edit the light blue cells** to input your predictions and team name. Make a prediction for each of the 55 games. 
+
+:::callout-important
+Enter all values to two decimal places.
+
+- Enter the point spread of team 1 over team 2 in the `point_spread` column.
+- Enter the lower bound of the 95% confidence interval in the `ci_95_lb` column.
+- Enter the upper bound of the 95% confidence interval in the `ci_95_ub` column.
+:::
+
+3. Click `File`, `Download`, `Comma Separated Values (.csv)` to download your prediction spreadsheet. Rename your file to the name of your team. Upload your file to the dropbox link [here](). **Make sure your file type is a** `csv`.
+

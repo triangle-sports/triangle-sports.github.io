@@ -17,3 +17,7 @@ Dates to be finalized.
 - April 2025: Award ceremony
 
 ### Register now [here](https://forms.gle/PCqbq2rrjqR9ByMX8)!
+
+<!-- ### Leaderboard -->
+
+<!-- {{< include _leaderboard.qmd >}} -->

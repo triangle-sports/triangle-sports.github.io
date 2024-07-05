@@ -46,13 +46,13 @@
     "href": "index.html",
     "title": "Triangle Sports Analytics Competition",
     "section": "",
-    "text": "Timeline\nDates to be finalized.\n\nAugust 2024: Registration opens\nOctober 2024: Attend welcome event\nNovember 2024: Pre-event workshop\nJanuary 2025: Submissions due\nApril 2025: Award ceremony\n\n\n\nRegister now here!"
+    "text": "Timeline\nDates to be finalized.\n\nAugust 2024: Registration opens\nOctober 2024: Attend welcome event\nNovember 2024: Pre-event workshop\nJanuary 2025: Submissions due\nApril 2025: Award ceremony\n\n\n\nRegister now here!\n\n\nLeaderboard\n\nLast updated: Fri Jul 05 2024\n\n\nteam\nscore\n\n\n\n\nteamLoser\n5\n\n\nteamWinner\n5"
   },
   {
     "objectID": "task.html",
     "href": "task.html",
     "title": "Task",
     "section": "",
-    "text": "Details coming soon."
+    "text": "Predict point spread together with a 95% confidence interval in the 2025 NCAA conference games for Duke, NC State and UNC, Chapel Hill.\n\n\n\n\nDownload a copy of the google sheet here.\nOnly edit the light blue cells to input your predictions and team name. Make a prediction for each of the 55 games.\n\n\n\n\n\n\n\nImportant\n\n\n\nEnter all values to two decimal places.\n\nEnter the point spread of team 1 over team 2 in the point_spread column.\nEnter the lower bound of the 95% confidence interval in the ci_95_lb column.\nEnter the upper bound of the 95% confidence interval in the ci_95_ub column.\n\n\n\n\nClick File, Download, Comma Separated Values (.csv) to download your prediction spreadsheet. Rename your file to the name of your team. Upload your file to the dropbox link here. Make sure your file type is a csv."
   }
 ]
