@@ -4,13 +4,13 @@ title: "Triangle Sports Analytics Competition"
 
 ### Statement of purpose
 
-The Triangle Sports Analytics Competition aims to bring together students who love sports analytics to compete in a prediction contest. Students may work individually or in a team of 2-5. All submissions are due January TBD, 2025. Read details about the contest on the [Task](/task) page
+The Triangle Sports Analytics Competition aims to bring together students who love sports analytics to compete in a prediction contest. Students may work individually or in a team of 2-5. All submissions are due by January 1, 2025. Read details about the contest on the [Task](/task) page
 
 ### Timeline
 
 Dates to be finalized. 
 
-- August 2024: Registration opens
+- August 2024: Registration begins
 - October 2024: Attend welcome event
 - November 2024: Pre-event workshop
 - January 2025: Submissions due
@@ -18,6 +18,6 @@ Dates to be finalized.
 
 ### Register now [here](https://forms.gle/PCqbq2rrjqR9ByMX8)!
 
-<!-- ### Leaderboard -->
+### Leaderboard
 
-<!-- {{< include _leaderboard.qmd >}} -->
+{{< include _leaderboard.qmd >}}

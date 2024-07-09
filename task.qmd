@@ -10,7 +10,7 @@ Predict `point spread` together with a `95% confidence interval` in the 2025 NCA
 
 #### Instructions
 
-1. Download a copy of the google sheet [here]().
+1. Download a copy of the google sheet [here](https://docs.google.com/spreadsheets/d/1MoSm6rSKa4zIemlunDs1O6m77oSbXa2klaqFYWPLOxc/edit?usp=sharing).
 
 2. **Only edit the light blue cells** to input your predictions and team name. Make a prediction for each of the 55 games. 
 
@@ -22,5 +22,5 @@ Enter all values to two decimal places.
 - Enter the upper bound of the 95% confidence interval in the `ci_95_ub` column.
 :::
 
-3. Click `File`, `Download`, `Comma Separated Values (.csv)` to download your prediction spreadsheet. Rename your file to the name of your team. Upload your file to the dropbox link [here](). **Make sure your file type is a** `csv`.
+3. Click `File`, `Download`, `Comma Separated Values (.csv)` to download your prediction spreadsheet. Rename your file to the name of your team. Upload your file to the dropbox link [here](https://www.dropbox.com/request/3rRzJVPdjfrjywYuXSm0). **Make sure your file type is a** `csv`.
 

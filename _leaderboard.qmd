@@ -1,6 +1,6 @@
-Table: Last updated: Fri Jul 05 2024
+Table: Last updated: Tue Jul 09 2024
 
-|team       | score|
-|:----------|-----:|
-|teamLoser  |     5|
-|teamWinner |     5|
+|team  | score|
+|:-----|-----:|
+|teamA |     5|
+|teamB |     5|
