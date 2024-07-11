@@ -4,11 +4,11 @@ title: "Task"
 
 ## 2024-2025
 
-#### Objective
+### Objective
 
 Predict `point spread` together with a `95% confidence interval` in the 2025 NCAA conference games for Duke, NC State and UNC, Chapel Hill. 
 
-#### Instructions
+### Instructions
 
 1. Download a copy of the google sheet [here](https://docs.google.com/spreadsheets/d/1MoSm6rSKa4zIemlunDs1O6m77oSbXa2klaqFYWPLOxc/edit?usp=sharing).
 
@@ -23,4 +23,20 @@ Enter all values to two decimal places.
 :::
 
 3. Click `File`, `Download`, `Comma Separated Values (.csv)` to download your prediction spreadsheet. Rename your file to the name of your team. Upload your file to the dropbox link [here](https://www.dropbox.com/request/3rRzJVPdjfrjywYuXSm0). **Make sure your file type is a** `csv`.
+
+### Evaluation
+
+Your accuracy and precision predictions (point estimate and confidence intervals respectively) will be evaluated separately by two metrics described below.
+
+1. Mean Absolute Error
+
+$$
+\frac{1}{n} \sum_{i=1}^n \left| \mu_i - \hat{\mu}_i \right|
+$$
+
+where $\mu_i$ is the actual point spread outcome (home - away points) and $\hat{\mu}_i$ is your predicted point spread for the $i$th game. The average is taken over all $n = 58$ total games that you are predicting the outcome for. In words, the mean absolute error is the average number of points your predictions are away from the truth.
+
+2. Confidence Interval Distance
+
+<!-- To reward tighter confidence intervals, we will use the following metric: -->
 

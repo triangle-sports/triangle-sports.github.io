@@ -54,6 +54,7 @@ ul.task-list{list-style: none;}
   }
 }</script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -99,7 +100,12 @@ ul.task-list{list-style: none;}
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2024-2025</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2024-2025</a>
+  <ul class="collapse">
+  <li><a href="#objective" id="toc-objective" class="nav-link" data-scroll-target="#objective">Objective</a></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation">Evaluation</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -124,12 +130,12 @@ ul.task-list{list-style: none;}
 
 <section id="section" class="level2">
 <h2 class="anchored" data-anchor-id="section">2024-2025</h2>
-<section id="objective" class="level4">
-<h4 class="anchored" data-anchor-id="objective">Objective</h4>
+<section id="objective" class="level3">
+<h3 class="anchored" data-anchor-id="objective">Objective</h3>
 <p>Predict <code>point spread</code> together with a <code>95% confidence interval</code> in the 2025 NCAA conference games for Duke, NC State and UNC, Chapel Hill.</p>
 </section>
-<section id="instructions" class="level4">
-<h4 class="anchored" data-anchor-id="instructions">Instructions</h4>
+<section id="instructions" class="level3">
+<h3 class="anchored" data-anchor-id="instructions">Instructions</h3>
 <ol type="1">
 <li><p>Download a copy of the google sheet <a href="https://docs.google.com/spreadsheets/d/1MoSm6rSKa4zIemlunDs1O6m77oSbXa2klaqFYWPLOxc/edit?usp=sharing">here</a>.</p></li>
 <li><p><strong>Only edit the light blue cells</strong> to input your predictions and team name. Make a prediction for each of the 55 games.</p></li>
@@ -155,6 +161,21 @@ Important
 <ol start="3" type="1">
 <li>Click <code>File</code>, <code>Download</code>, <code>Comma Separated Values (.csv)</code> to download your prediction spreadsheet. Rename your file to the name of your team. Upload your file to the dropbox link <a href="https://www.dropbox.com/request/3rRzJVPdjfrjywYuXSm0">here</a>. <strong>Make sure your file type is a</strong> <code>csv</code>.</li>
 </ol>
+</section>
+<section id="evaluation" class="level3">
+<h3 class="anchored" data-anchor-id="evaluation">Evaluation</h3>
+<p>Your accuracy and precision predictions (point estimate and confidence intervals respectively) will be evaluated separately by two metrics described below.</p>
+<ol type="1">
+<li>Mean Absolute Error</li>
+</ol>
+<p><span class="math display">\[
+\frac{1}{n} \sum_{i=1}^n \left| \mu_i - \hat{\mu}_i \right|
+\]</span></p>
+<p>where <span class="math inline">\(\mu_i\)</span> is the actual point spread outcome (home - away points) and <span class="math inline">\(\hat{\mu}_i\)</span> is your predicted point spread for the <span class="math inline">\(i\)</span>th game. The average is taken over all <span class="math inline">\(n = 58\)</span> total games that you are predicting the outcome for. In words, the mean absolute error is the average number of points your predictions are away from the truth.</p>
+<ol start="2" type="1">
+<li>Confidence Interval Distance</li>
+</ol>
+<!-- To reward tighter confidence intervals, we will use the following metric: -->
 
 
 </section>
