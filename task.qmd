@@ -34,7 +34,7 @@ $$
 \frac{1}{n} \sum_{i=1}^n \left| \mu_i - \hat{\mu}_i \right|
 $$
 
-where $\mu_i$ is the actual point spread outcome (home - away points) and $\hat{\mu}_i$ is your predicted point spread for the $i$th game. The average is taken over all $n = 58$ total games that you are predicting the outcome for. In words, the mean absolute error is the average number of points your predictions are away from the truth.
+where $\mu_i$ is the actual point spread outcome (home - away points) and $\hat{\mu}_i$ is your predicted point spread for the $i$th game. The average is ta    ken over all $n = 58$ total games that you are predicting the outcome for. In words, the mean absolute error is the average number of points your predictions are away from the truth.
 
 2. Confidence Interval Distance
 

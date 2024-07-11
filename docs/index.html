@@ -54,6 +54,14 @@ ul.task-list{list-style: none;}
   }
 }</script>
 
+<script src="site_libs/core-js-2.5.3/shim.min.js"></script>
+<script src="site_libs/react-18.2.0/react.min.js"></script>
+<script src="site_libs/react-18.2.0/react-dom.min.js"></script>
+<script src="site_libs/reactwidget-1.0.0/react-tools.js"></script>
+<script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="site_libs/reactable-0.4.4/reactable.css" rel="stylesheet">
+<script src="site_libs/reactable-binding-0.4.4/reactable.js"></script>
+
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -145,25 +153,15 @@ ul.task-list{list-style: none;}
 </section>
 <section id="leaderboard" class="level3">
 <h3 class="anchored" data-anchor-id="leaderboard">Leaderboard</h3>
-<table class="table">
-<caption>Last updated: Tue Jul 09 2024</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;">team</th>
-<th style="text-align: right;">score</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">teamA</td>
-<td style="text-align: right;">5</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">teamB</td>
-<td style="text-align: right;">5</td>
-</tr>
-</tbody>
-</table>
+<!-- {{< include _leaderboard.qmd >}} -->
+<div class="cell">
+<div class="cell-output-display">
+
+<h1 style="color:#000;background:#FFFFFF;text-align:left;font-size:16px;font-style:normal;font-weight:bold;text-decoration:;letter-spacing:px;word-spacing:px;text-transform:;text-shadow:;margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">Last updated: Thu Jul 11 2024</h1>
+<div class="reactable html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-0b360c6db23bd0e4788d" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-0b360c6db23bd0e4788d">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"team":["teamA","teamB"],"score":[5,5]},"columns":[{"id":"team","name":"team","type":"character"},{"id":"score","name":"score","type":"numeric"}],"searchable":true,"defaultPageSize":5,"dataKey":"4680ff8de868495822f1143e420f7d0f"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 
 
 </section>

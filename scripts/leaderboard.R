@@ -31,5 +31,5 @@ scoreBoard %>%
   kable(format = "markdown", caption = paste0("Last updated: ", format(Sys.time(), "%a %b %d %Y"))) %>%
   write(file = "_leaderboard.qmd")
 
-
+write_csv(scoreBoard, "scripts/scoreBoard.csv")
 

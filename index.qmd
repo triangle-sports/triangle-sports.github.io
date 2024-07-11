@@ -20,4 +20,24 @@ Dates to be finalized.
 
 ### Leaderboard
 
-{{< include _leaderboard.qmd >}}
+<!-- {{< include _leaderboard.qmd >}} -->
+
+```{r}
+#| label: leaderboard 
+#| echo: false
+#| warning: false
+library(magrittr)
+library(reactable)
+library(reactablefmtr)
+path = "./scripts/scoreBoard.csv"
+scoreBoard = readr::read_csv(path)
+time = file.info(path)$ctime
+reactableScoreBoard = reactable(scoreBoard,
+          defaultPageSize = 5,
+          searchable = TRUE)
+
+reactableScoreBoard %>%
+  add_title(font_size = 16,
+            paste0("Last updated: ", format(time, "%a %b %d %Y")))
+# format(Sys.time(), "%a %b %d %Y")
+```
