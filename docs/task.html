@@ -152,7 +152,7 @@ Important
 <div class="callout-body-container callout-body">
 <p>Enter all values to two decimal places.</p>
 <ul>
-<li>Enter the point spread of team 1 over team 2 in the <code>point_spread</code> column.</li>
+<li>Enter the point spread (home team minus away team) in the <code>point_spread</code> column.</li>
 <li>Enter the lower bound of the 95% confidence interval in the <code>ci_95_lb</code> column.</li>
 <li>Enter the upper bound of the 95% confidence interval in the <code>ci_95_ub</code> column.</li>
 </ul>
@@ -164,16 +164,16 @@ Important
 </section>
 <section id="evaluation" class="level3">
 <h3 class="anchored" data-anchor-id="evaluation">Evaluation</h3>
-<p>Your accuracy and precision predictions (point estimate and confidence intervals respectively) will be evaluated separately by two metrics described below.</p>
+<p>Your predictions (point estimates and confidence intervals) will be evaluated separately by two metrics described below.</p>
 <ol type="1">
 <li>Mean Absolute Error</li>
 </ol>
 <p><span class="math display">\[
 \frac{1}{n} \sum_{i=1}^n \left| \mu_i - \hat{\mu}_i \right|
 \]</span></p>
-<p>where <span class="math inline">\(\mu_i\)</span> is the actual point spread outcome (home - away points) and <span class="math inline">\(\hat{\mu}_i\)</span> is your predicted point spread for the <span class="math inline">\(i\)</span>th game. The average is ta ken over all <span class="math inline">\(n = 58\)</span> total games that you are predicting the outcome for. In words, the mean absolute error is the average number of points your predictions are away from the truth.</p>
+<p>where <span class="math inline">\(\mu_i\)</span> is the actual point spread outcome (home - away points) and <span class="math inline">\(\hat{\mu}_i\)</span> is your predicted point spread for the <span class="math inline">\(i\)</span>th game. The average is ta ken over all <span class="math inline">\(n = 55\)</span> total games that you are predicting the outcome for. In words, the mean absolute error is the average number of points your predictions are away from the truth.</p>
 <ol start="2" type="1">
-<li>Confidence Interval Distance</li>
+<li>Confidence Interval Width</li>
 </ol>
 <!-- To reward tighter confidence intervals, we will use the following metric: -->
 

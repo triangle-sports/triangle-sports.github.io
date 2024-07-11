@@ -17,7 +17,7 @@ Predict `point spread` together with a `95% confidence interval` in the 2025 NCA
 :::callout-important
 Enter all values to two decimal places.
 
-- Enter the point spread of team 1 over team 2 in the `point_spread` column.
+- Enter the point spread (home team minus away team) in the `point_spread` column.
 - Enter the lower bound of the 95% confidence interval in the `ci_95_lb` column.
 - Enter the upper bound of the 95% confidence interval in the `ci_95_ub` column.
 :::
@@ -26,7 +26,7 @@ Enter all values to two decimal places.
 
 ### Evaluation
 
-Your accuracy and precision predictions (point estimate and confidence intervals respectively) will be evaluated separately by two metrics described below.
+Your predictions (point estimates and confidence intervals) will be evaluated separately by two metrics described below.
 
 1. Mean Absolute Error
 
@@ -34,9 +34,9 @@ $$
 \frac{1}{n} \sum_{i=1}^n \left| \mu_i - \hat{\mu}_i \right|
 $$
 
-where $\mu_i$ is the actual point spread outcome (home - away points) and $\hat{\mu}_i$ is your predicted point spread for the $i$th game. The average is ta    ken over all $n = 58$ total games that you are predicting the outcome for. In words, the mean absolute error is the average number of points your predictions are away from the truth.
+where $\mu_i$ is the actual point spread outcome (home - away points) and $\hat{\mu}_i$ is your predicted point spread for the $i$th game. The average is ta    ken over all $n = 55$ total games that you are predicting the outcome for. In words, the mean absolute error is the average number of points your predictions are away from the truth.
 
-2. Confidence Interval Distance
+2. Confidence Interval Width
 
 <!-- To reward tighter confidence intervals, we will use the following metric: -->
 
