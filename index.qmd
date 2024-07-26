@@ -23,7 +23,7 @@ Dates to be finalized.
 <!-- {{< include _leaderboard.qmd >}} -->
 
 ```{r}
-#| label: leaderboard 
+#| label: leaderboard t
 #| echo: false
 #| warning: false
 library(magrittr)
