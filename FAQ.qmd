@@ -19,7 +19,11 @@ No.
 
 #### What do I need to compete?
 
-All you need is a computer.
+Register for the event and submit predictions and confidence intervals by the deadline making sure you are following all of the instructions on the [Task](/task) page. A computer with R or Python and a basic background with linear models is ideal. 
+
+#### Is there a prize for the winners?
+
+At this current point in time, there is no prize for the winners. This could change but there is no guarantee. This is an excellent, exciting opportunity to build your resume with essential data science skills. The photos of the winning teams in each category  will be displayed on this website as long as this competition exists. 
 
 #### Other questions
 
