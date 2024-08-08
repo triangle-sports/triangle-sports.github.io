@@ -6,7 +6,7 @@ title: "Task"
 
 ### Objective
 
-Predict `point spread` together with a `95% confidence interval` in the 2025 NCAA conference games for Duke, NC State and UNC, Chapel Hill. 
+Predict `point spread` together with a `confidence interval` in the 2025 NCAA conference games for Duke, NC State and UNC, Chapel Hill. 
 
 ### Instructions
 
@@ -18,8 +18,8 @@ Predict `point spread` together with a `95% confidence interval` in the 2025 NCA
 Enter all values to two decimal places.
 
 - Enter the point spread (home team minus away team) in the `point_spread` column.
-- Enter the lower bound of the 95% confidence interval in the `ci_95_lb` column.
-- Enter the upper bound of the 95% confidence interval in the `ci_95_ub` column.
+- Enter the lower bound of the confidence interval in the `ci_lb` column.
+- Enter the upper bound of the confidence interval in the `ci_ub` column.
 :::
 
 3. Click `File`, `Download`, `Comma Separated Values (.csv)` to download your prediction spreadsheet. Rename your file to the name of your team. Upload your file to the dropbox link [here](https://www.dropbox.com/request/3rRzJVPdjfrjywYuXSm0). **Make sure your file type is a** `csv`.
@@ -28,15 +28,25 @@ Enter all values to two decimal places.
 
 Your predictions (point estimates and confidence intervals) will be evaluated separately by two metrics described below.
 
-1. Mean Absolute Error
+1. Mean Absolute Error (MAE)
 
 $$
-\frac{1}{n} \sum_{i=1}^n \left| \mu_i - \hat{\mu}_i \right|
+MAE = \frac{1}{n} \sum_{i=1}^n \left| \mu_i - \hat{\mu}_i \right|
 $$
 
-where $\mu_i$ is the actual point spread outcome (home - away points) and $\hat{\mu}_i$ is your predicted point spread for the $i$th game. The average is ta    ken over all $n = 55$ total games that you are predicting the outcome for. In words, the mean absolute error is the average number of points your predictions are away from the truth.
+where $\mu_i$ is the actual point spread outcome (home - away points) and $\hat{\mu}_i$ is your predicted point spread for the $i$th game. The average is taken over all $n = 55$ total games for which you are predicting the outcome. In words, the $MAE$ is the average number of points your predictions are away from the truth. Smaller $MAE$ indicates accurate point predictions.
+ 
+2. Confidence Interval Width (CIW)
 
-2. Confidence Interval Width
+In order for your confidence intervals to be considered, **at least 70\%** of your confidence intervals must contain the true spread. Given this criteria, we heavily recommend reporting confidence intervals with a minimum of 70% coverage.
 
-<!-- To reward tighter confidence intervals, we will use the following metric: -->
+$$
+CIW = \begin{cases}
+    \frac{1}{n} \sum_{i=1}^n \left| ub_i - lb_i \right|,& \text{if Coverage} \geq 70\% \\
+    & \\
+    \text{Disqualified (DQ)},              & \text{if Coverage} < 70\%
+\end{cases}
+$$
+where $ub_i$ is the upper bound of your interval and $lb_i$ is the lower bound of your interval for the spread of the $i$th game. The average is taken over all $n = 55$ total games for which you are producing confidence intervals. In words, the $CIW$ is the average width of all your confidence intervals. Smaller $CIW$ indicates more precise confidence intervals.
+
 
