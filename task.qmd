@@ -38,5 +38,7 @@ where $\mu_i$ is the actual point spread outcome (home - away points) and $\hat{
 
 2. Confidence Interval Width
 
+
+
 <!-- To reward tighter confidence intervals, we will use the following metric: -->
 
