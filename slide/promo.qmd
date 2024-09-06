@@ -3,24 +3,29 @@ title: "Promo Slide"
 format: revealjs
 ---
 
-### Triangle Challenge: Sports Analytics Competition {.smaller}
+## Triangle Challenge: Sports Analytics Competition {background-image="https://static.vecteezy.com/system/resources/previews/001/346/646/original/basketball-on-wooden-court-with-white-copy-space-free-vector.jpg" }
 
 ::: {style="font-size: 50%;"}
 Data competition for individual or teams of undergraduate and masters students within the triangle area!
 
 ::: columns
 ::: {.column width="40%"}
-**Goal:** Make predictions with confidence intervals that capture the *point difference* between Duke's, UNC's, and NC State's ACC basketball games in 2025.
 
-![](images/example.png){width="400" height="300" fig-align="center"} website: <https://triangle-sports.github.io/>
+**Website**: <https://triangle-sports.github.io/>
+
+**Register** any time before *insert date*
+
+![](images/qr_code.png){width="100" height="100" fig-align="left"}
+
+
+**Submit** any time before *Jan 1st*
+
 :::
 
 ::: {.column width="60%"}
-**Why**: Hone data skills + gain experience that translates to the real world; Meet others interested in sports statistics
 
-**When**: Register **below** any time before *insert date*; Submit any time before *Jan 1st*
+![](images/example.png){width="400" height="300" fig-align="left"} 
 
-![](images/qr_code.png){width="400" height="400" fig-align="center"}
 :::
 :::
 :::
