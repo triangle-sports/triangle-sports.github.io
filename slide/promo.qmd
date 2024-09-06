@@ -3,7 +3,7 @@ title: "Promo Slide"
 format: revealjs
 ---
 
-### Triangle Challange: Sports Analytics Competition {.smaller}
+### Triangle Challenge: Sports Analytics Competition {.smaller}
 
 ::: {style="font-size: 50%;"}
 Data competition for individual or teams of undergraduate and masters students within the triangle area!

@@ -15,7 +15,7 @@ title: "Triangle Sports Analytics Competition"
 </style>
 ```
 
-<img src="imgs/logo_o.png" class="center"/>
+<img src="imgs/logo_notext.png" class="center"/>
 
 ### Statement of purpose
 
