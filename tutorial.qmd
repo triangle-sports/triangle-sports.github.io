@@ -12,7 +12,7 @@ It's important to test the usefulness of sophisticated models against more basic
 
 ## Step 1: Collecting data
 
-1a. install a package to scrape NCAA data
+1a. Install a package to scrape NCAA data
 
 ```{r}
 #| eval: false
@@ -20,7 +20,7 @@ It's important to test the usefulness of sophisticated models against more basic
 devtools::install_github("lbenz730/ncaahoopR")
 ```
 
-1b. load the package
+1b. Load the package
 
 ```{r}
 #| warning: false
@@ -28,7 +28,7 @@ devtools::install_github("lbenz730/ncaahoopR")
 library(ncaahoopR)
 ```
 
-1c. glimpse at a particular team's schedule
+1c. Glimpse at a particular team's schedule
 
 ```{r}
 # look at a team's schedule
@@ -36,7 +36,7 @@ get_schedule("Duke", "2022-23") %>%
   glimpse()
 ```
 
-1d. check out documentation at [https://github.com/lbenz730/ncaahoopR](https://github.com/lbenz730/ncaahoopR).
+1d. Check out documentation at [https://github.com/lbenz730/ncaahoopR](https://github.com/lbenz730/ncaahoopR).
 
 ## Step 2: Basic prediction
 
@@ -44,6 +44,7 @@ Imagine you wish to predict the point spread in match-ups between Duke, UNC and 
 
 ```{r}
 pt_df = NULL
+
 for(teamName in c("Duke", "UNC", "NC State")) {
 pt_df = rbind(pt_df, get_schedule(teamName, "2022-23") %>%
   filter(date < "2023-01-01") %>% # look at only Fall games
@@ -65,6 +66,7 @@ getCI95 = function(m, s) {
 }
   
 lookup <- c(team1 = "V1", team2= "V2")
+
 combn(pt_df$team, 2) %>%
   t() %>%
   as.data.frame() %>%
