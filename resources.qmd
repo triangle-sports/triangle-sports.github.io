@@ -1,0 +1,30 @@
+---
+title: "Resources"
+---
+
+Click the image to watch a video on importing data into R, joining data, and working with data!
+
+::: columns
+::: {.column width="50%"}
+
+[![Video on importing data](imgs/data.png){fig-align="left" width="200"}](https://www.youtube.com/watch?v=tIMaRYiuEFA)
+
+[![Working with data](imgs/tools.png){fig-align="left" width="200"}](https://www.youtube.com/watch?v=0229Uq2hkJo)
+
+:::
+::: {.column width="50%"}
+
+[![Video on joining data](imgs/join.png){fig-align="left" width="350"}](https://www.youtube.com/watch?v=VdV5ABsaf5Y)
+:::
+:::
+
+
+### Articles
+
+Here are a list of articles that use modeling techniques to make predictions on point spread.
+
+-- Article:
+
+-- Article:
+
+-- Article:

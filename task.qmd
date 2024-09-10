@@ -24,6 +24,8 @@ Enter all values to two decimal places.
 
 3.  Click `File`, `Download`, `Comma Separated Values (.csv)` to download your prediction spreadsheet. Rename your file to the name of your team. Upload your file to the dropbox link [here](https://www.dropbox.com/request/3rRzJVPdjfrjywYuXSm0). **Make sure your file type is a** `csv`.
 
+4. Submit a one-page (maximum) write-up detailing **how** you came up with your predicted point spread and associated confidence intervals, e.g. what type of model did you use? Additionally, discuss **why** you chose your methodology. Please upload this as a `.pdf` or `.docx` document [here](https://www.dropbox.com/request/3rRzJVPdjfrjywYuXSm0). Again, be sure to rename your file to the name of your team.
+
 ### Evaluation
 
 Your predictions (point estimates and confidence intervals) will be evaluated separately by two metrics described below. Your goal is to minimize each of the following metrics.
