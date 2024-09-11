@@ -17,7 +17,7 @@ It's important to test the usefulness of sophisticated models against more basic
 ```{r}
 #| eval: false
 # install.packages("devtools")
-devtools::install_github("lbenz730/ncaahoopR")
+# devtools::install_github("lbenz730/ncaahoopR")
 ```
 
 1b. Load the package
