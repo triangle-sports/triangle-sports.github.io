@@ -52,7 +52,7 @@ p +
   aesthetics = c("fill")
 ) + 
   labs(title = "Triangle Sp<img src = 'imgs/bball.png' height = 22><span style='font-size: 24pt'></span>rts",
-       subtitle = "Analytics Challenge 2025") + 
+       subtitle = "Analytics Competition 2025") + 
   annotation_raster(img2, xmin = -0.8, xmax = 2.9, ymin = 0.09, ymax = 0.104) + 
   annotation_raster(img3, xmin = 12.5, xmax = 18.5, ymin = 0.037, ymax = 0.062) + 
   annotation_raster(img4, xmin = 4.5, xmax = 8.2, ymin = 0.040, ymax = 0.057) + 
