@@ -124,9 +124,11 @@ window.document.addEventListener("DOMContentLoaded", function () {
       if (window.Headroom && sidebar.classList.contains("sidebar-unpinned")) {
         sidebar.style.top = "0";
         sidebar.style.maxHeight = "100vh";
+        sidebar.style.minHeight = "100vh";
       } else {
         sidebar.style.top = topOffset + "px";
         sidebar.style.maxHeight = "calc(100vh - " + topOffset + "px)";
+        sidebar.style.minHeight = "calc(100vh - " + topOffset + "px)";
       }
     });
 
@@ -237,7 +239,6 @@ window.document.addEventListener("DOMContentLoaded", function () {
     const links = window.document.querySelectorAll("a");
     for (let i = 0; i < links.length; i++) {
       if (links[i].href) {
-        links[i].dataset.originalHref = links[i].href;
         links[i].href = links[i].href.replace(/\/index\.html/, "/");
       }
     }

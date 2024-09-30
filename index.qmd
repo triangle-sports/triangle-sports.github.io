@@ -2,6 +2,10 @@
 title: "Triangle Sports Analytics Competition"
 ---
 
+## More Information Coming Soon!
+
+This website is currently changing and updating with more information about the competition. **Please register if you are interested in participating, and be on the look out for information sent to your listed email!**
+
 ```{=html}
 <style type="text/css">
 
