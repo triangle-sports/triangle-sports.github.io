@@ -36,7 +36,7 @@ MAE = \frac{1}{n} \sum_{i=1}^n \left| \mu_i - \hat{\mu}_i \right|
 $$
 
 <p style="margin-left: 25px;">
-where $\mu_i$ is the actual point spread outcome (home - away points) and $\hat{\mu}_i$ is your predicted point spread for the $i$th game. The average is taken over all $n = 55$ total games for which you are predicting the outcome. In words, the $MAE$ is the average number of points your predictions are away from the truth. Smaller $MAE$ indicates accurate point predictions.
+where $\mu_i$ is the actual point spread outcome (home - away points) and $\hat{\mu}_i$ is your predicted point spread for the $i$th game. The average is taken over all $n = 42$ total games for which you are predicting the outcome. In words, the $MAE$ is the average number of points your predictions are away from the truth. Smaller $MAE$ indicates accurate point predictions.
 </p>
 
 2.  Confidence Interval Width (CIW)
