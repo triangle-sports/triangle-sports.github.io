@@ -19,12 +19,24 @@ Click the image to watch a video on importing data into R, joining data, and wor
 :::
 
 
+### Free Online Texts
+
+Here are a list of online textbooks that may be helpful in this competition.
+
+-- [R for Data Science (1e)](https://r4ds.had.co.nz/)
+
+-- [R for Data Science (2e)](https://r4ds.hadley.nz/)
+
+-- [Forecasting: Principles and Practice](https://otexts.com/fpp2/)
+
+-- [An Introduction to Statistical Learning](https://www.statlearning.com/)
+
 ### Articles
 
-Here are a list of articles that use modeling techniques to make predictions on point spread.
+Here are a list of online articles that may be helpful in the modeling and predicting of point spreads.
 
--- Article:
+-- [Using Linear Regression to Model Point Spreads in College Basketball](https://towardsdatascience.com/using-linear-regression-to-model-point-spreads-in-college-basketball-f7da5811c3da)
 
--- Article:
+-- [Creating a College Basketball Metric to Predict Point Spreads for March MadnessArticle](https://medium.com/@jriordan1/creating-a-college-basketball-metric-to-predict-point-spreads-for-march-madness-02bbdf048e99)
 
--- Article:
+-- [Confidence vs Prediction Intervals: Understanding the Difference](https://www.datacamp.com/blog/confidence-intervals-vs-prediction-intervals)

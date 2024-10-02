@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.530">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -124,7 +124,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#articles" id="toc-articles" class="nav-link active" data-scroll-target="#articles">Articles</a></li>
+  <li><a href="#free-online-texts" id="toc-free-online-texts" class="nav-link active" data-scroll-target="#free-online-texts">Free Online Texts</a></li>
+  <li><a href="#articles" id="toc-articles" class="nav-link" data-scroll-target="#articles">Articles</a></li>
   </ul>
 </nav>
     </div>
@@ -155,31 +156,51 @@ ul.task-list li input[type="checkbox"] {
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
 <p><a href="https://www.youtube.com/watch?v=tIMaRYiuEFA"><img src="imgs/data.png" class="img-fluid quarto-figure quarto-figure-left figure-img" width="200" alt="Video on importing data"></a></p>
+</figure>
+</div>
 <figcaption>Video on importing data</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
 <p><a href="https://www.youtube.com/watch?v=0229Uq2hkJo"><img src="imgs/tools.png" class="img-fluid quarto-figure quarto-figure-left figure-img" width="200" alt="Working with data"></a></p>
+</figure>
+</div>
 <figcaption>Working with data</figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
 <p><a href="https://www.youtube.com/watch?v=VdV5ABsaf5Y"><img src="imgs/join.png" class="img-fluid quarto-figure quarto-figure-left figure-img" width="350" alt="Video on joining data"></a></p>
+</figure>
+</div>
 <figcaption>Video on joining data</figcaption>
 </figure>
 </div>
 </div>
 </div>
+<section id="free-online-texts" class="level3">
+<h3 class="anchored" data-anchor-id="free-online-texts">Free Online Texts</h3>
+<p>Here are a list of online textbooks that may be helpful in this competition.</p>
+<p>– <a href="https://r4ds.had.co.nz/">R for Data Science (1e)</a></p>
+<p>– <a href="https://r4ds.hadley.nz/">R for Data Science (2e)</a></p>
+<p>– <a href="https://otexts.com/fpp2/">Forecasting: Principles and Practice</a></p>
+<p>– <a href="https://www.statlearning.com/">An Introduction to Statistical Learning</a></p>
+</section>
 <section id="articles" class="level3">
 <h3 class="anchored" data-anchor-id="articles">Articles</h3>
-<p>Here are a list of articles that use modeling techniques to make predictions on point spread.</p>
-<p>– Article:</p>
-<p>– Article:</p>
-<p>– Article:</p>
+<p>Here are a list of online articles that may be helpful in the modeling and predicting of point spreads.</p>
+<p>– <a href="https://towardsdatascience.com/using-linear-regression-to-model-point-spreads-in-college-basketball-f7da5811c3da">Using Linear Regression to Model Point Spreads in College Basketball</a></p>
+<p>– <a href="https://medium.com/@jriordan1/creating-a-college-basketball-metric-to-predict-point-spreads-for-march-madness-02bbdf048e99">Creating a College Basketball Metric to Predict Point Spreads for March MadnessArticle</a></p>
+<p>– <a href="https://www.datacamp.com/blog/confidence-intervals-vs-prediction-intervals">Confidence vs Prediction Intervals: Understanding the Difference</a></p>
 
 
 </section>
@@ -264,6 +285,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -298,7 +337,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -346,7 +389,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
