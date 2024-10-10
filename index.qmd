@@ -65,3 +65,65 @@ reactableScoreBoard %>%
             paste0("Last updated: ", format(time, "%a %b %d %Y")))
 # format(Sys.time(), "%a %b %d %Y")
 ```
+
+### Coordinators
+
+```{=html}
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 20px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.grid-item-l {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 20px;
+  text-align: right;
+}
+
+.profile {
+  display: block;
+  width: 50%;
+}
+
+.grid-item2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 20px;
+  text-align: left;
+  overflow: hidden
+}
+
+.grid-item2 img {
+  display: block;
+  margin-bottom: -70px;
+  margin-left: -1px
+}
+
+</style>
+
+<div class="grid-container">
+  <div class="grid-item-l"><img src="/imgs/fisher_alexander.jpg" align="left" class="profile"></div>
+  <div class="grid-item"><b>Alexander Fisher</b> <br> <br>Duke University<br>alexander.fisher@duke.edu</div>
+  <div class="grid-item2"><img src="/imgs/giacomazzo_mario.jpg" align="left" class ="profile"></div>
+  <div class="grid-item"><b>Mario Giacomazzo</b> <br> <br>University of North Carolina<br>mgiacoma@email.unc.edu</div>
+  <div class="grid-item-l"><img src="/imgs/Elijah_Meyer.png" align="left" class="profile"></div>  
+  <div class="grid-item"><b>Elijah Meyer</b>  <br> <br>North Carolina State University<br>esmeyer2@ncsu.edu</div>
+</div>
+
+```
+
+
+
+
