@@ -94,7 +94,7 @@ Mario Giacomazzo   [mgiacoma@email.unc.edu](mailto:mgiacoma@email.unc.edu)
 :::
 
 ::: {.column width="30%"}
-![](imgs/Elijah_Meyer.png) <br>
+![](imgs/Elijah_Meyer_circle.png) <br>
 
 <p align="center">
 **North Carolina State University**  
