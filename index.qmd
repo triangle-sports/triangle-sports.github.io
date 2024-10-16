@@ -74,7 +74,7 @@ reactableScoreBoard %>%
 
 <p align="center">
 **Duke University**  
-Alexander Fisher   [alexander.fisher\@duke.edu](mailto:alexander.fisher@duke.edu)
+Alexander Fisher   [aaf29@duke.edu](mailto:aaf29@duke.edu)
 </p>
 :::
 
