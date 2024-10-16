@@ -2,7 +2,7 @@
 title: "Triangle Sports Analytics Competition"
 format:
   html:
-    toc: false
+    toc: true
 ---
 
 This website will update in real time with the latest information about the competition. **Please register if you are interested in participating, and be on the look out for emails!**
