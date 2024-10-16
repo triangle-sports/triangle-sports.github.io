@@ -1,10 +1,11 @@
 ---
 title: "Triangle Sports Analytics Competition"
+format:
+  html:
+    toc: false
 ---
 
-## More Information Coming Soon!
-
-This website is currently changing and updating with more information about the competition. **Please register if you are interested in participating, and be on the look out for information sent to your listed email!**
+This website will update in real time with the latest information about the competition. **Please register if you are interested in participating, and be on the look out for emails!**
 
 Register now [here](https://forms.gle/PCqbq2rrjqR9ByMX8)!
 
@@ -34,8 +35,7 @@ Dates to be finalized.
 -   October 2024: Attend info session
     -   Duke: TBD
     -   NC State: TBD
-    -   UNC: Friday, October 18 at 5PM on [Zoom](https://unc.zoom.us/j/95763950701?pwd=SxKXi7IZzd9zDQ5R54YYuiBZXiZlvc.1) (Passcode: 045494
-)
+    -   UNC: Friday, October 18 at 5PM on [Zoom](https://unc.zoom.us/j/95763950701?pwd=SxKXi7IZzd9zDQ5R54YYuiBZXiZlvc.1) (Passcode: 045494 )
 -   November 2024: Pre-event workshops
 -   January 10, 2025: Submissions Due by Midnight
 -   April 2025: Award ceremony
@@ -68,62 +68,133 @@ reactableScoreBoard %>%
 
 ### Coordinators
 
-```{=html}
-<style>
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 20px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 0px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  font-size: 20px;
-  text-align: left;
-}
+::: columns
+::: {.column width="30%"}
+![](imgs/fisher-alexander-circle.png) <br>
 
-.grid-item-l {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 0px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  font-size: 20px;
-  text-align: right;
-}
+<p align="center">
+**Duke University**  
+Alexander Fisher   [alexander.fisher\@duke.edu](mailto:alexander.fisher@duke.edu)
+</p>
+:::
 
-.profile {
-  display: block;
-  width: 50%;
-}
+::: {.column width="2%"}
+:::
 
-.grid-item2 {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 0px solid rgba(0, 0, 0, 0.8);
-  padding: 5px;
-  font-size: 20px;
-  text-align: left;
-  overflow: hidden
-}
+::: {.column width="30%"}
+![](imgs/giacomazzo_mario.png) <br>
 
-.grid-item2 img {
-  display: block;
-  margin-bottom: -70px;
-  margin-left: -1px
-}
+<p align="center">
+**University of North Carolina**  
+Mario Giacomazzo   [mgiacoma@email.unc.edu](mailto:mgiacoma@email.unc.edu)
+</p>
+:::
 
-</style>
+::: {.column width="2%"}
+:::
 
-<div class="grid-container">
-  <div class="grid-item-l"><img src="/imgs/fisher_alexander.jpg" align="left" class="profile"></div>
-  <div class="grid-item"><b>Alexander Fisher</b> <br> <br>Duke University<br>alexander.fisher@duke.edu</div>
-  <div class="grid-item2"><img src="/imgs/giacomazzo_mario.jpg" align="left" class ="profile"></div>
-  <div class="grid-item"><b>Mario Giacomazzo</b> <br> <br>University of North Carolina<br>mgiacoma@email.unc.edu</div>
-  <div class="grid-item-l"><img src="/imgs/Elijah_Meyer.png" align="left" class="profile"></div>  
-  <div class="grid-item"><b>Elijah Meyer</b>  <br> <br>North Carolina State University<br>esmeyer2@ncsu.edu</div>
-</div>
+::: {.column width="30%"}
+![](imgs/Elijah_Meyer.png) <br>
 
-```
+<p align="center">
+**North Carolina State University**  
+Elijah Meyer [esmeyer2@ncsu.edu](mailto:esmeyer2@ncsu.edu)
+</p>
+:::
+:::
 
+<!-- ```{=html} -->
 
+<!-- <style> -->
 
+<!-- .grid-container { -->
 
+<!--   display: grid; -->
+
+<!--   grid-template-columns: auto auto; -->
+
+<!--   padding: 20px; -->
+
+<!-- } -->
+
+<!-- .grid-item { -->
+
+<!--   background-color: rgba(255, 255, 255, 0.8); -->
+
+<!--   border: 0px solid rgba(0, 0, 0, 0.8); -->
+
+<!--   padding: 10px; -->
+
+<!--   font-size: 20px; -->
+
+<!--   text-align: left; -->
+
+<!-- } -->
+
+<!-- .grid-item-l { -->
+
+<!--   background-color: rgba(255, 255, 255, 0.8); -->
+
+<!--   border: 0px solid rgba(0, 0, 0, 0.8); -->
+
+<!--   padding: 10px; -->
+
+<!--   font-size: 20px; -->
+
+<!--   text-align: right; -->
+
+<!-- } -->
+
+<!-- .profile { -->
+
+<!--   display: block; -->
+
+<!--   width: 50%; -->
+
+<!-- } -->
+
+<!-- .grid-item2 { -->
+
+<!--   background-color: rgba(255, 255, 255, 0.8); -->
+
+<!--   border: 0px solid rgba(0, 0, 0, 0.8); -->
+
+<!--   padding: 5px; -->
+
+<!--   font-size: 20px; -->
+
+<!--   text-align: left; -->
+
+<!--   overflow: hidden -->
+
+<!-- } -->
+
+<!-- .grid-item2 img { -->
+
+<!--   display: block; -->
+
+<!--   margin-bottom: -70px; -->
+
+<!--   margin-left: -1px -->
+
+<!-- } -->
+
+<!-- </style> -->
+
+<!-- <div class="grid-container"> -->
+
+<!--   <div class="grid-item-l"><img src="/imgs/fisher_alexander.jpg" align="left" class="profile"></div> -->
+
+<!--   <div class="grid-item"><b>Alexander Fisher</b> <br> <br>Duke University<br>alexander.fisher@duke.edu</div> -->
+
+<!--   <div class="grid-item2"><img src="/imgs/giacomazzo_mario.jpg" align="left" class ="profile"></div> -->
+
+<!--   <div class="grid-item"><b>Mario Giacomazzo</b> <br> <br>University of North Carolina<br>mgiacoma@email.unc.edu</div> -->
+
+<!--   <div class="grid-item-l"><img src="/imgs/Elijah_Meyer.png" align="left" class="profile"></div>   -->
+
+<!--   <div class="grid-item"><b>Elijah Meyer</b>  <br> <br>North Carolina State University<br>esmeyer2@ncsu.edu</div> -->
+
+<!-- </div> -->
+
+<!-- ``` -->
