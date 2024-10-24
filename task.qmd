@@ -53,5 +53,5 @@ CIW = \begin{cases}
 \end{cases}
 $$ 
 <p style="margin-left: 25px;">
-where $ub_i$ is the upper bound of your interval and $lb_i$ is the lower bound of your interval for the spread of the $i$th game. The average is taken over all $n = 55$ total games for which you are producing confidence intervals. In words, the $CIW$ is the average width of all your confidence intervals. Smaller $CIW$ indicates more precise confidence intervals.
+where $ub_i$ is the upper bound of your interval and $lb_i$ is the lower bound of your interval for the spread of the $i$th game. The average is taken over all $n = 42$ total games for which you are producing confidence intervals. In words, the $CIW$ is the average width of all your confidence intervals. Smaller $CIW$ indicates more precise confidence intervals.
 </p>
