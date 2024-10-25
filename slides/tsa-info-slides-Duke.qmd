@@ -1,0 +1,69 @@
+---
+title: "Triangle Sports Analytics Competition"
+subtitle: "Duke Information Session"
+author: "Dr. Alexander Fisher"
+format: revealjs
+smaller: true
+---
+
+# Welcome!
+
+## Task
+
+Predict the outcome of 2025 college basketball conference games for Duke, NC State and UNC.
+
+Specifically, your submission will include  
+
+- **point spread**  
+- **confidence interval**  
+- methodology statement
+
+. . . 
+
+Practically, this means following the instructions here: [https://triangle-sports.github.io/task.html](https://triangle-sports.github.io/task.html)
+
+## Evaluation
+
+Your submission will be evaluated according to three metrics: 
+
+1. Mean absolute error (MAE)
+
+
+$$
+MAE = \frac{1}{n} \sum_{i=1}^n \left| \mu_i - \hat{\mu}_i \right|
+$$
+
+. . . 
+
+2. Confidence interval width (CIW) 
+
+$$
+CIW = \begin{cases}
+    \frac{1}{n} \sum_{i=1}^n \left| ub_i - lb_i \right|,& \text{if Coverage} \geq 70\% \\
+    & \\
+    \text{Disqualified (DQ)},              & \text{if Coverage} < 70\%
+\end{cases}
+$$ 
+
+. . . 
+
+3. Subjective score of methodology 
+
+## Important Dates
+
+- Submission deadline: 11:59pm on **January 10, 2025**
+
+- Workshops$^*$
+
+- Drop-in office hours$^*$
+
+$^*$will be updated on website in November and announced via email
+  
+## Resources
+
+- Follow the tutorial:  [https://triangle-sports.github.io/tutorial.html](https://triangle-sports.github.io/tutorial.html)
+
+- Access articles and videos for EDA: [https://triangle-sports.github.io/resources.html](https://triangle-sports.github.io/resources.html)
+
+# Questions?
+
