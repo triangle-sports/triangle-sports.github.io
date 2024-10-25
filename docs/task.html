@@ -183,7 +183,7 @@ window.Quarto = {
 
 <section id="objective" class="level3">
 <h3 class="anchored" data-anchor-id="objective">Objective</h3>
-<p>Predict <code>point spread</code> together with a <code>confidence interval</code> in the 2025 NCAA conference games for Duke, NC State and UNC.</p>
+<p>Predict <code>point spread</code> together with an <code>interval</code> (confidence/prediction) in the 2025 NCAA conference games for Duke, NC State and UNC.</p>
 </section>
 <section id="instructions" class="level3">
 <h3 class="anchored" data-anchor-id="instructions">Instructions</h3>
@@ -203,9 +203,9 @@ Important
 <div class="callout-body-container callout-body">
 <ul>
 <li>Enter your predicted point spread (home team minus away team) in the <code>pt_spread</code> column.</li>
-<li>Enter the lower bound of the confidence interval in the <code>ci_lb</code> column.</li>
-<li>Enter the upper bound of the confidence interval in the <code>ci_ub</code> column.</li>
-<li>Point spreads and confidence intervals must be numeric values. They do not need to be integers. For example, you may predict the spread to be somewhere between -8.25 and 3.75 points.</li>
+<li>Enter the lower bound of the interval in the <code>ci_lb</code> column.</li>
+<li>Enter the upper bound of the interval in the <code>ci_ub</code> column.</li>
+<li>Point spreads and intervals must be numeric values. They do not need to be integers. For example, you may predict the spread to be somewhere between -8.25 and 3.75 points.</li>
 <li>Insert your team name in the first cell of the <code>team_name</code> column.</li>
 <li>Insert the names of all the students on your team in the <code>team_members</code> column. This includes the name of the person who submitted. If you are submitting solo, this column should only have your name in the column.</li>
 </ul>
@@ -213,12 +213,12 @@ Important
 </div>
 <ol start="3" type="1">
 <li><p>Rename your file to the name of your team. Upload your file as a <code>csv</code> to the dropbox link <a href="https://www.dropbox.com/request/3rRzJVPdjfrjywYuXSm0">here</a>. <strong>Submission of this is due by midnight on January 10, 2025.</strong> Submissions after midnight will not be considered at all.</p></li>
-<li><p>Submit a one-page (maximum) write-up detailing <em>how</em> you came up with your predicted point spread and associated confidence intervals, e.g.&nbsp;what type of model did you use? Additionally, discuss <em>why</em> you chose your methodology. Please upload this as a <code>.pdf</code> or <code>.docx</code> document <a href="https://www.dropbox.com/request/3rRzJVPdjfrjywYuXSm0">here</a>. Again, be sure to rename your file to the name of your team. <strong>Submission of this is due by midnight on January 10, 2025.</strong></p></li>
+<li><p>Submit a one-page (maximum) write-up detailing <em>how</em> you came up with your predicted point spread and associated intervals, e.g.&nbsp;what type of model did you use? Additionally, discuss <em>why</em> you chose your methodology. Please upload this as a <code>.pdf</code> or <code>.docx</code> document <a href="https://www.dropbox.com/request/3rRzJVPdjfrjywYuXSm0">here</a>. Again, be sure to rename your file to the name of your team. <strong>Submission of this is due by midnight on January 10, 2025.</strong></p></li>
 </ol>
 </section>
 <section id="evaluation" class="level3">
 <h3 class="anchored" data-anchor-id="evaluation">Evaluation</h3>
-<p>Your predictions (point estimates and confidence intervals) will be evaluated separately by two metrics described below. Your goal is to minimize each of the following metrics.</p>
+<p>Your predictions (point estimates and intervals) will be evaluated separately by two metrics described below. Your goal is to minimize each of the following metrics.</p>
 <ol type="1">
 <li>Mean Absolute Error (MAE)</li>
 </ol>
@@ -229,10 +229,10 @@ MAE = \frac{1}{n} \sum_{i=1}^n \left| \mu_i - \hat{\mu}_i \right|
 where <span class="math inline">\(\mu_i\)</span> is the actual point spread outcome (home - away points) and <span class="math inline">\(\hat{\mu}_i\)</span> is your predicted point spread for the <span class="math inline">\(i\)</span>th game. The average is taken over all <span class="math inline">\(n = 42\)</span> total games for which you are predicting the outcome. In words, the <span class="math inline">\(MAE\)</span> is the average number of points your predictions are away from the truth. Smaller <span class="math inline">\(MAE\)</span> indicates accurate point predictions.
 </p>
 <ol start="2" type="1">
-<li>Confidence Interval Width (CIW)</li>
+<li>Interval Width (CIW)</li>
 </ol>
 <p style="margin-left: 25px;">
-In order for your confidence intervals to be considered, <strong>at least 70%</strong> of your confidence intervals must contain the true spread. Given this criteria, we heavily recommend reporting confidence intervals with a minimum of 70% coverage.
+In order for your confidence intervals to be considered, <strong>at least 70%</strong> of your intervals must contain the true spread. Given this criteria, we heavily recommend reporting intervals with a minimum of 70% coverage.
 </p>
 <span class="math display">\[
 CIW = \begin{cases}
