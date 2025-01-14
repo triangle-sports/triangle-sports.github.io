@@ -45,7 +45,13 @@ The Triangle Sports Analytics Competition aims to bring together students who lo
 
 <!-- - Drop-in office hours  -->
 
+<<<<<<< HEAD
 <!--   - (Duke): **Thursday, November 7th \@ 9:30-10:30AM** in Old Chem 223B -->
+=======
+  - (Duke): **Thursday, November 7th \@ 9:30-10:30AM** in Old Chem 223B
+  - (UNC): **Wednesday, November 20th \@ 9:30 - 10:30AM** on [Zoom](https://unc.zoom.us/j/97621855212)
+  - (UNC): **Thursday, November 21st \@ 9:30 - 10:30AM** on [Zoom](https://unc.zoom.us/j/94740181362)
+>>>>>>> 9f2456543b8cf53b9d268ebc4ee48fd787621ccb
 
 <!-- - Pre-event workshops (Duke):  -->
 <!--     -  Intro to Basketball Analytics and R Refresh - **Sunday, November 10 \@ 12:00pm** in Reuben-Cooke 129 -->
