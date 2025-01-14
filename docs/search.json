@@ -1,5 +1,103 @@
 [
   {
+    "objectID": "FAQ.html",
+    "href": "FAQ.html",
+    "title": "FAQ",
+    "section": "",
+    "text": "Who is eligible to compete?\nFor the 2025 Triangle Sports Analytics Challenge, only current undergraduate and master’s students at Duke, UNC, Chapel Hill and North Carolina State University are eligible to compete.\n\n\nIs there a registration fee?\nNo.\n\n\nWhat do I need to compete?\nRegister for the event and submit predictions and confidence intervals by the deadline making sure you are following all of the instructions on the Task page. A computer with R or Python and a basic background with linear models is ideal.\n\n\nIs there a prize for the winners?\nAt this current point in time, there is no prize for the winners. This could change but there is no guarantee. This is an excellent, exciting opportunity to build your resume with essential data science skills. The photos of the winning teams in each category will be displayed on this website as long as this competition exists.\n\n\nOther questions\nFor all other questions, please reach out to your school’s coordinator:\n\n\n\nDr. Alexander Fisher\nDuke\naaf29@duke.edu\n\n\nDr. Mario Giacomazzo\nUNC, Chapel Hill\nmgiacoma@email.unc.edu\n\n\nDr. Elijah Meyer\nNorth Carolina State University\nesmeyer2@ncsu.edu"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Triangle Sports Analytics Competition",
+    "section": "",
+    "text": "Statement of purpose\nThe Triangle Sports Analytics Competition aims to bring together students who love sports analytics to compete in a prediction contest. Students may work individually or in a team of 2-5. All submissions will be due January 10th. Read details about the contest on the Task page.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLeaderboard\n\n\n\n\nLast updated: Tue Jan 14 2025\n\n\n\n\n\n\nCoordinators\n\n\n \n\nDuke University\nAlexander Fisher aaf29@duke.edu\n\n\n\n\n \n\nUniversity of North Carolina\nMario Giacomazzo mgiacoma@email.unc.edu\n\n\n\n\n \n\nNorth Carolina State University\nElijah Meyer esmeyer2@ncsu.edu"
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Video on importing data\n\n\n\n\n\nWorking with data\n\n\n\n\n\n\nVideo on joining data\n\n\n\n\n\nFree Online Texts\nHere are a list of online textbooks that may be helpful in this competition.\n– R for Data Science (1e)\n– R for Data Science (2e)\n– Forecasting: Principles and Practice\n– An Introduction to Statistical Learning\n\n\nArticles\nHere are a list of online articles that may be helpful in the modeling and predicting of point spreads.\n– Using Linear Regression to Model Point Spreads in College Basketball\n– Creating a College Basketball Metric to Predict Point Spreads for March MadnessArticle\n– Confidence vs Prediction Intervals: Understanding the Difference"
+  },
+  {
+    "objectID": "slides/promo.html#triangle-challenge-sports-analytics-competition",
+    "href": "slides/promo.html#triangle-challenge-sports-analytics-competition",
+    "title": "Promo Slide",
+    "section": "Triangle Challenge: Sports Analytics Competition",
+    "text": "Triangle Challenge: Sports Analytics Competition\n\nData competition for individual or teams of undergraduate and masters students within the triangle area!\n\n\nWebsite: https://triangle-sports.github.io/\nRegister any time before insert date\n\n\n\n\n\nSubmit any time before Jan 1st"
+  },
+  {
+    "objectID": "slides/tsa-info-slides-Duke.html#task",
+    "href": "slides/tsa-info-slides-Duke.html#task",
+    "title": "Triangle Sports Analytics Competition",
+    "section": "Task",
+    "text": "Task\nPredict the outcome of 2025 college basketball conference games for Duke, NC State and UNC.\nSpecifically, your submission will include\n\npoint spread\n\nconfidence interval\n\nmethodology statement\n\n\nPractically, this means following the instructions here: https://triangle-sports.github.io/task.html"
+  },
+  {
+    "objectID": "slides/tsa-info-slides-Duke.html#evaluation",
+    "href": "slides/tsa-info-slides-Duke.html#evaluation",
+    "title": "Triangle Sports Analytics Competition",
+    "section": "Evaluation",
+    "text": "Evaluation\nYour submission will be evaluated according to three metrics:\n\nMean absolute error (MAE)\n\n\\[\nMAE = \\frac{1}{n} \\sum_{i=1}^n \\left| \\mu_i - \\hat{\\mu}_i \\right|\n\\]\n\n\nConfidence interval width (CIW)\n\n\\[\nCIW = \\begin{cases}\n    \\frac{1}{n} \\sum_{i=1}^n \\left| ub_i - lb_i \\right|,& \\text{if Coverage} \\geq 70\\% \\\\\n    & \\\\\n    \\text{Disqualified (DQ)},              & \\text{if Coverage} < 70\\%\n\\end{cases}\n\\]\n\n\n\nSubjective score of methodology"
+  },
+  {
+    "objectID": "slides/tsa-info-slides-Duke.html#important-dates",
+    "href": "slides/tsa-info-slides-Duke.html#important-dates",
+    "title": "Triangle Sports Analytics Competition",
+    "section": "Important Dates",
+    "text": "Important Dates\n\nSubmission deadline: 11:59pm on January 10, 2025\nWorkshops\\(^*\\)\nDrop-in office hours\\(^*\\)\n\n\\(^*\\)will be updated on website in November and announced via email"
+  },
+  {
+    "objectID": "slides/tsa-info-slides-Duke.html#resources",
+    "href": "slides/tsa-info-slides-Duke.html#resources",
+    "title": "Triangle Sports Analytics Competition",
+    "section": "Resources",
+    "text": "Resources\n\nFollow the tutorial: https://triangle-sports.github.io/tutorial.html\nAccess articles and videos for EDA: https://triangle-sports.github.io/resources.html"
+  },
+  {
+    "objectID": "task.html",
+    "href": "task.html",
+    "title": "Task",
+    "section": "",
+    "text": "Instructions\n\nDownload a copy of the google sheet here. Click File, Download, Comma Separated Values (.csv) to download your prediction spreadsheet as a csv to your computer.\nOnly edit cells that contain NA. All the information in the first three columns should not be altered at all. The games should remain in their original order. Your predictions may not be considered if you alter the information in these first three columns.\n\n\n\n\n\n\n\nImportant\n\n\n\n\nEnter your predicted point spread (home team minus away team) in the pt_spread column.\nEnter the lower bound of the interval in the ci_lb column.\nEnter the upper bound of the interval in the ci_ub column.\nPoint spreads and intervals must be numeric values. They do not need to be integers. For example, you may predict the spread to be somewhere between -8.25 and 3.75 points.\nInsert your team name in the first cell of the team_name column.\nInsert the names of all the students on your team in the team_members column. This includes the name of the person who submitted. If you are submitting solo, this column should only have your name in the column.\n\n\n\n\nRename your file to the name of your team. Upload your file as a csv to the dropbox link here. Submission of this is due by midnight on January 10, 2025. Submissions after midnight will not be considered at all.\nSubmit a one-page (maximum) write-up detailing how you came up with your predicted point spread and associated intervals, e.g. what type of model did you use? Additionally, discuss why you chose your methodology. Please upload this as a .pdf or .docx document here. Again, be sure to rename your file to the name of your team. Submission of this is due by midnight on January 10, 2025.\n\n\n\nEvaluation\nYour predictions (point estimates and intervals) will be evaluated separately by two metrics described below. Your goal is to minimize each of the following metrics.\n\nMean Absolute Error (MAE)\n\n\\[\nMAE = \\frac{1}{n} \\sum_{i=1}^n \\left| \\mu_i - \\hat{\\mu}_i \\right|\n\\]\n\nwhere \\(\\mu_i\\) is the actual point spread outcome (home - away points) and \\(\\hat{\\mu}_i\\) is your predicted point spread for the \\(i\\)th game. The average is taken over all \\(n = 42\\) total games for which you are predicting the outcome. In words, the \\(MAE\\) is the average number of points your predictions are away from the truth. Smaller \\(MAE\\) indicates accurate point predictions.\n\n\nInterval Width (CIW)\n\n\nIn order for your confidence intervals to be considered, at least 70% of your intervals must contain the true spread. Given this criteria, we heavily recommend reporting intervals with a minimum of 70% coverage.\n\n\\[\nCIW = \\begin{cases}\n    \\frac{1}{n} \\sum_{i=1}^n \\left| ub_i - lb_i \\right|,& \\text{if Coverage} \\geq 70\\% \\\\\n    & \\\\\n    \\text{Disqualified (DQ)},              & \\text{if Coverage} < 70\\%\n\\end{cases}\n\\]\n\nwhere \\(ub_i\\) is the upper bound of your interval and \\(lb_i\\) is the lower bound of your interval for the spread of the \\(i\\)th game. The average is taken over all \\(n = 42\\) total games for which you are producing confidence intervals. In words, the \\(CIW\\) is the average width of all your confidence intervals. Smaller \\(CIW\\) indicates more precise confidence intervals."
+  },
+  {
+    "objectID": "tsa-info-slides-Duke.html#task",
+    "href": "tsa-info-slides-Duke.html#task",
+    "title": "Triangle Sports Analytics Competition",
+    "section": "Task",
+    "text": "Task\nPredict the outcome of 2025 college basketball conference games for Duke, NC State and UNC.\nSpecifically, your submission will include\n\npoint spread\n\nconfidence interval\n\nmethodology statement\n\n\nPractically, this means following the instructions here: https://triangle-sports.github.io/task.html"
+  },
+  {
+    "objectID": "tsa-info-slides-Duke.html#evaluation",
+    "href": "tsa-info-slides-Duke.html#evaluation",
+    "title": "Triangle Sports Analytics Competition",
+    "section": "Evaluation",
+    "text": "Evaluation\nYour submission will be evaluated according to three metrics:\n\nMean absolute error (MAE)\n\n\\[\nMAE = \\frac{1}{n} \\sum_{i=1}^n \\left| \\mu_i - \\hat{\\mu}_i \\right|\n\\]\n\n\nConfidence interval width (CIW)\n\n\\[\nCIW = \\begin{cases}\n    \\frac{1}{n} \\sum_{i=1}^n \\left| ub_i - lb_i \\right|,& \\text{if Coverage} \\geq 70\\% \\\\\n    & \\\\\n    \\text{Disqualified (DQ)},              & \\text{if Coverage} < 70\\%\n\\end{cases}\n\\]\n\n\n\nSubjective score of methodology"
+  },
+  {
+    "objectID": "tsa-info-slides-Duke.html#important-dates",
+    "href": "tsa-info-slides-Duke.html#important-dates",
+    "title": "Triangle Sports Analytics Competition",
+    "section": "Important Dates",
+    "text": "Important Dates\n\nSubmission deadline: 11:59pm on January 10, 2025\nWorkshops\\(^*\\)\nDrop-in office hours\\(^*\\)\n\n\\(^*\\)will be updated on website in November and announced via email"
+  },
+  {
+    "objectID": "tsa-info-slides-Duke.html#resources",
+    "href": "tsa-info-slides-Duke.html#resources",
+    "title": "Triangle Sports Analytics Competition",
+    "section": "Resources",
+    "text": "Resources\n\nFollow the tutorial: https://triangle-sports.github.io/tutorial.html\nAccess articles and videos for EDA: https://triangle-sports.github.io/resources.html"
+  },
+  {
     "objectID": "tutorial.html",
     "href": "tutorial.html",
     "title": "Getting started",
@@ -19,135 +117,5 @@
     "title": "Getting started",
     "section": "Step 2: Basic prediction",
     "text": "Step 2: Basic prediction\nImagine you wish to predict the point spread in match-ups between Duke, UNC and NC State in the Spring 2023 using data from Fall 2022. We can build a simple (poor) naive model that assumes each team scores a normally distributed amount of points per game.\n\npt_df = NULL\n\nfor(teamName in c(\"Duke\", \"UNC\", \"NC State\")) {\npt_df = rbind(pt_df, get_schedule(teamName, \"2022-23\") %>%\n  filter(date < \"2023-01-01\") %>% # look at only Fall games\n  summarize(mean_pts = mean(team_score),\n            var_pts = var(team_score)) %>%\n  mutate(team = teamName))\n}\n\npt_df\n\n  mean_pts  var_pts     team\n1 73.85714 118.4396     Duke\n2 80.92857 171.9176      UNC\n3 79.53333 173.2667 NC State\n\n\nUsing this, we can make naive predictions about the outcome of each matchup.\n\ngetCI95 = function(m, s) {\n  return(toString(\n    c(m - (qnorm(0.975) * s), m + (qnorm(0.975) * s))\n  ))\n}\n  \nlookup <- c(team1 = \"V1\", team2= \"V2\")\n\ncombn(pt_df$team, 2) %>%\n  t() %>%\n  as.data.frame() %>%\n  rename(all_of(lookup)) %>%\n  rowwise() %>%\n  mutate(pt_spread = \n           pt_df$mean_pts[pt_df[\"team\"] == team1] - \n            pt_df$mean_pts[pt_df[\"team\"] == team2]) %>%\n  mutate(spread_sd = \n           sqrt(pt_df$var_pts[pt_df[\"team\"] == team1] +\n            pt_df$var_pts[pt_df[\"team\"] == team2])) %>%\n  mutate(spread_CI_95 = getCI95(pt_spread, spread_sd)) %>%\n  select(-spread_sd)\n\n# A tibble: 3 × 4\n# Rowwise: \n  team1 team2    pt_spread spread_CI_95                       \n  <chr> <chr>        <dbl> <chr>                              \n1 Duke  UNC          -7.07 -40.4689585336895, 26.3261013908323\n2 Duke  NC State     -5.68 -39.1512178722751, 27.7988369198942\n3 UNC   NC State      1.40 -35.0191969327747, 37.8096731232509"
-  },
-  {
-    "objectID": "slide/promo.html#triangle-challenge-sports-analytics-competition",
-    "href": "slide/promo.html#triangle-challenge-sports-analytics-competition",
-    "title": "Promo Slide",
-    "section": "Triangle Challenge: Sports Analytics Competition",
-    "text": "Triangle Challenge: Sports Analytics Competition\n\nData competition for individual or teams of undergraduate and masters students within the triangle area!\n\n\nWebsite: https://triangle-sports.github.io/\nRegister any time before insert date\n\n\n\n\n\nSubmit any time before Jan 1st"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Triangle Sports Analytics Competition",
-    "section": "",
-<<<<<<< HEAD
-    "text": "Statement of purpose\nThe Triangle Sports Analytics Competition aims to bring together students who love sports analytics to compete in a prediction contest. Students may work individually or in a team of 2-5. All submissions will be due January 10th. Read details about the contest on the Task page.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLeaderboard\n\n\n\n\nLast updated: Tue Jan 14 2025\n\n\n\n\n\n\nCoordinators\n\n\n \n\nDuke University\nAlexander Fisher aaf29@duke.edu\n\n\n\n\n \n\nUniversity of North Carolina\nMario Giacomazzo mgiacoma@email.unc.edu\n\n\n\n\n \n\nNorth Carolina State University\nElijah Meyer esmeyer2@ncsu.edu"
-=======
-    "text": "This website will update in real time with the latest information about the competition. Please register if you are interested in participating, and be on the look out for emails!\nRegister now here!\n\n\n\nStatement of purpose\nThe Triangle Sports Analytics Competition aims to bring together students who love sports analytics to compete in a prediction contest. Students may work individually or in a team of 2-5. All submissions will be due January 10th. Read details about the contest on the Task page.\n\n\nTimeline\nDates to be finalized.\n\nSeptember 2024\n\nRegistration begins\n\n\n\nOctober 2024\n\nAttend info session\n\nDuke: Friday, October 25 @ 5:15PM in Old Chem 116\nNC State: Friday, October 25 @ 4:00PM on Zoom (check email for information)\nUNC: Friday, October 18 @ 5:00PM on Zoom (Passcode: 045494 )\n\n\n\n\nNovember 2024\n\nDrop-in office hours\n\n(Duke): Thursday, November 7th @ 9:30-10:30AM in Old Chem 223B\n(UNC): Wednesday, November 20th @ 9:30 - 10:30AM on Zoom\n(UNC): Thursday, November 21st @ 9:30 - 10:30AM on Zoom\n\nPre-event workshops (Duke):\n\nIntro to Basketball Analytics and R Refresh - Sunday, November 10 @ 12:00pm in Reuben-Cooke 129\nModel Example Walkthrough - Sunday, November 17 @ 12:00pm in Reuben-Cooke 129\n\nJanuary 10, 2025: Submissions Due by Midnight\nApril 2025: Award ceremony\n\n\n\n\nRegister now here!\n\n\nLeaderboard\n\n\n\nLast updated: Fri Sep 06 2024\n\n\n\n\n\n\nCoordinators\n\n\n \n\nDuke University\nAlexander Fisher aaf29@duke.edu\n\n\n\n\n \n\nUniversity of North Carolina\nMario Giacomazzo mgiacoma@email.unc.edu\n\n\n\n\n \n\nNorth Carolina State University\nElijah Meyer esmeyer2@ncsu.edu"
->>>>>>> 9f2456543b8cf53b9d268ebc4ee48fd787621ccb
-  },
-  {
-    "objectID": "FAQ.html",
-    "href": "FAQ.html",
-    "title": "FAQ",
-    "section": "",
-    "text": "Who is eligible to compete?\nFor the 2025 Triangle Sports Analytics Challenge, only current undergraduate and master’s students at Duke, UNC, Chapel Hill and North Carolina State University are eligible to compete.\n\n\nIs there a registration fee?\nNo.\n\n\nWhat do I need to compete?\nRegister for the event and submit predictions and confidence intervals by the deadline making sure you are following all of the instructions on the Task page. A computer with R or Python and a basic background with linear models is ideal.\n\n\nIs there a prize for the winners?\nAt this current point in time, there is no prize for the winners. This could change but there is no guarantee. This is an excellent, exciting opportunity to build your resume with essential data science skills. The photos of the winning teams in each category will be displayed on this website as long as this competition exists.\n\n\nOther questions\nFor all other questions, please reach out to your school’s coordinator:\n\n\n\nDr. Alexander Fisher\nDuke\naaf29@duke.edu\n\n\nDr. Mario Giacomazzo\nUNC, Chapel Hill\nmgiacoma@email.unc.edu\n\n\nDr. Elijah Meyer\nNorth Carolina State University\nesmeyer2@ncsu.edu"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Resources",
-    "section": "",
-    "text": "Video on importing data\n\n\n\n\n\nWorking with data\n\n\n\n\n\n\nVideo on joining data\n\n\n\n\n\nFree Online Texts\nHere are a list of online textbooks that may be helpful in this competition.\n– R for Data Science (1e)\n– R for Data Science (2e)\n– Forecasting: Principles and Practice\n– An Introduction to Statistical Learning\n\n\nArticles\nHere are a list of online articles that may be helpful in the modeling and predicting of point spreads.\n– Using Linear Regression to Model Point Spreads in College Basketball\n– Creating a College Basketball Metric to Predict Point Spreads for March MadnessArticle\n– Confidence vs Prediction Intervals: Understanding the Difference"
-  },
-  {
-    "objectID": "task.html",
-    "href": "task.html",
-    "title": "Task",
-    "section": "",
-    "text": "Instructions\n\nDownload a copy of the google sheet here. Click File, Download, Comma Separated Values (.csv) to download your prediction spreadsheet as a csv to your computer.\nOnly edit cells that contain NA. All the information in the first three columns should not be altered at all. The games should remain in their original order. Your predictions may not be considered if you alter the information in these first three columns.\n\n\n\n\n\n\n\nImportant\n\n\n\n\nEnter your predicted point spread (home team minus away team) in the pt_spread column.\nEnter the lower bound of the interval in the ci_lb column.\nEnter the upper bound of the interval in the ci_ub column.\nPoint spreads and intervals must be numeric values. They do not need to be integers. For example, you may predict the spread to be somewhere between -8.25 and 3.75 points.\nInsert your team name in the first cell of the team_name column.\nInsert the names of all the students on your team in the team_members column. This includes the name of the person who submitted. If you are submitting solo, this column should only have your name in the column.\n\n\n\n\nRename your file to the name of your team. Upload your file as a csv to the dropbox link here. Submission of this is due by midnight on January 10, 2025. Submissions after midnight will not be considered at all.\nSubmit a one-page (maximum) write-up detailing how you came up with your predicted point spread and associated intervals, e.g. what type of model did you use? Additionally, discuss why you chose your methodology. Please upload this as a .pdf or .docx document here. Again, be sure to rename your file to the name of your team. Submission of this is due by midnight on January 10, 2025.\n\n\n\nEvaluation\nYour predictions (point estimates and intervals) will be evaluated separately by two metrics described below. Your goal is to minimize each of the following metrics.\n\nMean Absolute Error (MAE)\n\n\\[\nMAE = \\frac{1}{n} \\sum_{i=1}^n \\left| \\mu_i - \\hat{\\mu}_i \\right|\n\\]\n\nwhere \\(\\mu_i\\) is the actual point spread outcome (home - away points) and \\(\\hat{\\mu}_i\\) is your predicted point spread for the \\(i\\)th game. The average is taken over all \\(n = 42\\) total games for which you are predicting the outcome. In words, the \\(MAE\\) is the average number of points your predictions are away from the truth. Smaller \\(MAE\\) indicates accurate point predictions.\n\n\nInterval Width (CIW)\n\n\nIn order for your confidence intervals to be considered, at least 70% of your intervals must contain the true spread. Given this criteria, we heavily recommend reporting intervals with a minimum of 70% coverage.\n\n\\[\nCIW = \\begin{cases}\n    \\frac{1}{n} \\sum_{i=1}^n \\left| ub_i - lb_i \\right|,& \\text{if Coverage} \\geq 70\\% \\\\\n    & \\\\\n    \\text{Disqualified (DQ)},              & \\text{if Coverage} < 70\\%\n\\end{cases}\n\\]\n\nwhere \\(ub_i\\) is the upper bound of your interval and \\(lb_i\\) is the lower bound of your interval for the spread of the \\(i\\)th game. The average is taken over all \\(n = 42\\) total games for which you are producing confidence intervals. In words, the \\(CIW\\) is the average width of all your confidence intervals. Smaller \\(CIW\\) indicates more precise confidence intervals."
-  },
-  {
-    "objectID": "tsa-info-slides-Duke.html#task",
-    "href": "tsa-info-slides-Duke.html#task",
-    "title": "Triangle Sports Analytics Competition",
-    "section": "",
-    "text": "Predict the outcome of 2025 college basketball conference games for Duke, NC State and UNC.\nSpecifically, your submission will include\n\npoint spread\n\nconfidence interval\n\nmethodology statement\n\n. . .\nPractically, this means following the instructions here: https://triangle-sports.github.io/task.html"
-  },
-  {
-    "objectID": "tsa-info-slides-Duke.html#evaluation",
-    "href": "tsa-info-slides-Duke.html#evaluation",
-    "title": "Triangle Sports Analytics Competition",
-    "section": "",
-    "text": "Your submission will be evaluated according to three metrics:\n\nMean absolute error (MAE)\n\n\\[\nMAE = \\frac{1}{n} \\sum_{i=1}^n \\left| \\mu_i - \\hat{\\mu}_i \\right|\n\\]\n. . .\n\nConfidence interval width (CIW)\n\n\\[\nCIW = \\begin{cases}\n    \\frac{1}{n} \\sum_{i=1}^n \\left| ub_i - lb_i \\right|,& \\text{if Coverage} \\geq 70\\% \\\\\n    & \\\\\n    \\text{Disqualified (DQ)},              & \\text{if Coverage} &lt; 70\\%\n\\end{cases}\n\\]\n. . .\n\nSubjective score of methodology"
-  },
-  {
-    "objectID": "tsa-info-slides-Duke.html#important-dates",
-    "href": "tsa-info-slides-Duke.html#important-dates",
-    "title": "Triangle Sports Analytics Competition",
-    "section": "",
-    "text": "Submission deadline: 11:59pm on January 10, 2025\nWorkshops\\(^*\\)\nDrop-in office hours\\(^*\\)\n\n\\(^*\\)will be updated on website in November and announced via email"
-  },
-  {
-    "objectID": "tsa-info-slides-Duke.html#resources",
-    "href": "tsa-info-slides-Duke.html#resources",
-    "title": "Triangle Sports Analytics Competition",
-    "section": "",
-    "text": "Follow the tutorial: https://triangle-sports.github.io/tutorial.html\nAccess articles and videos for EDA: https://triangle-sports.github.io/resources.html"
-  },
-  {
-    "objectID": "slides/promo.html#triangle-challenge-sports-analytics-competition",
-    "href": "slides/promo.html#triangle-challenge-sports-analytics-competition",
-    "title": "Promo Slide",
-    "section": "",
-    "text": "Data competition for individual or teams of undergraduate and masters students within the triangle area!\n\n\nWebsite: https://triangle-sports.github.io/\nRegister any time before insert date\n\n\n\n\n\nSubmit any time before Jan 1st"
-  },
-  {
-    "objectID": "tsa-info-slides-Duke.html",
-    "href": "tsa-info-slides-Duke.html",
-    "title": "Triangle Sports Analytics Competition",
-    "section": "",
-    "text": "Predict the outcome of 2025 college basketball conference games for Duke, NC State and UNC.\nSpecifically, your submission will include\n\npoint spread\n\nconfidence interval\n\nmethodology statement\n\n. . .\nPractically, this means following the instructions here: https://triangle-sports.github.io/task.html\n\n\n\nYour submission will be evaluated according to three metrics:\n\nMean absolute error (MAE)\n\n\\[\nMAE = \\frac{1}{n} \\sum_{i=1}^n \\left| \\mu_i - \\hat{\\mu}_i \\right|\n\\]\n. . .\n\nConfidence interval width (CIW)\n\n\\[\nCIW = \\begin{cases}\n    \\frac{1}{n} \\sum_{i=1}^n \\left| ub_i - lb_i \\right|,& \\text{if Coverage} \\geq 70\\% \\\\\n    & \\\\\n    \\text{Disqualified (DQ)},              & \\text{if Coverage} &lt; 70\\%\n\\end{cases}\n\\]\n. . .\n\nSubjective score of methodology\n\n\n\n\n\nSubmission deadline: 11:59pm on January 10, 2025\nWorkshops\\(^*\\)\nDrop-in office hours\\(^*\\)\n\n\\(^*\\)will be updated on website in November and announced via email\n\n\n\n\nFollow the tutorial: https://triangle-sports.github.io/tutorial.html\nAccess articles and videos for EDA: https://triangle-sports.github.io/resources.html"
-  },
-  {
-    "objectID": "slides/tsa-info-slides-Duke.html",
-    "href": "slides/tsa-info-slides-Duke.html",
-    "title": "Triangle Sports Analytics Competition",
-    "section": "",
-    "text": "Predict the outcome of 2025 college basketball conference games for Duke, NC State and UNC.\nSpecifically, your submission will include\n\npoint spread\n\nconfidence interval\n\nmethodology statement\n\n. . .\nPractically, this means following the instructions here: https://triangle-sports.github.io/task.html\n\n\n\nYour submission will be evaluated according to three metrics:\n\nMean absolute error (MAE)\n\n\\[\nMAE = \\frac{1}{n} \\sum_{i=1}^n \\left| \\mu_i - \\hat{\\mu}_i \\right|\n\\]\n. . .\n\nConfidence interval width (CIW)\n\n\\[\nCIW = \\begin{cases}\n    \\frac{1}{n} \\sum_{i=1}^n \\left| ub_i - lb_i \\right|,& \\text{if Coverage} \\geq 70\\% \\\\\n    & \\\\\n    \\text{Disqualified (DQ)},              & \\text{if Coverage} &lt; 70\\%\n\\end{cases}\n\\]\n. . .\n\nSubjective score of methodology\n\n\n\n\n\nSubmission deadline: 11:59pm on January 10, 2025\nWorkshops\\(^*\\)\nDrop-in office hours\\(^*\\)\n\n\\(^*\\)will be updated on website in November and announced via email\n\n\n\n\nFollow the tutorial: https://triangle-sports.github.io/tutorial.html\nAccess articles and videos for EDA: https://triangle-sports.github.io/resources.html"
-  },
-  {
-    "objectID": "slides/tsa-info-slides-Duke.html#task",
-    "href": "slides/tsa-info-slides-Duke.html#task",
-    "title": "Triangle Sports Analytics Competition",
-    "section": "",
-    "text": "Predict the outcome of 2025 college basketball conference games for Duke, NC State and UNC.\nSpecifically, your submission will include\n\npoint spread\n\nconfidence interval\n\nmethodology statement\n\n. . .\nPractically, this means following the instructions here: https://triangle-sports.github.io/task.html"
-  },
-  {
-    "objectID": "slides/tsa-info-slides-Duke.html#evaluation",
-    "href": "slides/tsa-info-slides-Duke.html#evaluation",
-    "title": "Triangle Sports Analytics Competition",
-    "section": "",
-    "text": "Your submission will be evaluated according to three metrics:\n\nMean absolute error (MAE)\n\n\\[\nMAE = \\frac{1}{n} \\sum_{i=1}^n \\left| \\mu_i - \\hat{\\mu}_i \\right|\n\\]\n. . .\n\nConfidence interval width (CIW)\n\n\\[\nCIW = \\begin{cases}\n    \\frac{1}{n} \\sum_{i=1}^n \\left| ub_i - lb_i \\right|,& \\text{if Coverage} \\geq 70\\% \\\\\n    & \\\\\n    \\text{Disqualified (DQ)},              & \\text{if Coverage} &lt; 70\\%\n\\end{cases}\n\\]\n. . .\n\nSubjective score of methodology"
-  },
-  {
-    "objectID": "slides/tsa-info-slides-Duke.html#important-dates",
-    "href": "slides/tsa-info-slides-Duke.html#important-dates",
-    "title": "Triangle Sports Analytics Competition",
-    "section": "",
-    "text": "Submission deadline: 11:59pm on January 10, 2025\nWorkshops\\(^*\\)\nDrop-in office hours\\(^*\\)\n\n\\(^*\\)will be updated on website in November and announced via email"
-  },
-  {
-    "objectID": "slides/tsa-info-slides-Duke.html#resources",
-    "href": "slides/tsa-info-slides-Duke.html#resources",
-    "title": "Triangle Sports Analytics Competition",
-    "section": "",
-    "text": "Follow the tutorial: https://triangle-sports.github.io/tutorial.html\nAccess articles and videos for EDA: https://triangle-sports.github.io/resources.html"
-  },
-  {
-    "objectID": "slides/promo.html",
-    "href": "slides/promo.html",
-    "title": "Promo Slide",
-    "section": "",
-    "text": "Data competition for individual or teams of undergraduate and masters students within the triangle area!\n\n\nWebsite: https://triangle-sports.github.io/\nRegister any time before insert date\n\n\n\n\n\nSubmit any time before Jan 1st"
   }
 ]
