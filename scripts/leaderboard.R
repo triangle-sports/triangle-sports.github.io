@@ -3,7 +3,9 @@ library(tidyverse)
 library(data.table)
 library(knitr)
 
-results = read_csv("data/scores.csv") %>%
+results = read_csv("data/scores.csv")
+
+results = results %>%
   mutate(true_pt_spread = pt_spread) %>%
   select(-pt_spread) %>%
   mutate(id = 1:nrow(results))
