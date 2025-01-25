@@ -81,42 +81,6 @@ reactableScoreBoard %>%
 # format(Sys.time(), "%a %b %d %Y")
 ```
 
-### Coordinators
-
-::: columns
-::: {.column width="30%"}
-![](imgs/fisher-alexander-circle.png) <br>
-
-<p align="center">
-**Duke University**  
-Alexander Fisher   [aaf29@duke.edu](mailto:aaf29@duke.edu)
-</p>
-:::
-
-::: {.column width="2%"}
-:::
-
-::: {.column width="30%"}
-![](imgs/giacomazzo_mario.png) <br>
-
-<p align="center">
-**University of North Carolina**  
-Mario Giacomazzo   [mgiacoma@email.unc.edu](mailto:mgiacoma@email.unc.edu)
-</p>
-:::
-
-::: {.column width="2%"}
-:::
-
-::: {.column width="30%"}
-![](imgs/Elijah_Meyer_circle.png) <br>
-
-<p align="center">
-**North Carolina State University**  
-Elijah Meyer [esmeyer2@ncsu.edu](mailto:esmeyer2@ncsu.edu)
-</p>
-:::
-:::
 
 <!-- ```{=html} -->
 
