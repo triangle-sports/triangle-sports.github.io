@@ -1,19 +1,19 @@
-Table: Last updated: Thu Jan 30 2025
+Table: Last updated: Mon Feb 10 2025
 
 |team               |   MAE|CIW            |
 |:------------------|-----:|:--------------|
-|TarheelBallers     |  7.40|23.04          |
-|WeWant6            |  7.40|27.09          |
-|Blue Devils MIDS   |  7.51|30.03          |
-|Cuteness Overload  |  7.78|< 70% coverage |
-|Kenpom Believers   |  7.86|24.42          |
-|3pi                |  7.87|27.91          |
-|UNC SAIL           |  8.21|< 70% coverage |
-|Buzzer Beaters     |  8.23|< 70% coverage |
-|Just Me            |  8.50|26.57          |
-|DustyDunne         |  8.57|28.03          |
-|Batra              |  8.68|38.24          |
-|3 Var Simple       | 10.36|< 70% coverage |
-|UMD                | 11.12|35.48          |
-|Scalator Wonjae Oh | 12.05|200            |
-|The Triangle Men   | 15.68|< 70% coverage |
+|WeWant6            |  7.18|26.98          |
+|TarheelBallers     |  7.43|23.04          |
+|Kenpom Believers   |  7.48|24.37          |
+|Cuteness Overload  |  7.52|< 70% coverage |
+|Blue Devils MIDS   |  7.77|29.89          |
+|DustyDunne         |  8.14|28.03          |
+|Buzzer Beaters     |  8.54|< 70% coverage |
+|UNC SAIL           |  8.56|< 70% coverage |
+|3pi                |  8.63|27.91          |
+|Batra              |  8.75|38.95          |
+|Just Me            |  9.33|26.33          |
+|UMD                | 12.17|35.89          |
+|3 Var Simple       | 12.38|< 70% coverage |
+|Scalator Wonjae Oh | 13.54|200            |
+|The Triangle Men   | 14.52|< 70% coverage |
