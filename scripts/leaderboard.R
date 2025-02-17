@@ -47,7 +47,6 @@ getCIW = function(df) {
     left_join(results, by = c("id")) %>%
     filter(id <= total_games) %>%
     mutate(inCI = true_pt_spread < ci_ub & true_pt_spread > ci_lb)
-  
   if(mean(merged_df$inCI) < 0.7) {
     ciw = "< 70% coverage"
     return(ciw)
