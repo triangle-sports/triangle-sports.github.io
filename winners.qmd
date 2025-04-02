@@ -1,15 +1,28 @@
-# 2025 Winners
+---
+title: "2025 Winners"
+format: html
+---  
+
+<!-- background-image: url("https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg"); -->
+
+<style>
+  body {
+   background-image: url("/imgs/basketball-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  
+</style>
+
 
 ## MAE
 
-1. **WeWant6** - Chris Johnson
-2. **Kenpom Believers** - Daniel Marin
-3. **Cuteness Overload** - Hung-Chun Lu, Zijian Huang
+1.  **WeWant6** - Chris Johnson
+2.  **Kenpom Believers** - Daniel Marin
+3.  **Cuteness Overload** - Hung-Chun Lu, Zijian Huang
 
 ## CIW
 
-1. **Kenpom Believers** - Daniel Marin
-2. **WeWant6** - Chris Johnson
-3. **Scalator** - Wonjae Oh, Ethan Youm
-
-
+1.  **Kenpom Believers** - Daniel Marin
+2.  **WeWant6** - Chris Johnson
+3.  **Scalator** - Wonjae Oh, Ethan Youm
