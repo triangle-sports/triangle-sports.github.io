@@ -1,13 +1,11 @@
 ---
-title: "2025 Winners"
+title: "Winners"
 format: html
 ---  
 
-<!-- background-image: url("https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg"); -->
-
 <style>
   body {
-   background-image: url("/imgs/basketball-2.png");
+   background-image: url("/imgs/basketball-3.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -19,6 +17,8 @@ format: html
       color: white;
     }
   </style>
+  
+# 2025
 
 ## MAE
 

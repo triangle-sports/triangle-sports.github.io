@@ -4,7 +4,7 @@
     "href": "FAQ.html",
     "title": "FAQ",
     "section": "",
-    "text": "Who is eligible to compete?\nFor the 2025 Triangle Sports Analytics Challenge, only current undergraduate and master’s students at Duke, UNC, Chapel Hill and North Carolina State University are eligible to compete.\n\n\nIs there a registration fee?\nNo.\n\n\nWhat do I need to compete?\nRegister for the event and submit predictions and confidence intervals by the deadline making sure you are following all of the instructions on the Task page. A computer with R or Python and a basic background with linear models is ideal.\n\n\nIs there a prize for the winners?\nAt this current point in time, there is no prize for the winners. This could change but there is no guarantee. This is an excellent, exciting opportunity to build your resume with essential data science skills. The photos of the winning teams in each category will be displayed on this website as long as this competition exists.\n\n\nOther questions\nFor all other questions, please reach out to your school’s coordinator:\n\n\nCoordinators\n\n\n \n\nDuke University\nAlexander Fisher aaf29@duke.edu\n\n\n\n\n \n\nUniversity of North Carolina\nMario Giacomazzo mgiacoma@email.unc.edu\n\n\n\n\n \n\nNorth Carolina State University\nElijah Meyer esmeyer2@ncsu.edu"
+    "text": "How do I sign up?\nRegistration has closed for the 2025 Triangle Sports Analytics Challenge. \nIf you have any questions about your registration, please contact Prof. Alexander Fisher.\n\n\nWho is eligible to compete?\nFor the 2025 Triangle Sports Analytics Challenge, only current undergraduate and master’s students at Duke, UNC, Chapel Hill and North Carolina State University are eligible to compete.\n\n\nIs there a registration fee?\nNo.\n\n\nWhat do I need to compete?\nRegister for the event and submit predictions and confidence intervals by the deadline making sure you are following all of the instructions on the Task page. A computer with R or Python and a basic background with linear models is ideal.\n\n\nIs there a prize for the winners?\nAt this current point in time, there is no prize for the winners. This could change but there is no guarantee. This is an excellent, exciting opportunity to build your resume with essential data science skills. The photos of the winning teams in each category will be displayed on this website as long as this competition exists.\n\n\nOther questions\nFor all other questions, please reach out to your school’s coordinator:\n\n\nCoordinators\n\n\n \n\nDuke University\nAlexander Fisher aaf29@duke.edu\n\n\n\n\n \n\nUniversity of North Carolina\nMario Giacomazzo mgiacoma@email.unc.edu\n\n\n\n\n \n\nNorth Carolina State University\nElijah Meyer esmeyer2@ncsu.edu"
   },
   {
     "objectID": "about.html",
@@ -121,22 +121,22 @@
   {
     "objectID": "winners.html",
     "href": "winners.html",
-    "title": "2025 Winners",
+    "title": "Winners",
     "section": "",
-    "text": "WeWant6 - Chris Johnson\nKenpom Believers - Daniel Marin\nCuteness Overload - Hung-Chun Lu, Zijian Huang"
+    "text": "WeWant6 - Chris Johnson\nKenpom Believers - Daniel Marin\nCuteness Overload - Hung-Chun Lu, Zijian Huang\n\n\n\n\n\nKenpom Believers - Daniel Marin\nWeWant6 - Chris Johnson\nScalator - Wonjae Oh, Ethan Youm"
   },
   {
     "objectID": "winners.html#mae",
     "href": "winners.html#mae",
-    "title": "2025 Winners",
+    "title": "Winners",
     "section": "",
     "text": "WeWant6 - Chris Johnson\nKenpom Believers - Daniel Marin\nCuteness Overload - Hung-Chun Lu, Zijian Huang"
   },
   {
     "objectID": "winners.html#ciw",
     "href": "winners.html#ciw",
-    "title": "2025 Winners",
-    "section": "CIW",
-    "text": "CIW\n\nKenpom Believers - Daniel Marin\nWeWant6 - Chris Johnson\nScalator - Wonjae Oh, Ethan Youm"
+    "title": "Winners",
+    "section": "",
+    "text": "Kenpom Believers - Daniel Marin\nWeWant6 - Chris Johnson\nScalator - Wonjae Oh, Ethan Youm"
   }
 ]
