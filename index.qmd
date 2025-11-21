@@ -27,9 +27,10 @@ This website will update in real time with the latest information about the comp
 
 ### Statement of purpose
 
-The Triangle Sports Analytics Competition aims to bring together students who love sports analytics to compete in a prediction contest. 
+The Triangle Sports Analytics Competition aims to bring together students who love sports analytics to compete in a prediction contest. Both undergraduate and graduate level students are encouraged to submit predictions. 
+
 Students may work individually or in a team of 2-5. 
-All submissions will be due **January 10th**. Read details about the contest on the [Task](/task.html) page.
+All submissions will be due **January 30th**. Read details about the contest on the [Task](/task.html) page.
 
 <!-- ### Timeline -->
 
@@ -61,23 +62,23 @@ All submissions will be due **January 10th**. Read details about the contest on 
 
 <!-- {{< include _leaderboard.qmd >}} -->
 
-```{r}
-#| label: leaderboard t
-#| echo: false
-#| warning: false
-library(magrittr)
-library(reactable)
-library(reactablefmtr)
-path = "./scripts/scoreBoard.csv"
-scoreBoard = readr::read_csv(path)
-time = file.info(path)$ctime
-reactableScoreBoard = reactable(scoreBoard,
-          defaultPageSize = 8,
-          searchable = TRUE)
-
-reactableScoreBoard %>%
-  add_title(font_size = 16,
-            paste0("Last updated: ", format(time, "%a %b %d %Y")))
+```{r,echo=FALSE, warning=FALSE,lab}
+<!-- #| label: leaderboard t -->
+<!-- #| echo: false -->
+<!-- #| warning: false -->
+# library(magrittr)
+# library(reactable)
+# library(reactablefmtr)
+# path = "./scripts/scoreBoard.csv"
+# scoreBoard = readr::read_csv(path)
+# time = file.info(path)$ctime
+# reactableScoreBoard = reactable(scoreBoard,
+#           defaultPageSize = 8,
+#           searchable = TRUE)
+# 
+# reactableScoreBoard %>%
+#   add_title(font_size = 16,
+#             paste0("Last updated: ", format(time, "%a %b %d %Y")))
 # format(Sys.time(), "%a %b %d %Y")
 ```
 
