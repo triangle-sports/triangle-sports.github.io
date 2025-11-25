@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>TSA - FAQ</title>
+<title>TSA - Challenge: Interval</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -97,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Challenge: Spread</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./task-ci.html"> 
+    <a class="nav-link active" href="./task-ci.html" aria-current="page"> 
 <span class="menu-text">Challenge: Interval</span></a>
   </li>  
   <li class="nav-item">
@@ -105,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Getting started</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./FAQ.html" aria-current="page"> 
+    <a class="nav-link" href="./FAQ.html"> 
 <span class="menu-text">FAQ</span></a>
   </li>  
   <li class="nav-item">
@@ -132,7 +161,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#coordinators" id="toc-coordinators" class="nav-link active" data-scroll-target="#coordinators">Coordinators</a></li>
+  <li><a href="#objective" id="toc-objective" class="nav-link active" data-scroll-target="#objective">Objective</a></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation">Evaluation</a></li>
   </ul>
 </nav>
     </div>
@@ -141,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">FAQ</h1>
+<h1 class="title">Challenge: Interval</h1>
 </div>
 
 
@@ -158,63 +189,69 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="how-do-i-sign-up" class="level4">
-<h4 class="anchored" data-anchor-id="how-do-i-sign-up">How do I sign up?</h4>
-<p>Registration has closed for the 2025 Triangle Sports Analytics Challenge. <!-- Register [here](https://forms.gle/PCqbq2rrjqR9ByMX8).  --></p>
-<p>If you have any questions about your registration, please contact <a href="mailto:aaf29@duke.edu">Prof.&nbsp;Alexander Fisher</a>.</p>
+<section id="objective" class="level3">
+<h3 class="anchored" data-anchor-id="objective">Objective</h3>
+<p>Predict <code>point spread</code> together with an <code>interval</code> (confidence/prediction) in the 2025 NCAA conference games for Duke, NC State and UNC.</p>
 </section>
-<section id="who-is-eligible-to-compete" class="level4">
-<h4 class="anchored" data-anchor-id="who-is-eligible-to-compete">Who is eligible to compete?</h4>
-<p>For the 2025 Triangle Sports Analytics Challenge, only current undergraduate and master’s students at Duke, UNC, Chapel Hill and North Carolina State University are eligible to compete.</p>
-</section>
-<section id="is-there-a-registration-fee" class="level4">
-<h4 class="anchored" data-anchor-id="is-there-a-registration-fee">Is there a registration fee?</h4>
-<p>No.</p>
-</section>
-<section id="what-do-i-need-to-compete" class="level4">
-<h4 class="anchored" data-anchor-id="what-do-i-need-to-compete">What do I need to compete?</h4>
-<p>Register for the event and submit predictions and confidence intervals by the deadline making sure you are following all of the instructions on the <a href=".\task">Task</a> page. A computer with R or Python and a basic background with linear models is ideal.</p>
-</section>
-<section id="is-there-a-prize-for-the-winners" class="level4">
-<h4 class="anchored" data-anchor-id="is-there-a-prize-for-the-winners">Is there a prize for the winners?</h4>
-<p>At this current point in time, there is no prize for the winners. This could change but there is no guarantee. This is an excellent, exciting opportunity to build your resume with essential data science skills. The photos of the winning teams in each category will be displayed on this website as long as this competition exists.</p>
-</section>
-<section id="other-questions" class="level4">
-<h4 class="anchored" data-anchor-id="other-questions">Other questions</h4>
-<p>For all other questions, please reach out to your school’s coordinator:</p>
-</section>
-<section id="coordinators" class="level3">
-<h3 class="anchored" data-anchor-id="coordinators">Coordinators</h3>
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img src="imgs/fisher-alexander-circle.png" class="img-fluid"> <br></p>
-<p align="center">
-<strong>Duke University</strong><br>
-Alexander Fisher <a href="mailto:aaf29@duke.edu">aaf29@duke.edu</a>
-</p>
-</div><div class="column" style="width:2%;">
-
-</div><div class="column" style="width:30%;">
-<p><img src="imgs/giacomazzo_mario.png" class="img-fluid"> <br></p>
-<p align="center">
-<strong>University of North Carolina</strong><br>
-Mario Giacomazzo <a href="mailto:mgiacoma@email.unc.edu">mgiacoma@email.unc.edu</a>
-</p>
-</div><div class="column" style="width:2%;">
-
-</div><div class="column" style="width:30%;">
-<p><img src="imgs/Elijah_Meyer_circle.png" class="img-fluid"> <br></p>
-<p align="center">
-<strong>North Carolina State University</strong><br>
-Elijah Meyer <a href="mailto:esmeyer2@ncsu.edu">esmeyer2@ncsu.edu</a>
-</p>
+<section id="instructions" class="level3">
+<h3 class="anchored" data-anchor-id="instructions">Instructions</h3>
+<ol type="1">
+<li><p>Download a copy of the google sheet <a href="https://docs.google.com/spreadsheets/d/1MoSm6rSKa4zIemlunDs1O6m77oSbXa2klaqFYWPLOxc/edit?usp=sharing">here</a>. Click <code>File</code>, <code>Download</code>, <code>Comma Separated Values (.csv)</code> to download your prediction spreadsheet as a <code>csv</code> to your computer.</p></li>
+<li><p><strong>Only edit cells that contain NA.</strong> All the information in the first three columns should not be altered at all. The games should remain in their original order. Your predictions may not be considered if you alter the information in these first three columns.</p></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
 </div>
 </div>
-<!-- |                      |                                 |                                                          | -->
-<!-- |----------------------|---------------------------------|----------------------------------------------------------| -->
-<!-- | Dr. Alexander Fisher | Duke                            | [aaf29\@duke.edu](mailto:aaf29@duke.edu)                 | -->
-<!-- | Dr. Mario Giacomazzo | UNC, Chapel Hill                | [mgiacoma\@email.unc.edu](mailto:mgiacoma@email.unc.edu) | -->
-<!-- | Dr. Elijah Meyer     | North Carolina State University | [esmeyer2\@ncsu.edu](mailto:esmeyer2@ncsu.edu)   | -->
+<div class="callout-body-container callout-body">
+<ul>
+<li>Enter your predicted point spread (home team minus away team) in the <code>pt_spread</code> column.</li>
+<li>Enter the lower bound of the interval in the <code>ci_lb</code> column.</li>
+<li>Enter the upper bound of the interval in the <code>ci_ub</code> column.</li>
+<li>Point spreads and intervals must be numeric values. They do not need to be integers. For example, you may predict the spread to be somewhere between -8.25 and 3.75 points.</li>
+<li>Insert your team name in the first cell of the <code>team_name</code> column.</li>
+<li>Insert the names of all the students on your team in the <code>team_members</code> column. This includes the name of the person who submitted. If you are submitting solo, this column should only have your name in the column.</li>
+</ul>
+</div>
+</div>
+<ol start="3" type="1">
+<li><p>Rename your file to the name of your team. Upload your file as a <code>csv</code> to the dropbox link <a href="https://www.dropbox.com/request/3rRzJVPdjfrjywYuXSm0">here</a>. <strong>Submission of this is due by midnight on January 10, 2025.</strong> Submissions after midnight will not be considered at all.</p></li>
+<li><p>Submit a one-page (maximum) write-up detailing <em>how</em> you came up with your predicted point spread and associated intervals, e.g.&nbsp;what type of model did you use? Additionally, discuss <em>why</em> you chose your methodology. Please upload this as a <code>.pdf</code> or <code>.docx</code> document <a href="https://www.dropbox.com/request/3rRzJVPdjfrjywYuXSm0">here</a>. Again, be sure to rename your file to the name of your team. <strong>Submission of this is due by midnight on January 10, 2025.</strong></p></li>
+</ol>
+</section>
+<section id="evaluation" class="level3">
+<h3 class="anchored" data-anchor-id="evaluation">Evaluation</h3>
+<p>Your predictions (point estimates and intervals) will be evaluated separately by two metrics described below. Your goal is to minimize each of the following metrics.</p>
+<ol type="1">
+<li>Mean Absolute Error (MAE)</li>
+</ol>
+<p><span class="math display">\[
+MAE = \frac{1}{n} \sum_{i=1}^n \left| \mu_i - \hat{\mu}_i \right|
+\]</span></p>
+<p style="margin-left: 25px;">
+where <span class="math inline">\(\mu_i\)</span> is the actual point spread outcome (home - away points) and <span class="math inline">\(\hat{\mu}_i\)</span> is your predicted point spread for the <span class="math inline">\(i\)</span>th game. The average is taken over all <span class="math inline">\(n = 42\)</span> total games for which you are predicting the outcome. In words, the <span class="math inline">\(MAE\)</span> is the average number of points your predictions are away from the truth. Smaller <span class="math inline">\(MAE\)</span> indicates accurate point predictions.
+</p>
+<ol start="2" type="1">
+<li>Interval Width (CIW)</li>
+</ol>
+<p style="margin-left: 25px;">
+In order for your confidence intervals to be considered, <strong>at least 70%</strong> of your intervals must contain the true spread. Given this criteria, we heavily recommend reporting intervals with a minimum of 70% coverage.
+</p>
+<span class="math display">\[
+CIW = \begin{cases}
+    \frac{1}{n} \sum_{i=1}^n \left| ub_i - lb_i \right|,&amp; \text{if Coverage} \geq 70\% \\
+    &amp; \\
+    \text{Disqualified (DQ)},              &amp; \text{if Coverage} &lt; 70\%
+\end{cases}
+\]</span>
+<p style="margin-left: 25px;">
+where <span class="math inline">\(ub_i\)</span> is the upper bound of your interval and <span class="math inline">\(lb_i\)</span> is the lower bound of your interval for the spread of the <span class="math inline">\(i\)</span>th game. The average is taken over all <span class="math inline">\(n = 42\)</span> total games for which you are producing confidence intervals. In words, the <span class="math inline">\(CIW\)</span> is the average width of all your confidence intervals. Smaller <span class="math inline">\(CIW\)</span> indicates more precise confidence intervals.
+</p>
 
 
 </section>

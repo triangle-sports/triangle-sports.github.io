@@ -5,11 +5,7 @@ format:
     toc: true
 ---
 
-This website will update in real time with the latest information about the competition. Registration for 2024-2025 season has closed.
-
-<!-- **Please register if you are interested in participating, and be on the look out for emails!** -->
-
-<!-- Register now [here](https://forms.gle/PCqbq2rrjqR9ByMX8)! -->
+<!-- This website will update in real time with the latest information about the competition. Registration for 2024-2025 season has closed. -->
 
 ```{=html}
 <style type="text/css">
@@ -18,54 +14,74 @@ This website will update in real time with the latest information about the comp
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  width: 90%;
 }
 
 </style>
 ```
 <img src="imgs/logo_notext.png" class="center"/>
 
-### Statement of purpose
+## Statement of Purpose
 
-The Triangle Sports Analytics Competition aims to bring together students who love sports analytics to compete in a prediction contest. Both undergraduate and graduate level students are encouraged to submit predictions. 
+The **Triangle Sports Analytics Competition** aims to bring together students who love sports analytics to compete in a prediction contest. In this competition, participants are able to showcase their skills on **two** different prediction challenges: point spreads and prediction intervals. The most exciting aspect of this competition is that all **ACC Men's Basketball** games between **January 31, 2026** and **March 7, 2026** will be the focus of this competition. Therefore, if you plan on following your university basketball team's fight to the NCAA tournament, why not fight for your university's reputation in data science by competing in the 2nd annual **Triangle Sports Analytics Competition**.
 
-Students may work individually or in a team of 2-5. 
-All submissions will be due **January 30th**. Read details about the contest on the [Task](/task.html) page.
+Details about the contest are found on both the [Challenge: Spread](/task-spread.html) page and the [Challenge: Interval](/task-ci.html) page.
 
-<!-- ### Timeline -->
+## Entry Requirements
 
-<!-- #### September 2024  -->
+All Duke, NC State, and UNC students are encouraged to participate in **one** or **both** challenges. Students may work individually or in a team of 2-5. 
 
-<!-- - Registration begins -->
+All submissions for both challenges will be due at **11:59PM** on **January 30th**. Groups unable to submit on time will be ineligible for participation. This is to promote a fair competition. 
 
-<!-- #### October 2024 -->
-<!-- - Attend info session -->
-<!--     -   Duke: **Friday, October 25 \@ 5:15PM** in Old Chem 116 -->
-<!--     -   NC State: **Friday, October 25 \@ 4:00PM** on Zoom (check email for information) -->
-<!--     -   UNC: **Friday, October 18 \@ 5:00PM** on [Zoom](https://unc.zoom.us/j/95763950701?pwd=SxKXi7IZzd9zDQ5R54YYuiBZXiZlvc.1) (Passcode: 045494 ) -->
+Furthermore, we ask you follow the submission guidelines found on both the [Challenge: Spread](/task-spread.html) page and the [Challenge: Interval](/task-ci.html) page. If your submission is on time but requires a considerable amount of data cleaning, we may allow you to resubmit after you fix the problems. 
 
-<!-- #### November 2024 -->
 
-<!-- - Drop-in office hours  -->
+## Timeline
 
-<!--   - (Duke): **Thursday, November 7th \@ 9:30-10:30AM** in Old Chem 223B -->
+#### January 2026
 
-<!-- - Pre-event workshops (Duke):  -->
-<!--     -  Intro to Basketball Analytics and R Refresh - **Sunday, November 10 \@ 12:00pm** in Reuben-Cooke 129 -->
-<!--     -  Model Example Walkthrough - **Sunday, November 17 \@ 12:00pm** in Reuben-Cooke 129 -->
-<!-- -   January 10, 2025: Submissions Due by Midnight -->
-<!-- -   April 2025: Award ceremony -->
+-   Registration Begins (**Register now [here](https://forms.gle/PCqbq2rrjqR9ByMX8)!**)
 
-<!-- ### Register now [here](https://forms.gle/PCqbq2rrjqR9ByMX8)! -->
+-   Attend Info Session
+    -   Duke: TBD
+    -   NC State: TBD
+    -   UNC: TBD
 
-### Leaderboard
+-   Pre-Event Workshops (TBD)
+
+-   January 30, 2026: Submissions Due by Midnight
+
+-   January 31, 2026: First ACC Games of Competition
+
+#### February 2026
+
+-   Scoreboards Created on Website
+
+    -   Separate Scoreboards for Each Challenge
+    -   Results Updated Weekly
+    -   Follow Placement on Both Prediction Challenges
+    
+-   Feb 28, 2026: Opportunity to Update Data and Resubmit
+
+#### March 2026
+
+-   March 7, 2026: Last ACC Games of Competition
+-   Final Results and Celebration
+
+### Contact for Questions
+
+If you have any questions, first see our [FAQ](/faq.html) page. 
+
+If your question(s) remain unanswered, contact either Alexander Fisher (Duke), Elijah Meyer (NC State), or Mario Giacomazzo (UNC). All contact information is found on the [FAQ](/faq.html) page. 
+
+<!-- ### Leaderboard -->
 
 <!-- {{< include _leaderboard.qmd >}} -->
 
 ```{r,echo=FALSE, warning=FALSE,lab}
-<!-- #| label: leaderboard t -->
-<!-- #| echo: false -->
-<!-- #| warning: false -->
+#| label: leaderboard t
+#| echo: false
+#| warning: false
 # library(magrittr)
 # library(reactable)
 # library(reactablefmtr)
@@ -81,7 +97,6 @@ All submissions will be due **January 30th**. Read details about the contest on 
 #             paste0("Last updated: ", format(time, "%a %b %d %Y")))
 # format(Sys.time(), "%a %b %d %Y")
 ```
-
 
 <!-- ```{=html} -->
 

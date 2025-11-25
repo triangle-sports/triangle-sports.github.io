@@ -15,7 +15,8 @@ website:
     left:
       - href: index.qmd
         text: "Home"
-      - task.qmd
+      - task-spread.qmd
+      - task-ci.qmd
       - tutorial.qmd
       - FAQ.qmd
       - resources.qmd

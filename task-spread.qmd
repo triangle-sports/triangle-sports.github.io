@@ -1,5 +1,5 @@
 ---
-title: "Task"
+title: "Challenge: Spread"
 ---
 
 ### Objective
