@@ -31,8 +31,9 @@ library(ncaahoopR)
 1c. Glimpse at a particular team's schedule
 
 ```{r}
+#| eval: false
 # look at a team's schedule
-get_schedule("Duke", "2022-23") %>%
+get_schedule("Duke", "2024-25") %>%
   glimpse()
 ```
 
@@ -43,6 +44,7 @@ get_schedule("Duke", "2022-23") %>%
 Imagine you wish to predict the point spread in match-ups between Duke, UNC and NC State in the Spring 2023 using data from Fall 2022. We can build a simple (poor) naive model that assumes each team scores a normally distributed amount of points per game.
 
 ```{r}
+#| eval: false
 pt_df = NULL
 
 for(teamName in c("Duke", "UNC", "NC State")) {
@@ -59,6 +61,7 @@ pt_df
 Using this, we can make naive predictions about the outcome of each matchup. 
 
 ```{r}
+#| eval: false
 getCI95 = function(m, s) {
   return(toString(
     c(m - (qnorm(0.975) * s), m + (qnorm(0.975) * s))

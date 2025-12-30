@@ -1,9 +1,18 @@
 ---
 title: "Triangle Sports Analytics Competition"
+subtitle: "Compete in predicting ACC basketball point spread"
 format:
   html:
+    css: styles.css
     toc: true
 ---
+
+::: {style="text-align: center;"}
+
+There are **two different** competitions below. See each for more information! Enter **one** competition by **January 30th** date.
+
+Represent your school in data science and to take home the title! 
+
 
 <!-- This website will update in real time with the latest information about the competition. Registration for 2024-2025 season has closed. -->
 
@@ -19,24 +28,99 @@ format:
 
 </style>
 ```
-<img src="imgs/logo_notext.png" class="center"/>
 
-## Statement of Purpose
+![](imgs/logo_notext.png){width="50%"}
+::: 
 
-The **Triangle Sports Analytics Competition** aims to bring together students who love sports analytics to compete in a prediction contest. In this competition, participants are able to showcase their skills on **two** different prediction challenges: point spreads and prediction intervals. The most exciting aspect of this competition is that all **ACC Men's Basketball** games between **January 31, 2026** and **March 7, 2026** will be the focus of this competition. Therefore, if you plan on following your university basketball team's fight to the NCAA tournament, why not fight for your university's reputation in data science by competing in the 2nd annual **Triangle Sports Analytics Competition**.
+The **Triangle Sports Analytics Competition** aims to bring together students who love sports analytics to compete in a prediction contest. In this competition, participants are able to showcase their skills in **one of two** different prediction challenges: point spreads and prediction intervals. **Students may work individually or in a team of 2-5**.
 
-Details about the contest are found on both the [Challenge: Spread](/task-spread.html) page and the [Challenge: Interval](/task-ci.html) page.
+
+The most exciting aspect of this competition is that ALL **ACC Men's Basketball** games between **January 31, 2026** and **March 7, 2026** will be the focus of this competition. If you plan on following your university basketball team's fight to the NCAA tournament, why not fight for your university's reputation in data science by competing in the 2nd annual **Triangle Sports Analytics Competition**. 
+
+
+::: {style="text-align: center;"}
+
+<hr style="border: 3px solid black; margin-bottom: 40px; margin-top: 40px;">
+
+## The Competitions
+
+
+The winners of each competition will receive: 
+
+::: {style="text-align: center;"}
+
+:::: {.columns style="display: flex; align-items: stretch;"}
+
+::: {.column width="47%" style="border-right: 3px solid #bfbfbf; padding-right: 20px; display: flex; flex-direction: column;"}
+### Predicting point spread <br> (entry level)
+
+![](imgs/entrybball.png){width="45%"}
+
+Point spread is the difference in points scored between Team1 and Team2. Your job is to create a statistical model that predicts the point spread of all ACC basketball games (# total). To enter, you need to: 
+
+- Find data
+- Build a model 
+- Make predictions 
+- Submit a spreadsheet 
+- Write a paragraph on your process & submit it!
+
+You have the opportunity to change your model, and re-submit predictions in February!
+
+**Details about the contest and how to get started** can be found here - [Challenge: Point Spread](/task-spread.html).
+:::
+
+::: {.column width="6%"}
+:::
+
+::: {.column width="47%" style="display: flex; flex-direction: column;"}
+### Predicting point spread + intervals <br> (advanced level)
+
+![](imgs/advbball.png){width="73%"}
+
+Point spread is the difference in points scored between Team1 and Team2. Your job is to create a statistical model that predicts the point spread **AND** create prediction intervals of all ACC basketball games (# total). To enter, you need to: 
+
+- Find data
+- Build a model 
+- Make predictions 
+- Make prediction intervals
+- Submit a spreadsheet 
+- Write a paragraph on your process  & submit it!
+
+You have the opportunity to change your model, and re-submit predictions in February!
+
+**Details about the contest and how to get started** can be found here - [Challenge: Point Spread + Interval](/task-ci.html).
+:::
+
+::::
+
+:::
+
+<br>
+
+::: {style="text-align: center; font-size: 1.5em;"}
+CLICK HERE TO SEE A DETAILED TIMELINE 
+:::
+
+<hr style="border: 3px solid black; margin-bottom: 40px; margin-top: 40px;">
 
 ## Entry Requirements
 
-All Duke, NC State, and UNC students are encouraged to participate in **one** or **both** challenges. Students may work individually or in a team of 2-5. 
+All Duke, NC State, and UNC students are encouraged to participate in **one** challenge. **Students may work individually or in a team of 2-5**. 
 
 All submissions for both challenges will be due at **11:59PM** on **January 30th**. Groups unable to submit on time will be ineligible for participation. This is to promote a fair competition. 
 
-Furthermore, we ask you follow the submission guidelines found on both the [Challenge: Spread](/task-spread.html) page and the [Challenge: Interval](/task-ci.html) page. If your submission is on time but requires a considerable amount of data cleaning, we may allow you to resubmit after you fix the problems. 
+Furthermore, we ask you follow the submission guidelines found on both the [Challenge: Spread](/task-spread.html) page and the [Challenge: Interval](/task-ci.html) page. If your submission is on time but requires a considerable amount of data cleaning, we may allow you to resubmit after you fix the problems, or you may be disqualified from the challenge. 
+
+<hr style="border: 3px solid black; margin-bottom: 40px; margin-top: 40px;">
+
+### Contact for Questions
+
+If you have any questions, first see our [FAQ](/faq.html) page. 
+
+If your question(s) remain unanswered, contact either Alexander Fisher (Duke), Elijah Meyer (NC State), or Mario Giacomazzo (UNC). All contact information is found on the [FAQ](/faq.html) page. 
 
 
-## Timeline
+## Timeline (move to new page)
 
 #### January 2026
 
@@ -68,11 +152,7 @@ Furthermore, we ask you follow the submission guidelines found on both the [Chal
 -   March 7, 2026: Last ACC Games of Competition
 -   Final Results and Celebration
 
-### Contact for Questions
 
-If you have any questions, first see our [FAQ](/faq.html) page. 
-
-If your question(s) remain unanswered, contact either Alexander Fisher (Duke), Elijah Meyer (NC State), or Mario Giacomazzo (UNC). All contact information is found on the [FAQ](/faq.html) page. 
 
 <!-- ### Leaderboard -->
 

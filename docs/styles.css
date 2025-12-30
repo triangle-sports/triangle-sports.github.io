@@ -1,1 +1,21 @@
 /* css styles */
+
+.title, .subtitle, .author, .date {
+  text-align: center;
+}
+
+body {
+  background-image: url("imgs/bkround.png");
+  background-size: cover;       /* Ensures the image covers the whole screen */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-attachment: fixed; /* Keeps the image still while you scroll */
+  background-position: center;  /* Centers the image */
+}
+
+/* Optional: Make the main content area slightly transparent 
+   so the text is readable over the background */
+.quarto-container {
+  background-color: rgba(255, 255, 255, 0.9); 
+  padding: 10px;
+  border-radius: 8px;
+}
