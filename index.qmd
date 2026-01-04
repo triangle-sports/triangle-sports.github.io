@@ -9,9 +9,10 @@ format:
 
 ::: {style="text-align: center;"}
 
-There are **two different** competitions below. See each for more information! Enter **one** competition by **January 30th** date.
+There are **two different** competitions below. See each for more information! 
+Enter **one** competition by **January 30th** date.
 
-Represent your school in data science and to take home the title! 
+Represent your school in data science and take home the title! 
 
 
 <!-- This website will update in real time with the latest information about the competition. Registration for 2024-2025 season has closed. -->
@@ -38,7 +39,6 @@ The **Triangle Sports Analytics Competition** aims to bring together students wh
 The most exciting aspect of this competition is that ALL **ACC Men's Basketball** games between **January 31, 2026** and **March 7, 2026** will be the focus of this competition. If you plan on following your university basketball team's fight to the NCAA tournament, why not fight for your university's reputation in data science by competing in the 2nd annual **Triangle Sports Analytics Competition**. 
 
 
-::: {style="text-align: center;"}
 
 <hr style="border: 3px solid black; margin-bottom: 40px; margin-top: 40px;">
 
