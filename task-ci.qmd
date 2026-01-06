@@ -4,11 +4,11 @@ title: "Challenge: Interval"
 
 ### Objective
 
-Predict `point spread` together with an `interval` (confidence/prediction) in the 2025 NCAA conference games for Duke, NC State and UNC.
+Construct  `prediction intervals` for the point spread of 88 ACC basketball games in the current NCAA Men's basketball season. 
 
 ### Instructions
 
-1.  Download a copy of the google sheet [here](https://docs.google.com/spreadsheets/d/1-NJjX7W1ztloGJShjclTPFQ452qBt9hWPdXTVbRwYc8/edit?usp=sharing). Click `File`, `Download`, `Comma Separated Values (.csv)` to download your prediction spreadsheet as a `csv` to your computer.
+1.  Download a copy of the Google Sheet [here](https://docs.google.com/spreadsheets/d/1-NJjX7W1ztloGJShjclTPFQ452qBt9hWPdXTVbRwYc8/edit?usp=sharing). Click `File`, `Download`, `Comma Separated Values (.csv)` to download your prediction spreadsheet as a `csv` to your computer.
 
 2.  **Only edit cells that contain NA.** All the information in the first three columns should not be altered at all. The games should remain in their original order. Your predictions may not be considered if you alter the information in these first three columns. Keep them in the games in their original order.
 
