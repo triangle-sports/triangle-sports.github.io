@@ -49,6 +49,10 @@ sports analytics to compete in a prediction contest. All undergraduate and gradu
  
 - Looking to go the extra mile? You can **optionally** submit prediction intervals as well. These will be judged separately. [Click here to learn more](/task.html#optional-advanced-objective-prediction-intervals)
 
+### Learn more 
+
+Come to your school's information session. Sessions will be announced soon.
+
 ### Questions?
 
 Contact your school's organizer:
