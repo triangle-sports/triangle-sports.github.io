@@ -1,0 +1,101 @@
+---
+title: "Task"
+format: 
+  html:
+    toc: true
+    toc-depth: 2
+css: styles2.css
+---
+
+:::: year-box
+## Objective: point spread
+
+Predict `point spread` for 78 ACC basketball games in the current NCAA Men's basketball season.
+
+### Instructions
+
+1.  Download a copy of the Google Sheet [here](https://docs.google.com/spreadsheets/d/1jIMwfPQj6GiPVYAi7N4hu2YQS2GhbNlmz5OA6Z7a65w/edit?gid=0#gid=0). Click `File`, `Download`, `Comma Separated Values (.csv)` to download your prediction spreadsheet as a `csv` to your computer.
+
+2.  **Only edit cells that contain NA.** All the information in the first three columns should not be altered at all. The games should remain in their original order. Your predictions may not be considered if you alter the information in these first three columns. Keep them in the games in their original order.
+
+::: callout-note
+## Important
+
+-   Enter your predicted point spread (home team minus away team) in the `pt_spread` column.
+-   Point spreads must be numeric values. They do not need to be integers. For example, you may predict the point spread to be -12.347 points.
+-   Insert your team name in the first cell of the `team_name` column.
+-   Insert the names of all the students on your team in the `team_members` column. This includes the name of the person who submitted. If you are submitting solo, this column should only have your name in the column.
+-   Make sure that you have point spreads for all 78 college basketball games. We cannot consider your predictions if there are still missing values.
+:::
+
+3.  Rename the original file to include your **team name**. Do this by replacing the word "template" in the original file name. For example, if your team name is *Shot Callers*, then your file name should be "tsa_pt_spread_Shot_Callers_2026". Upload your file as a `csv` to the dropbox link [here](https://www.dropbox.com/request/ETp2QrgoKWwK8JtxpFbe). **Submission of this is due by 11:59pm on February 6, 2026.** Submissions after midnight will **not be considered**.
+
+4.  Submit a one-page (maximum) write-up detailing *how* you predicted the point spread e.g. what type of model are you using, how did you evaluate your model, what variables are involved? Please upload this as a `.pdf` or `.docx` document [here](https://www.dropbox.com/request/ETp2QrgoKWwK8JtxpFbe). Be sure to rename your file to the name of your team. **Submissions are due 11:59pm on February 6, 2026.**
+
+### Evaluation
+
+Your predicted point spreads will be evaluated by the classic metric, mean absolute error ($MAE$). This metric is defined below:
+
+$$
+MAE = \frac{1}{n} \sum_{i=1}^n \left| \mu_i - \hat{\mu}_i \right|
+$$
+
+<p style="margin-left: 25px;">
+
+where $\mu_i$ is the actual point spread outcome (home - away points) and $\hat{\mu}_i$ is your predicted point spread for the $i$th game. The average is taken over all $n = 78$ total games for which you are predicting the outcome. In words, the $MAE$ is the average number of points your predictions are away from the truth. Smaller $MAE$ indicates accurate point predictions.
+
+</p>
+::::
+
+![](images/clipboard-2789521610.png){fig-align="center" width="400"}
+
+:::: year-box
+## Optional (advanced) objective: prediction intervals
+
+Construct `prediction intervals` for the point spread of 78 ACC basketball games in the current NCAA Men's basketball season.
+
+### Instructions
+
+1.  Download a copy of the Google Sheet [here](https://docs.google.com/spreadsheets/d/1-NJjX7W1ztloGJShjclTPFQ452qBt9hWPdXTVbRwYc8/edit?usp=sharing). Click `File`, `Download`, `Comma Separated Values (.csv)` to download your prediction spreadsheet as a `csv` to your computer.
+
+2.  **Only edit cells that contain NA.** All the information in the first three columns should not be altered at all. The games should remain in their original order. Your predictions may not be considered if you alter the information in these first three columns. Keep them in the games in their original order.
+
+::: callout-note
+## Important
+
+-   Enter the lower bound of the interval in the `ci_lb` column.
+-   Enter the upper bound of the interval in the `ci_ub` column.
+-   Prediction intervals must be numeric values. They do not need to be integers. For example, you may predict the point spread to be somewhere between -8.25 and 3.75 points.
+-   Insert your team name in the first cell of the `team_name` column.
+-   Insert the names of all the students on your team in the `team_members` column. This includes the name of the person who submitted. If you are submitting solo, this column should only have your name in the column.
+-   Make sure that you have prediction intervals for all 78 college basketball games. We cannot consider your predictions if there are still missing values.
+:::
+
+3.  Rename the original file to include your **team name**. Do this by replacing the word "template" in the original file name. For example, if your team name is *Shot Callers*, then your file name should be "tsa_pi_Shot_Callers_2026". Upload your file as a `csv` to the dropbox link [here](https://www.dropbox.com/request/9trhi24QmfAAXUXR4SC1). **Submission of this is due by 11:59pm on February 6, 2026.** Submissions after midnight will not be considered at all.
+
+4.  Submit a one-page (maximum) write-up detailing *how* you constructed your prediction intervals e.g. what method are you using, how did you evaluate your chosen method. If your team also submitted predicted point spread, you don't need to submit two files. Just submit one file that includes rationale behind your point spreads and prediction intervals. Please upload this as a `.pdf` or `.docx` document [here](https://www.dropbox.com/request/9trhi24QmfAAXUXR4SC1). Be sure to rename your file to the name of your team. **Submissions are due by 11:59pm on February 6, 2026.**
+
+### Evaluation
+
+Your prediction intervals for the point spread will be evaluated by a new metric based on your interval widths abbreviated $PIW$. Remember that smaller intervals are better since they are more precise; however, you don't want to be reporting intervals that rarely contain the true point spread. Details about $PIW$ is found below:
+
+<p style="margin-left: 25px;">
+
+In order for your prediction intervals to be considered, **at least 70%** of your intervals must contain the true spread. Given this criteria, we heavily recommend reporting intervals with a minimum of 70% coverage. We also recommend testing your methodology on past data to check coverage.
+
+</p>
+
+$$
+PIW = \begin{cases}
+    \frac{1}{n} \sum_{i=1}^n \left| ub_i - lb_i \right|,& \text{if Coverage} \geq 70\% \\
+    & \\
+    \text{Disqualified (DQ)},              & \text{if Coverage} < 70\%
+\end{cases}
+$$
+
+<p style="margin-left: 25px;">
+
+where $ub_i$ is the upper bound of your interval and $lb_i$ is the lower bound of your interval for the spread of the $i$th game. The average is taken over all $n = 78$ total games for which you are producing prediction intervals. In words, the $PIW$ is the average width of all your prediction intervals. Smaller $PIW$ indicates more precise prediction intervals.
+
+</p>
+::::

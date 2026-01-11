@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Bebas+Neue&display=swap');
+
+.navbar a {
+  color: var(--color-secondary);
+  margin-right: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-secondary);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Generic section styling */
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 4rem;
+}
+section p, section li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+.year-box {
+  border: 4px solid #f57c00;      /* thick border colour */
+  border-radius: 8px;             /* optional rounded corners */
+  padding: 1rem;                  /* space inside the box */
+  margin: 1.5rem 0;               /* space above and below */
+}

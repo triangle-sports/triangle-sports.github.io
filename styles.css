@@ -1,21 +1,129 @@
-/* css styles */
+/*
+ * Custom site styles for BallerHack.  The palette and typography borrow
+ * inspiration from the TreeHacks website: a dark backdrop with vivid accent
+ * colors and large, friendly headlines【129026186528667†L27-L41】.  A
+ * fixed background image (court.jpg) creates a sense of depth as you scroll
+ * down the page, while the bouncing basketball is styled below.
+ */
 
-.title, .subtitle, .author, .date {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Bebas+Neue&display=swap');
+
+:root {
+  --color-bg: #0a0a0a;
+  --color-primary: #f57c00; /* orange accent reminiscent of a basketball */
+  --color-secondary: #ffffff;
 }
 
 body {
-  background-image: url("imgs/bkround.png");
-  background-size: cover;       /* Ensures the image covers the whole screen */
-  background-repeat: no-repeat; /* Prevents tiling */
-  background-attachment: fixed; /* Keeps the image still while you scroll */
-  background-position: center;  /* Centers the image */
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-secondary);
+  background-color: var(--color-bg);
+  background-image: url('assets/court-shopped.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
-/* Optional: Make the main content area slightly transparent 
-   so the text is readable over the background */
-.quarto-container {
-  background-color: rgba(255, 255, 255, 0.9); 
-  padding: 10px;
+/* Override Quarto's default page padding to allow full‑bleed hero */
+.page-contents {
+  padding-top: 0;
+}
+
+/* Navigation bar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0.75rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+.navbar a {
+  color: var(--color-secondary);
+  margin-right: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.navbar a:hover {
+  color: var(--color-primary);
+}
+
+/* Hero section: full viewport height with center‑aligned heading */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8rem 1rem 4rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 6rem;
+  letter-spacing: 2px;
+  margin: 0;
+  color: var(--color-primary);
+  text-shadow: 0 3px 4px rgba(0,0,0,0.5);
+}
+
+.hero h2 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: var(--color-secondary);
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Generic section styling */
+section {
+  padding: 5rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 8px;
+  margin-bottom: 4rem;
+}
+
+section h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+section p, section li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Bouncing ball styling: created purely with CSS rather than an image */
+#ball {
+  position: absolute;
+  right: 5vw;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  /* PNG of basketball, the image will scale to
+     fit the div. */
+  background: url('assets/ball.png') no-repeat center/contain;
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); */
+  z-index: 500;
 }

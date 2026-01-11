@@ -1,11 +1,12 @@
 ---
 title: "Winners"
 format: html
+css: styles3.css
 ---  
 
 <style>
   body {
-   background-image: url("/imgs/basketball-3.png");
+   background-image: url("/assets/hoop_night.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -20,13 +21,17 @@ format: html
   
 # 2025
 
-## MAE
+::: {.year-box}
+Read about the 2025 winners [here](https://researchblog.duke.edu/2025/04/08/triangle-sports-analytics-competition/)
+:::
+
+## Point spread
 
 1.  **WeWant6** - Chris Johnson
 2.  **Kenpom Believers** - Daniel Marin
 3.  **Cuteness Overload** - Hung-Chun Lu, Zijian Huang
 
-## CIW
+## Prediction intervals
 
 1.  **Kenpom Believers** - Daniel Marin
 2.  **WeWant6** - Chris Johnson

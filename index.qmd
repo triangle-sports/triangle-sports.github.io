@@ -1,275 +1,63 @@
 ---
-title: "Triangle Sports Analytics Competition"
-subtitle: "Compete in predicting ACC basketball point spread"
-format:
-  html:
-    css: styles.css
-    toc: true
+title: "Triangle Sports Contest"
+format: html
+css: styles.css
+page-layout: full
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
-::: {style="text-align: center;"}
+```{=html}
+<!--
+This Quarto page builds a scrolling one‑page website.  As visitors scroll down
+the page they travel across a fixed background image of a basketball court while
+a bouncing basketball follows them along the right side of the viewport.  The
+layout and color palette are inspired by the dark, animated aesthetic of the
+TreeHacks website (dark backdrop, simple white headings and vibrant accents)
+【129026186528667†L27-L41】.  Custom CSS and JavaScript implement the
+animation and styling.
+-->
+```
 
-There are **two different** competitions below. See each for more information! 
-Enter **one** competition by **January 30th** date.
+<!-- Ball element (positioned by scripts.js) -->
 
-Represent your school in data science and take home the title! 
+::: {#ball}
+:::
 
+<!-- Hero section -->
 
-<!-- This website will update in real time with the latest information about the competition. Registration for 2024-2025 season has closed. -->
+::: hero
+<h1>Triangle Sports Contest 2026</h1>
+
+<h2>Submissions due February 6</h2>
+
+<p>Represent your school in data science and take home the title</p>
+:::
+
+<section id="all">
+
+### About
+
+The 2nd annual **Triangle Sports Analytics Competition** aims to bring
+together students from Duke, UNC, Chapel Hill, and NC State who love
+sports analytics to compete in a prediction contest. The scope of the competition is to predict all **ACC Men's Basketball** games between **February 7, 2026** and **March 7, 2026**. **Students may work individually or in a team of 2-5**.
+
+### Competition
+
+- Point spread is the difference in points scored between Home and Away teams. Your job is to create a statistical model that predicts the point spread of ACC Men's Basketball games. [Click here to learn more](/task.html#Objective)
+ 
+- Looking to go the extra mile? You can **optionally** submit prediction intervals as well. These will be judged separately. [Click here to learn more](/task.html#optional-advanced-objective-prediction-intervals)
+
+### Questions?
+
+Contact your school's organizer:
+
+[Alexander Fisher (Duke)](mailto:alexander.fisher@duke.edu), [Elijah Meyer (NC State)](mailto:esmeyer2@ncsu.edu), [Mario Giacomazzo (UNC)](mailto:mgiacoma@email.unc.edu).
+</section>
+
+<!-- Include the animation script -->
 
 ```{=html}
-<style type="text/css">
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-}
-
-</style>
+<script src="scripts.js"></script>
 ```
-
-![](imgs/logo_notext.png){width="50%"}
-::: 
-
-The **Triangle Sports Analytics Competition** aims to bring together students who love sports analytics to compete in a prediction contest. In this competition, participants are able to showcase their skills in **one of two** different prediction challenges: point spreads and prediction intervals. **Students may work individually or in a team of 2-5**.
-
-
-The most exciting aspect of this competition is that ALL **ACC Men's Basketball** games between **January 31, 2026** and **March 7, 2026** will be the focus of this competition. If you plan on following your university basketball team's fight to the NCAA tournament, why not fight for your university's reputation in data science by competing in the 2nd annual **Triangle Sports Analytics Competition**. 
-
-
-
-<hr style="border: 3px solid black; margin-bottom: 40px; margin-top: 40px;">
-
-## The Competitions
-
-
-The winners of each competition will receive: 
-
-::: {style="text-align: center;"}
-
-:::: {.columns style="display: flex; align-items: stretch;"}
-
-::: {.column width="47%" style="border-right: 3px solid #bfbfbf; padding-right: 20px; display: flex; flex-direction: column;"}
-### Predicting point spread <br> (entry level)
-
-![](imgs/entrybball.png){width="45%"}
-
-Point spread is the difference in points scored between Team1 and Team2. Your job is to create a statistical model that predicts the point spread of all ACC basketball games (# total). To enter, you need to: 
-
-- Find data
-- Build a model 
-- Make predictions 
-- Submit a spreadsheet 
-- Write a paragraph on your process & submit it!
-
-You have the opportunity to change your model, and re-submit predictions in February!
-
-**Details about the contest and how to get started** can be found here - [Challenge: Point Spread](/task-spread.html).
-:::
-
-::: {.column width="6%"}
-:::
-
-::: {.column width="47%" style="display: flex; flex-direction: column;"}
-### Predicting point spread + intervals <br> (advanced level)
-
-![](imgs/advbball.png){width="73%"}
-
-Point spread is the difference in points scored between Team1 and Team2. Your job is to create a statistical model that predicts the point spread **AND** create prediction intervals of all ACC basketball games (# total). To enter, you need to: 
-
-- Find data
-- Build a model 
-- Make predictions 
-- Make prediction intervals
-- Submit a spreadsheet 
-- Write a paragraph on your process  & submit it!
-
-You have the opportunity to change your model, and re-submit predictions in February!
-
-**Details about the contest and how to get started** can be found here - [Challenge: Point Spread + Interval](/task-ci.html).
-:::
-
-::::
-
-:::
-
-<br>
-
-::: {style="text-align: center; font-size: 1.5em;"}
-CLICK HERE TO SEE A DETAILED TIMELINE 
-:::
-
-<hr style="border: 3px solid black; margin-bottom: 40px; margin-top: 40px;">
-
-## Entry Requirements
-
-All Duke, NC State, and UNC students are encouraged to participate in **one** challenge. **Students may work individually or in a team of 2-5**. 
-
-All submissions for both challenges will be due at **11:59PM** on **January 30th**. Groups unable to submit on time will be ineligible for participation. This is to promote a fair competition. 
-
-Furthermore, we ask you follow the submission guidelines found on both the [Challenge: Spread](/task-spread.html) page and the [Challenge: Interval](/task-ci.html) page. If your submission is on time but requires a considerable amount of data cleaning, we may allow you to resubmit after you fix the problems, or you may be disqualified from the challenge. 
-
-<hr style="border: 3px solid black; margin-bottom: 40px; margin-top: 40px;">
-
-### Contact for Questions
-
-If you have any questions, first see our [FAQ](/faq.html) page. 
-
-If your question(s) remain unanswered, contact either Alexander Fisher (Duke), Elijah Meyer (NC State), or Mario Giacomazzo (UNC). All contact information is found on the [FAQ](/faq.html) page. 
-
-
-## Timeline (move to new page)
-
-#### January 2026
-
--   Registration Begins (**Register now [here](https://forms.gle/PCqbq2rrjqR9ByMX8)!**)
-
--   Attend Info Session
-    -   Duke: TBD
-    -   NC State: TBD
-    -   UNC: TBD
-
--   Pre-Event Workshops (TBD)
-
--   January 30, 2026: Submissions Due by Midnight
-
--   January 31, 2026: First ACC Games of Competition
-
-#### February 2026
-
--   Scoreboards Created on Website
-
-    -   Separate Scoreboards for Each Challenge
-    -   Results Updated Weekly
-    -   Follow Placement on Both Prediction Challenges
-    
--   Feb 28, 2026: Opportunity to Update Data and Resubmit
-
-#### March 2026
-
--   March 7, 2026: Last ACC Games of Competition
--   Final Results and Celebration
-
-
-
-<!-- ### Leaderboard -->
-
-<!-- {{< include _leaderboard.qmd >}} -->
-
-```{r,echo=FALSE, warning=FALSE,lab}
-#| label: leaderboard t
-#| echo: false
-#| warning: false
-# library(magrittr)
-# library(reactable)
-# library(reactablefmtr)
-# path = "./scripts/scoreBoard.csv"
-# scoreBoard = readr::read_csv(path)
-# time = file.info(path)$ctime
-# reactableScoreBoard = reactable(scoreBoard,
-#           defaultPageSize = 8,
-#           searchable = TRUE)
-# 
-# reactableScoreBoard %>%
-#   add_title(font_size = 16,
-#             paste0("Last updated: ", format(time, "%a %b %d %Y")))
-# format(Sys.time(), "%a %b %d %Y")
-```
-
-<!-- ```{=html} -->
-
-<!-- <style> -->
-
-<!-- .grid-container { -->
-
-<!--   display: grid; -->
-
-<!--   grid-template-columns: auto auto; -->
-
-<!--   padding: 20px; -->
-
-<!-- } -->
-
-<!-- .grid-item { -->
-
-<!--   background-color: rgba(255, 255, 255, 0.8); -->
-
-<!--   border: 0px solid rgba(0, 0, 0, 0.8); -->
-
-<!--   padding: 10px; -->
-
-<!--   font-size: 20px; -->
-
-<!--   text-align: left; -->
-
-<!-- } -->
-
-<!-- .grid-item-l { -->
-
-<!--   background-color: rgba(255, 255, 255, 0.8); -->
-
-<!--   border: 0px solid rgba(0, 0, 0, 0.8); -->
-
-<!--   padding: 10px; -->
-
-<!--   font-size: 20px; -->
-
-<!--   text-align: right; -->
-
-<!-- } -->
-
-<!-- .profile { -->
-
-<!--   display: block; -->
-
-<!--   width: 50%; -->
-
-<!-- } -->
-
-<!-- .grid-item2 { -->
-
-<!--   background-color: rgba(255, 255, 255, 0.8); -->
-
-<!--   border: 0px solid rgba(0, 0, 0, 0.8); -->
-
-<!--   padding: 5px; -->
-
-<!--   font-size: 20px; -->
-
-<!--   text-align: left; -->
-
-<!--   overflow: hidden -->
-
-<!-- } -->
-
-<!-- .grid-item2 img { -->
-
-<!--   display: block; -->
-
-<!--   margin-bottom: -70px; -->
-
-<!--   margin-left: -1px -->
-
-<!-- } -->
-
-<!-- </style> -->
-
-<!-- <div class="grid-container"> -->
-
-<!--   <div class="grid-item-l"><img src="/imgs/fisher_alexander.jpg" align="left" class="profile"></div> -->
-
-<!--   <div class="grid-item"><b>Alexander Fisher</b> <br> <br>Duke University<br>alexander.fisher@duke.edu</div> -->
-
-<!--   <div class="grid-item2"><img src="/imgs/giacomazzo_mario.jpg" align="left" class ="profile"></div> -->
-
-<!--   <div class="grid-item"><b>Mario Giacomazzo</b> <br> <br>University of North Carolina<br>mgiacoma@email.unc.edu</div> -->
-
-<!--   <div class="grid-item-l"><img src="/imgs/Elijah_Meyer.png" align="left" class="profile"></div>   -->
-
-<!--   <div class="grid-item"><b>Elijah Meyer</b>  <br> <br>North Carolina State University<br>esmeyer2@ncsu.edu</div> -->
-
-<!-- </div> -->
-
-<!-- ``` -->

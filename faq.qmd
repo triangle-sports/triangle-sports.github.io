@@ -1,0 +1,76 @@
+---
+title: "Frequently Asked Questions"
+format: html
+css: styles2.css
+---
+
+<!-- ::: {.column-margin} -->
+<!-- ![](assets/logo_notext.png){width=1000px} -->
+<!-- ::: -->
+
+#### How do I sign up?
+
+Click [here](https://forms.gle/5ZXVLvWgk8FsTtfJ8) to register.
+<!-- Register [here](https://forms.gle/PCqbq2rrjqR9ByMX8).  -->
+
+If you have any questions about your registration, please contact [Dr. Alexander Fisher](mailto:aaf29@duke.edu).
+
+
+#### Who is eligible to compete?
+
+For the 2026 Triangle Sports Analytics Challenge, only currently enrolled students at Duke, UNC, Chapel Hill and North Carolina State University are eligible to compete.
+
+#### Is there a registration fee?
+
+No.
+
+#### What do I need to compete?
+
+Register for the event and submit predictions and confidence intervals by the deadline making sure you are following all of the instructions on the [Task](/task) page. A computer with R or Python and a basic background with linear models is ideal. 
+
+![](assets/logo_notext.png){fig-align="center" width="500"}
+
+#### Other questions
+
+For all other questions, please reach out to your school's coordinator below.
+
+::: columns
+::: {.column width="30%"}
+![](imgs/fisher-alexander-circle.png) <br>
+
+<p align="center">
+**Duke University**  
+Alexander Fisher   [aaf29@duke.edu](mailto:aaf29@duke.edu)
+</p>
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="30%"}
+![](imgs/giacomazzo_mario.png) <br>
+
+<p align="center">
+**University of North Carolina**  
+Mario Giacomazzo   [mgiacoma@email.unc.edu](mailto:mgiacoma@email.unc.edu)
+</p>
+:::
+
+::: {.column width="2%"}
+:::
+
+::: {.column width="30%"}
+![](imgs/Elijah_Meyer_circle.png) <br>
+
+<p align="center">
+**North Carolina State University**  
+Elijah Meyer [esmeyer2@ncsu.edu](mailto:esmeyer2@ncsu.edu)
+</p>
+:::
+:::
+
+<!-- |                      |                                 |                                                          | -->
+<!-- |----------------------|---------------------------------|----------------------------------------------------------| -->
+<!-- | Dr. Alexander Fisher | Duke                            | [aaf29\@duke.edu](mailto:aaf29@duke.edu)                 | -->
+<!-- | Dr. Mario Giacomazzo | UNC, Chapel Hill                | [mgiacoma\@email.unc.edu](mailto:mgiacoma@email.unc.edu) | -->
+<!-- | Dr. Elijah Meyer     | North Carolina State University | [esmeyer2\@ncsu.edu](mailto:esmeyer2@ncsu.edu)   | -->

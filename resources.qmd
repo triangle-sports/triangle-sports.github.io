@@ -1,42 +1,138 @@
 ---
 title: "Resources"
+format: 
+  html:
+    toc: true
+    toc-depth: 2
+css: styles2.css
 ---
 
-Click the image to watch a video on importing data into R, joining data, and working with data!
+## Tutorial
 
-::: columns
-::: {.column width="50%"}
+The tutorial below will help you get started with basic data analysis in `R`. To follow along, you can download `R` and Rstudio. `R` is freely available at <http://www.r-project.org/>. RStudio, the popular IDE for `R`, is freely available at <https://posit.co/downloads/>.
 
-[![Video on importing data](imgs/data.png){fig-align="left" width="200"}](https://www.youtube.com/watch?v=tIMaRYiuEFA)
-
-[![Working with data](imgs/tools.png){fig-align="left" width="200"}](https://www.youtube.com/watch?v=0229Uq2hkJo)
-
-:::
-::: {.column width="50%"}
-
-[![Video on joining data](imgs/join.png){fig-align="left" width="350"}](https://www.youtube.com/watch?v=VdV5ABsaf5Y)
-:::
+::: callout-note
+It's important to test the usefulness of sophisticated models against more basic alternatives. The following may serve as a simple baseline comparator.
 :::
 
+## Step 1: Collecting data
 
-### Free Online Texts
+1a. Install a package to scrape NCAA data
 
-Here are a list of online textbooks that may be helpful in this competition.
+```{r}
+#| eval: false
+install.packages("devtools")
+devtools::install_github("lbenz730/ncaahoopR")
+```
 
--- [R for Data Science (1e)](https://r4ds.had.co.nz/)
+1b. Load `ncaahoopR` package and load `tidyverse`
 
--- [R for Data Science (2e)](https://r4ds.hadley.nz/)
+```{r}
+#| warning: false
+#| message: false
+library(ncaahoopR)
+library(tidyverse)
+```
 
--- [Forecasting: Principles and Practice](https://otexts.com/fpp2/)
+1c. Glimpse at a particular team's schedule
 
--- [An Introduction to Statistical Learning](https://www.statlearning.com/)
+```{r}
+#| eval: false
+#| echo: false
+#| label: "hidden-1"
 
-### Articles
+x <- get_schedule("Duke", "2024-25") %>%
+  glimpse()
 
-Here are a list of online articles that may be helpful in the modeling and predicting of point spreads.
+x %>%
+  write_csv("data/duke-sample.csv")
+```
 
--- [Using Linear Regression to Model Point Spreads in College Basketball](https://towardsdatascience.com/using-linear-regression-to-model-point-spreads-in-college-basketball-f7da5811c3da)
+```{r}
+#| eval: false
+# look at a team's schedule
+duke_sample <- get_schedule("Duke", "2024-25")
+
+duke_sample %>%
+  glimpse()
+```
+
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
+#| label: "hidden-2"
+
+duke_sample <- read_csv("data/duke-sample.csv")
+duke_sample %>%
+  glimpse()
+
+```
+
+1d. Check out documentation at <https://github.com/lbenz730/ncaahoopR>.
+
+## Step 2: Basic prediction
+
+Imagine you wish to predict the point spread in match-ups between Duke, UNC and NC State using data from Fall 2022. We can build a simple (poor) naive model that assumes each team scores a normally distributed amount of points per game.
+
+```{r}
+#| eval: false
+pt_df = NULL
+
+for(teamName in c("Duke", "UNC", "NC State")) {
+pt_df = rbind(pt_df, get_schedule(teamName, "2022-23") %>%
+  filter(date < "2023-01-01") %>% # look at only Fall games
+  summarize(mean_pts = mean(team_score),
+            var_pts = var(team_score)) %>%
+  mutate(team = teamName))
+}
+
+pt_df 
+```
+
+```{r}
+#| echo: false
+#| label: "hidden-3"
+#| warning: false
+#| message: false
+pt_df <-
+  read_csv("data/pt-sample-df.csv")
+
+pt_df
+```
+
+Using this, we can make naive predictions about the outcome of each matchup.
+
+```{r}
+getCI95 = function(m, s) {
+  return(toString(
+    c(m - (qnorm(0.975) * s), m + (qnorm(0.975) * s))
+  ))
+}
+  
+lookup <- c(team1 = "V1", team2= "V2")
+
+combn(pt_df$team, 2) %>%
+  t() %>%
+  as.data.frame() %>%
+  rename(all_of(lookup)) %>%
+  rowwise() %>%
+  mutate(pt_spread = 
+           pt_df$mean_pts[pt_df["team"] == team1] - 
+            pt_df$mean_pts[pt_df["team"] == team2]) %>%
+  mutate(spread_sd = 
+           sqrt(pt_df$var_pts[pt_df["team"] == team1] +
+            pt_df$var_pts[pt_df["team"] == team2])) %>%
+  mutate(spread_CI_95 = getCI95(pt_spread, spread_sd)) %>%
+  select(-spread_sd)
+```
+
+## Further reading
+
+Here are a list of online articles that may be helpful in this competition.
 
 -- [Creating a College Basketball Metric to Predict Point Spreads for March MadnessArticle](https://medium.com/@jriordan1/creating-a-college-basketball-metric-to-predict-point-spreads-for-march-madness-02bbdf048e99)
 
 -- [Confidence vs Prediction Intervals: Understanding the Difference](https://www.datacamp.com/blog/confidence-intervals-vs-prediction-intervals)
+

@@ -1,33 +1,28 @@
 project:
   type: website
-  output-dir: docs
-  resources:
-  - "/demo-files/"
-  render:
-    - "*.qmd"
-    - "!/demo-files"
+  output-dir: ../_site
 
 website:
-  title: "TSA"
+  title: "Triangle Sports Contest"
   navbar:
-    background: "#FFFFFF"
-    foreground: "#000000"
+    pinned: true
+    background: black
+    foreground: white
     left:
-      - href: index.qmd
-        text: "Home"
-      - task-spread.qmd
-      - task-ci.qmd
-      - tutorial.qmd
-      - FAQ.qmd
-      - resources.qmd
-      - href: winners.qmd
-        text: "Hall of fame"
+      - text: Home
+        href: index.qmd
+      - text: About
+        href: index.qmd#about
+      - text: Task
+        href: task.qmd
+      - text: "Hall of fame"
+        href: winners.qmd
+      - text: "Resources"
+        href: resources.qmd
+      - text: "FAQ"
+        href: faq.qmd
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
-    toc: true
-
-
-
+    theme: default
+    toc: false
