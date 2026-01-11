@@ -1,5 +1,5 @@
 ---
-title: "Triangle Sports Contest"
+title: "Triangle Sports Analytics Competition"
 format: html
 css: styles.css
 page-layout: full
