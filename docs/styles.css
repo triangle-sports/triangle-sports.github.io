@@ -127,3 +127,40 @@ section p, section li {
   /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); */
   z-index: 500;
 }
+
+/* EDITS FOR MOBILE DEVICES */
+
+/* Mobile tweaks: triggered when the screen is ≤ 768px wide */
+@media (max-width: 768px) {
+  /* Let the background scroll on mobile — fixed backgrounds can get clipped */
+  body {
+    background-attachment: scroll;
+    /* Optionally supply a cropped/mobile-friendly image: */
+    /* background-image: url('assets/court-mobile.jpg'); */
+  }
+
+  /* Reduce hero height and padding so text fits on small screens */
+  .hero {
+    min-height: 80vh;    /* was 100vh */
+    padding: 6rem 1rem 2rem;
+  }
+
+  /* Scale down headline sizes */
+  .hero h1 {
+    font-size: 3rem;     /* was 6rem */
+  }
+  .hero h2 {
+    font-size: 1.5rem;   /* was 2.5rem */
+  }
+  .hero p {
+    font-size: 0.9rem;   /* was 1.1rem */
+    max-width: 90%;      /* allow more width on narrow screens */
+  }
+
+  /* Optionally shrink and reposition the bouncing ball */
+  #ball {
+    width: 50px;
+    height: 50px;
+    right: 8vw;
+  }
+}
