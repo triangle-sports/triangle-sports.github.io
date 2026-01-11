@@ -28,7 +28,7 @@ animation and styling.
 <!-- Hero section -->
 
 ::: hero
-<h1>Triangle Sports Contest 2026</h1>
+<h1>Triangle Sports Analytics Competition 2026</h1>
 
 <h2>Submissions due February 6</h2>
 
@@ -41,7 +41,7 @@ animation and styling.
 
 The 2nd annual **Triangle Sports Analytics Competition** aims to bring
 together students from Duke, UNC, Chapel Hill, and NC State who love
-sports analytics to compete in a prediction contest. The scope of the competition is to predict all **ACC Men's Basketball** games between **February 7, 2026** and **March 7, 2026**. **Students may work individually or in a team of 2-5**.
+sports analytics to compete in a prediction contest. All undergraduate and graduate students are eligible to compete. The scope of the competition is to predict all **ACC Men's Basketball** games between **February 7, 2026** and **March 7, 2026**. **Students may work individually or in a team of 2-5**.
 
 ### Competition
 
