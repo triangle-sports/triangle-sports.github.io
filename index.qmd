@@ -30,7 +30,7 @@ animation and styling.
 ::: hero
 <h1>Triangle Sports Analytics Competition 2026</h1>
 
-<h2>Submissions due February 6</h2>
+<h2>Submissions due February 6 &#127936; Register [Here](https://forms.gle/5ZXVLvWgk8FsTtfJ8)</h2>
 
 <p>Represent your school in data science and take home the title</p>
 :::
