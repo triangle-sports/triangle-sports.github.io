@@ -42,19 +42,18 @@ animation and styling.
 The 2nd annual **Triangle Sports Analytics Competition** aims to bring together students from Duke, UNC, Chapel Hill, and NC State who love
 sports analytics to compete in a prediction contest. All undergraduate and graduate students are eligible to compete. The scope of the competition is to predict all **ACC Men's Basketball** games between **February 7, 2026** and **March 7, 2026**. **Students may work individually or in a team of 2-5**.
 
-### Competition
+<!-- ### Competition -->
 
-- Point spread is the difference in points scored between Home and Away teams. Your job is to create a statistical model that predicts the point spread of ACC Men's Basketball games. [Click here to learn more](/task.html#Objective)
- 
-- Looking to go the extra mile? You can **optionally** submit prediction intervals as well. These will be judged separately. [Click here to learn more](/task.html#optional-advanced-objective-prediction-intervals)
+<!-- - Point spread is the difference in points scored between Home and Away teams. Your job is to create a statistical model that predicts the point spread of ACC Men's Basketball games. [Click here to learn more](/task.html#Objective) -->
 
-### Learn more 
+<!-- - Looking to go the extra mile? You can **optionally** submit prediction intervals as well. These will be judged separately. [Click here to learn more](/task.html#optional-advanced-objective-prediction-intervals) -->
 
-Come to your school's information session.
+### Leaderboard
 
-- UNC: January 21 at 7PM [Click here for Zoom link](https://unc.zoom.us/j/94014959892)
-- NCSU: January 22 at 4PM [Click here for Zoom link](https://ncsu.zoom.us/j/9304565996?pwd=cEcrZjVSSGV1dnFCb0NxUEUxMHBLdz09)
-- Duke: January 22 at 5PM [Click here for Zoom link](https://duke.zoom.us/j/94344895424)
+Check back soon!
+<!-- Come to your school's information session. -->
+<!-- - NCSU: January 22 at 4PM [Click here for Zoom link]() -->
+<!-- - Duke: January 22 at 5PM [Click here for Zoom link]() -->
 
 ### Questions?
 

@@ -28,9 +28,13 @@ Predict `point spread` for 78 ACC basketball games in the current NCAA Men's bas
 -   Make sure that you have point spreads for all 78 college basketball games. We cannot consider your predictions if there are still missing values.
 :::
 
-3.  Rename the original file to include your **team name**. Do this by replacing the word "template" in the original file name. For example, if your team name is *Shot Callers*, then your file name should be "tsa_pt_spread_Shot_Callers_2026". Upload your file as a `csv` to the dropbox link [here](https://www.dropbox.com/request/ETp2QrgoKWwK8JtxpFbe). **Submission of this is due by 11:59pm on February 6, 2026.** Submissions after midnight will **not be considered**.
+3.  Rename the original file to include your **team name**. Do this by replacing the word "template" in the original file name. For example, if your team name is *Shot Callers*, then your file name should be "tsa_pt_spread_Shot_Callers_2026". Upload your file as a `csv` to the dropbox link [here](). **Submission of this is due by 11:59pm on February 6, 2026.** Submissions after midnight will **not be considered**.
 
-4.  Submit a one-page (maximum) write-up detailing *how* you predicted the point spread e.g. what type of model are you using, how did you evaluate your model, what variables are involved? Please upload this as a `.pdf` or `.docx` document [here](https://www.dropbox.com/request/ETp2QrgoKWwK8JtxpFbe). Be sure to rename your file to the name of your team. **Submissions are due 11:59pm on February 6, 2026.**
+<!-- https://www.dropbox.com/request/ETp2QrgoKWwK8JtxpFbe -->
+
+4.  Submit a one-page (maximum) write-up detailing *how* you predicted the point spread e.g. what type of model are you using, how did you evaluate your model, what variables are involved? Please upload this as a `.pdf` or `.docx` document [here](). Be sure to rename your file to the name of your team. **Submissions are due 11:59pm on February 6, 2026.**
+
+<!-- https://www.dropbox.com/request/ETp2QrgoKWwK8JtxpFbe -->
 
 ### Evaluation
 
@@ -71,9 +75,13 @@ Construct `prediction intervals` for the point spread of 78 ACC basketball games
 -   Make sure that you have prediction intervals for all 78 college basketball games. We cannot consider your predictions if there are still missing values.
 :::
 
-3.  Rename the original file to include your **team name**. Do this by replacing the word "template" in the original file name. For example, if your team name is *Shot Callers*, then your file name should be "tsa_pi_Shot_Callers_2026". Upload your file as a `csv` to the dropbox link [here](https://www.dropbox.com/request/9trhi24QmfAAXUXR4SC1). **Submission of this is due by 11:59pm on February 6, 2026.** Submissions after midnight will not be considered at all.
+3.  Rename the original file to include your **team name**. Do this by replacing the word "template" in the original file name. For example, if your team name is *Shot Callers*, then your file name should be "tsa_pi_Shot_Callers_2026". Upload your file as a `csv` to the dropbox link [here](). **Submission of this is due by 11:59pm on February 6, 2026.** Submissions after midnight will not be considered at all.
 
-4.  Submit a one-page (maximum) write-up detailing *how* you constructed your prediction intervals e.g. what method are you using, how did you evaluate your chosen method. If your team also submitted predicted point spread, you don't need to submit two files. Just submit one file that includes rationale behind your point spreads and prediction intervals. Please upload this as a `.pdf` or `.docx` document [here](https://www.dropbox.com/request/9trhi24QmfAAXUXR4SC1). Be sure to rename your file to the name of your team. **Submissions are due by 11:59pm on February 6, 2026.**
+<!-- https://www.dropbox.com/request/9trhi24QmfAAXUXR4SC1 -->
+
+4.  Submit a one-page (maximum) write-up detailing *how* you constructed your prediction intervals e.g. what method are you using, how did you evaluate your chosen method. If your team also submitted predicted point spread, you don't need to submit two files. Just submit one file that includes rationale behind your point spreads and prediction intervals. Please upload this as a `.pdf` or `.docx` document [here](). Be sure to rename your file to the name of your team. **Submissions are due by 11:59pm on February 6, 2026.**
+
+<!-- https://www.dropbox.com/request/9trhi24QmfAAXUXR4SC1 -->
 
 ### Evaluation
 
