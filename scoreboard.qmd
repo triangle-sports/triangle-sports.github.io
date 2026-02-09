@@ -1,0 +1,246 @@
+---
+title: "Scoreboard"
+format: html
+---  
+
+<!-- <style> -->
+<!--   body { -->
+<!--    background-image: url("/assets/hoop_night.jpg"); -->
+<!--   background-size: cover; -->
+<!--   background-repeat: no-repeat; -->
+<!-- } -->
+
+<!-- </style> -->
+
+<!--  <style> -->
+<!--     body { -->
+<!--       color: white; -->
+<!--     } -->
+<!--   </style> -->
+  
+```{r,echo=FALSE, message = FALSE,warning=FALSE}
+library(DT)
+library(tidyverse)
+library(plyr)
+
+# Read in Actual Spread
+actual = read_csv("predictions/tsa_pt_spread_actual_2026.csv")
+actual = actual[1:78,1:4]
+
+# Read in Prediction Files from Students for Point Spread
+pt1 = read_csv("predictions/tsa_pt_spread_UNCSigmaChiF24_2026.csv")[1:78,1:4]
+pt2 = read_csv("predictions/tsa_pt_spread_Pandalytics_2026.csv")[1:78,1:4]
+pt3 = read_csv("predictions/TSA_PT_spread_Ball_In_The_Family_2026.csv")[1:78,1:4]
+pt4 = read_csv("predictions/tsa_pt_spread_arjun_2026 Arjun Trivedi.csv")[1:78,1:4]
+pt5 = read_csv("predictions/tsa_pt_spread_Ball_Knower_2026 Christopher Dunevant.csv")[1:78,1:4]
+pt6 = read_csv("predictions/tsa_pt_spread_Baracuda_Boys_2026 Joshua Harbaugh.csv")[1:78,1:4]
+pt7 = read_csv("predictions/tsa_pt_spread_Beat_Dook_2026 Roshan Ragu.csv")[1:78,1:4]
+pt8 = read_csv("predictions/tsa_pt_spread_Buzzer_Beaters_2026 Nicholas Hengsterman.csv")[1:78,1:4]
+pt9 = read_csv("predictions/tsa_pt_spread_Caleb_Goated_Wilson_2026 Frank Thaingtham.csv")[1:78,1:4]
+pt10 = read_csv("predictions/tsa_pt_spread_Caleb_s_Hammer_2026 Kenny Colindres-Carias.csv")[1:78,1:4]
+pt11 = read_csv("predictions/tsa_pt_spread_CalebTruthers_2026 Tyler Watts.csv")[1:78,1:4]
+pt12 = read_csv("predictions/tsa_pt_spread_CMMT_2026 Caleb Han.csv")[1:78,1:4]
+pt13 = read_csv("predictions/tsa_pt_spread_Definitely_Not_Overfit_2026 Sean.csv")[1:78,1:4]
+pt14 = read_csv("predictions/tsa_pt_spread_DerrickWhiteEnjoyer_2026 Nathan Honea.csv")[1:78,1:4]
+pt15 = read_csv("predictions/tsa_pt_spread_devig_to_ball_knowledge_2026 Ethan Yountz.csv")[1:78,1:4]
+pt17 = read_csv("predictions/tsa_pt_spread_fleiAnalytics_2026 Max Fleischer.csv")[1:78,1:4]
+pt18 = read_csv("predictions/tsa_pt_spread_Freaky_Forecasts_2026 Eddy Ding.csv")[1:78,1:4]
+pt19 = read_csv("predictions/tsa_pt_spread_Fuqua_Devils_2026 ruiting shao.csv")[1:78,1:4]
+pt20 = read_csv("predictions/tsa_pt_spread_Gaussian_Eliminators_2026 - Sheet1 Aaron Siminou.csv")[1:78,1:4]
+pt21 = read_csv("predictions/tsa_pt_spread_Grayson_Alpha_2026 - Sheet1 Ethan Mindlin.csv")[1:78,1:4]
+pt22 = read_csv("predictions/tsa_pt_spread_Healthy_Kids_2026 Daniel Fulk.csv")[1:78,1:4]
+pt23 = read_csv("predictions/tsa_pt_spread_Heels_Excel_2026 Riham.csv")[1:78,1:4]
+pt24 = read_csv("predictions/tsa_pt_spread_HTN_Heaven_2026 - Sheet1 Ankita Karuturi.csv")[1:78,1:4]
+pt25 = read_csv("predictions/tsa_pt_spread_I2A_2026 Adonias Ketema.csv")[1:78,1:4]
+pt26 = read_csv("predictions/tsa_pt_spread_Lobryjakar - Sheet1 Jackson Tam.csv")[1:78,1:4]
+pt27 = read_csv("predictions/tsa_pt_spread_midsters_2026 Gaurav Law.csv")[1:78,1:4]
+pt28 = read_csv("predictions/tsa_pt_spread_MillerAndSons_2026 Christopher Miller.csv")[1:78,1:4]
+pt29 = read_csv("predictions/tsa_pt_spread_moneyball_is_life_2026 Joseph Glasson.csv")[1:78,1:4]
+pt30 = read_csv("predictions/tsa_pt_spread_Mustard_2026 - Sheet1 Daniel Wang.csv")[1:78,1:4]
+pt31 = read_csv("predictions/tsa_pt_spread_Naman_2026 Naman Saboo.csv")[1:78,1:4]
+pt32 = read_csv("predictions/tsa_pt_spread_Not_Cute_Anymore_2026 Hung-Chun Lu.csv")[1:78,1:4]
+pt33 = read_csv("predictions/tsa_pt_spread_One_Ram_Band_2026 Case Redmond.csv")[1:78,1:4]
+pt34 = read_csv("predictions/tsa_pt_spread_RedReckoning_2026 - Sheet1 Sam Brown.csv")[1:78,1:4]
+pt35 = read_csv("predictions/tsa_pt_spread_template_Henri_Febre_2026 - Sheet1 Henri Febre.csv")[1:78,1:4]
+pt36 = read_csv("predictions/tsa_pt_spread_Torvik_Tryhard_2026 Aaron J. Reed.csv")[1:78,1:4]
+pt37 = read_csv("predictions/tsa_pt_spread_Trust_Me_Bro_Analytics_2026 Jason Pereira.csv")[1:78,1:4]
+pt38 = read_csv("predictions/tsa_pt_spread_Twilight_Wolfpack_Analytics_2026 Ameen Ahmed.csv")[1:78,1:4]
+pt39 = read_csv("predictions/tsa_pt_spread_Roll_the_Dice_2026 Ford Love.csv")[1:78,1:4]
+pt40 = read_csv("predictions/tsa_pt_spread_BIOS_Bros_2026 Jonah Prober.csv")[1:78,1:4]
+
+#Vector of Team Names for Point Spread
+pt_teams = c("UNCSigmaChiF24", "Pandalytics", "Ball in the Family", "arjun", "Ball Knower",
+          "Baracuda Boys","Beat Dook","Buzzer Beaters", "Caleb Goated Wilson","Caleb's Hammer",
+          "CalebTruthers","CMMT","Definitely Not Overfit","DerrickWhiteEnjoyer","devig to ball knowledge",
+          "fleiAnalytics","Freaky Forecasts", "Fuqua Devils","Gaussian Eliminators",
+          "Grayson Alpha","Healthy Kids","Heels Excel","HTN Heaven","I2A",
+          "Lobryjakar","MIDSTERS","MillerAndSons","(Money)ball is life","Mustard",
+          "Naman","Not Cute Anymore","One Ram Band","RedReckoning","Henri Febre",
+          "Torvik Tryhard","Trust Me Bro Analytics","Twilight Wolfpack Analytics","Roll the Dice","BIOS Bros")
+
+#Merge Datasets
+SPREAD=join_all(list(dplyr::rename(pt1,pt_spread_1=pt_spread),
+                     dplyr::rename(pt2,pt_spread_2=pt_spread),
+                     dplyr::rename(pt3,pt_spread_3=pt_spread),
+                     dplyr::rename(pt4,pt_spread_4=pt_spread),
+                     dplyr::rename(pt5,pt_spread_5=pt_spread),
+                     dplyr::rename(pt6,pt_spread_6=pt_spread),
+                     dplyr::rename(pt7,pt_spread_7=pt_spread),
+                     dplyr::rename(pt8,pt_spread_8=pt_spread),
+                     dplyr::rename(pt9,pt_spread_9=pt_spread),
+                     dplyr::rename(pt10,pt_spread_10=pt_spread),
+                     dplyr::rename(pt11,pt_spread_11=pt_spread),
+                     dplyr::rename(pt12,pt_spread_12=pt_spread),
+                     dplyr::rename(pt13,pt_spread_13=pt_spread),
+                     dplyr::rename(pt14,pt_spread_14=pt_spread),
+                     dplyr::rename(pt15,pt_spread_15=pt_spread),
+                     dplyr::rename(pt17,pt_spread_17=pt_spread),
+                     dplyr::rename(pt18,pt_spread_18=pt_spread),
+                     dplyr::rename(pt19,pt_spread_19=pt_spread),
+                     dplyr::rename(pt20,pt_spread_20=pt_spread),
+                     dplyr::rename(pt21,pt_spread_21=pt_spread),
+                     dplyr::rename(pt22,pt_spread_22=pt_spread),
+                     dplyr::rename(pt23,pt_spread_23=pt_spread),
+                     dplyr::rename(pt24,pt_spread_24=pt_spread),
+                     dplyr::rename(pt25,pt_spread_25=pt_spread),
+                     dplyr::rename(pt26,pt_spread_26=pt_spread),
+                     dplyr::rename(pt27,pt_spread_27=pt_spread),
+                     dplyr::rename(pt28,pt_spread_28=pt_spread),
+                     dplyr::rename(pt29,pt_spread_29=pt_spread),
+                     dplyr::rename(pt30,pt_spread_30=pt_spread),
+                     dplyr::rename(pt31,pt_spread_31=pt_spread),
+                     dplyr::rename(pt32,pt_spread_32=pt_spread),
+                     dplyr::rename(pt33,pt_spread_33=pt_spread),
+                     dplyr::rename(pt34,pt_spread_34=pt_spread),
+                     dplyr::rename(pt35,pt_spread_35=pt_spread),
+                     dplyr::rename(pt36,pt_spread_36=pt_spread),
+                     dplyr::rename(pt37,pt_spread_37=pt_spread),
+                     dplyr::rename(pt38,pt_spread_38=pt_spread),
+                     dplyr::rename(pt39,pt_spread_39=pt_spread),
+                     dplyr::rename(pt40,pt_spread_40=pt_spread)),
+                by=c("Date","Away","Home"),type="left")
+
+SPREAD2 = SPREAD[,-(1:3)]
+
+#MAE for predictions
+mae.func=function(predict){
+  mean(abs(actual$pt_spread-predict),na.rm=T)
+}
+
+eval = apply(SPREAD2,2,mae.func)
+
+OUT_SPREAD = tibble(Team = pt_teams,MAE=round(eval,4)) |> arrange(MAE) |> mutate(Rank = round(rank(MAE))) |> select(Rank,everything())
+
+```
+
+
+### Point Spread Prediction
+
+```{r,echo=FALSE}
+
+datatable(OUT_SPREAD, rownames = FALSE, class = 'cell-border stripe') 
+
+```
+
+<br>
+<br>
+<br>
+<br>
+
+
+```{r,echo=FALSE, message = FALSE,warning=FALSE}
+# Read in Prediction Files from Students for Prediction Interval
+pi1 = read_csv("predictions/tsa_pi_arjun_2026 Arjun Trivedi.csv")[1:78,1:5]
+pi2 = read_csv("predictions/tsa_pi_Baracuda_Boys_2026 Joshua Harbaugh.csv")[1:78,1:5]
+pi3 = read_csv("predictions/tsa_pi_BIOS_Bros_2026 Jonah Prober.csv")[1:78,1:5]
+pi4 = read_csv("predictions/tsa_pi_Caleb_Goated_Wilson_2026 Frank Thaingtham.csv")[1:78,1:5]
+pi5 = read_csv("predictions/tsa_pi_CalebTruthers_2026 Tyler Watts.csv")[1:78,1:5]
+pi6 = read_csv("predictions/tsa_pi_Definitely_Not_Overfit_2026 Sean.csv")[1:78,1:5]
+pi7 = read_csv("predictions/tsa_pi_devig_to_ball_knowledge_2026 Ethan Yountz.csv")[1:78,1:5]
+pi8 = read_csv("predictions/tsa_pi_FIBA_Analytics_2026 Daniel Marin.csv")[1:78,1:5]
+pi9 = read_csv("predictions/tsa_pi_Freaky_Forecasts_2026 Eddy Ding.csv")[1:78,1:5]
+pi10 = read_csv("predictions/tsa_pi_Fuqua_Devils_2026 ruiting shao.csv")[1:78,1:5]
+pi11 = read_csv("predictions/tsa_pi_Healthy_Kids_2026 Daniel Fulk.csv")[1:78,1:5]
+pi12 = read_csv("predictions/tsa_pi_midsters_2026 Gaurav Law.csv")[1:78,1:5]
+pi13 = read_csv("predictions/tsa_pi_MillerAndSons_2026 Christopher Miller.csv")[1:78,1:5]
+pi14 = read_csv("predictions/tsa_pi_Mustard_2026 - Sheet1 Daniel Wang.csv")[1:78,1:5]
+pi15 = read_csv("predictions/tsa_pi_Naman_2026 Naman Saboo.csv")[1:78,1:5]
+pi16 = read_csv("predictions/tsa_pi_Not_Cute_Anymore_2026 Hung-Chun Lu.csv")[1:78,1:5]
+pi17 = read_csv("predictions/tsa_pi_Torvik_Tryhard_2026 Aaron J. Reed.csv")[1:78,1:5]
+pi18 = read_csv("predictions/tsa_pi_Twilight_Wolfpack_Analytics_2026 Ameen Ahmed.csv")[1:78,1:5]
+
+#Vector of Team Names for Prediction Interval
+pi_teams = c("Arjun", "Baracuda Boys","BIOS Bros","Caleb Goated Wilson","CalebTruthers",
+             "Definitely Not Overfit","devig to ball knowledge","FIBA Analytics","Freaky Forecasts","Fuqua Devils",
+             "Healthy Kids","MIDSTERS","MillerAndSons","Mustard","Naman",
+             "Not Cute Anymore","Torvik Tryhard","Twilight Wolfpack Analytics")
+
+#Merge Datasets
+LB=join_all(list(dplyr::rename(pi1[,1:4],ci_lb_1=ci_lb),
+                     dplyr::rename(pi2[,1:4],ci_lb_2=ci_lb),
+                     dplyr::rename(pi3[,1:4],ci_lb_3=ci_lb),
+                     dplyr::rename(pi4[,1:4],ci_lb_4=ci_lb),
+                     dplyr::rename(pi5[,1:4],ci_lb_5=ci_lb),
+                     dplyr::rename(pi6[,1:4],ci_lb_6=ci_lb),
+                     dplyr::rename(pi7[,1:4],ci_lb_7=ci_lb),
+                     dplyr::rename(pi8[,1:4],ci_lb_8=ci_lb),
+                     dplyr::rename(pi9[,1:4],ci_lb_9=ci_lb),
+                     dplyr::rename(pi10[,1:4],ci_lb_10=ci_lb),
+                     dplyr::rename(pi11[,1:4],ci_lb_11=ci_lb),
+                     dplyr::rename(pi12[,1:4],ci_lb_12=ci_lb),
+                     dplyr::rename(pi13[,1:4],ci_lb_13=ci_lb),
+                     dplyr::rename(pi14[,1:4],ci_lb_14=ci_lb),
+                     dplyr::rename(pi15[,1:4],ci_lb_15=ci_lb),
+                     dplyr::rename(pi16[,1:4],ci_lb_16=ci_lb),
+                     dplyr::rename(pi17[,1:4],ci_lb_17=ci_lb),
+                     dplyr::rename(pi18[,1:4],ci_lb_18=ci_lb)),
+                by=c("Date","Away","Home"),type="left")
+
+UB=join_all(list(dplyr::rename(pi1[,c(1,2,3,5)],ci_ub_1=ci_ub),
+                     dplyr::rename(pi2[,c(1,2,3,5)],ci_ub_2=ci_ub),
+                     dplyr::rename(pi3[,c(1,2,3,5)],ci_ub_3=ci_ub),
+                     dplyr::rename(pi4[,c(1,2,3,5)],ci_ub_4=ci_ub),
+                     dplyr::rename(pi5[,c(1,2,3,5)],ci_ub_5=ci_ub),
+                     dplyr::rename(pi6[,c(1,2,3,5)],ci_ub_6=ci_ub),
+                     dplyr::rename(pi7[,c(1,2,3,5)],ci_ub_7=ci_ub),
+                     dplyr::rename(pi8[,c(1,2,3,5)],ci_ub_8=ci_ub),
+                     dplyr::rename(pi9[,c(1,2,3,5)],ci_ub_9=ci_ub),
+                     dplyr::rename(pi10[,c(1,2,3,5)],ci_ub_10=ci_ub),
+                     dplyr::rename(pi11[,c(1,2,3,5)],ci_ub_11=ci_ub),
+                     dplyr::rename(pi12[,c(1,2,3,5)],ci_ub_12=ci_ub),
+                     dplyr::rename(pi13[,c(1,2,3,5)],ci_ub_13=ci_ub),
+                     dplyr::rename(pi14[,c(1,2,3,5)],ci_ub_14=ci_ub),
+                     dplyr::rename(pi15[,c(1,2,3,5)],ci_ub_15=ci_ub),
+                     dplyr::rename(pi16[,c(1,2,3,5)],ci_ub_16=ci_ub),
+                     dplyr::rename(pi17[,c(1,2,3,5)],ci_ub_17=ci_ub),
+                     dplyr::rename(pi18[,c(1,2,3,5)],ci_ub_18=ci_ub)),
+                by=c("Date","Away","Home"),type="left")
+
+LB2=LB[,-c(1:3)]
+UB2 = UB[,-c(1:3)]
+
+
+#Measure Disqualification and PIW for each Group
+DQ=rep(NA,dim(UB2)[2])
+`%` = rep(NA,dim(UB2)[2])
+eval=rep(NA,dim(UB2)[2])
+
+for(i in 1:dim(UB2)[2]){
+  check = mean(actual$pt_spread>LB2[,i] & actual$pt_spread<UB2[,i],na.rm=T)
+  `%`[i]=check
+  if (check < 0.7){
+    DQ[i]="Yes"
+  }else {
+    DQ[i]="No"
+    eval[i] = mean(UB2[!is.na(actual$pt_spread),i]-LB2[!is.na(actual$pt_spread),i])
+  }
+}
+
+OUT_PIW = tibble(Team = pi_teams,`%`=round(`%`*100,2),DQ=DQ,PIW=round(eval,2)) |> arrange(PIW) |> mutate(Rank = round(min_rank(PIW))) |> select(Rank,everything())
+```
+
+## Prediction Interval Construction
+
+```{r,echo=FALSE}
+datatable(OUT_PIW, rownames = FALSE, class = 'cell-border stripe') 
+```
