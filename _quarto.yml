@@ -15,8 +15,6 @@ website:
         href: index.qmd#about
       - text: Task
         href: task.qmd
-      - text: Scoreboard
-        href: scoreboard.qmd
       - text: "Hall of fame"
         href: winners.qmd
       - text: "Resources"

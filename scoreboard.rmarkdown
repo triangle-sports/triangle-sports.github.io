@@ -1,53 +1,24 @@
 ---
-title: "Triangle Sports Analytics Competition"
+title: "Scoreboard"
 format: html
-css: styles.css
-page-layout: full
-editor: 
-  markdown: 
-    wrap: 72
----
+---  
 
-```{=html}
-<!--
-This Quarto page builds a scrolling one‑page website.  As visitors scroll down
-the page they travel across a fixed background image of a basketball court while
-a bouncing basketball follows them along the right side of the viewport.  The
-layout and color palette are inspired by the dark, animated aesthetic of the
-TreeHacks website (dark backdrop, simple white headings and vibrant accents)
-【129026186528667†L27-L41】.  Custom CSS and JavaScript implement the
-animation and styling.
--->
-```
 
-<!-- Ball element (positioned by scripts.js) -->
+<!-- <style> -->
+<!--   body { -->
+<!--    background-image: url("/assets/hoop_night.jpg"); -->
+<!--   background-size: cover; -->
+<!--   background-repeat: no-repeat; -->
+<!-- } -->
 
-::: {#ball}
-:::
+<!-- </style> -->
 
-<!-- Hero section -->
-
-::: hero
-<h1>Triangle Sports Analytics Competition 2026</h1>
-
-<h2>Submissions due February 6 &#127936; Register [Here](https://forms.gle/5ZXVLvWgk8FsTtfJ8)</h2>
-
-<p>Represent your school in data science and take home the title</p>
-:::
-
-<section id="all">
-
-### About
-
-The 2nd annual **Triangle Sports Analytics Competition** aims to bring together students from Duke, UNC, Chapel Hill, and NC State who love
-sports analytics to compete in a prediction contest. All undergraduate and graduate students are eligible to compete. The scope of the competition is to predict all **ACC Men's Basketball** games between **February 7, 2026** and **March 7, 2026**. **Students may work individually or in a team of 2-5**.
-
-<!-- ### Competition -->
-
-<!-- - Point spread is the difference in points scored between Home and Away teams. Your job is to create a statistical model that predicts the point spread of ACC Men's Basketball games. [Click here to learn more](/task.html#Objective) -->
-
-<!-- - Looking to go the extra mile? You can **optionally** submit prediction intervals as well. These will be judged separately. [Click here to learn more](/task.html#optional-advanced-objective-prediction-intervals) -->
-
+<!--  <style> -->
+<!--     body { -->
+<!--       color: white; -->
+<!--     } -->
+<!--   </style> -->
+  
 
 ```{r,echo=FALSE, message = FALSE,warning=FALSE}
 library(DT)
@@ -165,18 +136,22 @@ OUT_SPREAD = tibble(Team = pt_teams,MAE=round(eval,4)) |> arrange(MAE) |> mutate
 ```
 
 
-### Leaderboard: Point Spreads
+
+### Point Spread Prediction
+
 
 ```{r,echo=FALSE}
-datatable(OUT_SPREAD, rownames = FALSE, class = 'cell-border stripe',
-          options=list(pageLength=40,dom="t")) 
+
+datatable(OUT_SPREAD, rownames = FALSE, class = 'cell-border stripe') 
 
 ```
 
+
 <br>
 <br>
 <br>
 <br>
+
 
 
 ```{r,echo=FALSE, message = FALSE,warning=FALSE}
@@ -270,24 +245,11 @@ for(i in 1:dim(UB2)[2]){
 OUT_PIW = tibble(Team = pi_teams,`%`=round(`%`*100,2),DQ=DQ,PIW=round(eval,2)) |> arrange(PIW) |> mutate(Rank = round(min_rank(PIW))) |> select(Rank,everything())
 ```
 
-### Leaderboard: Prediction Intervals
+
+## Prediction Interval Construction
+
 
 ```{r,echo=FALSE}
-datatable(OUT_PIW, rownames = FALSE, class = 'cell-border stripe',
-          options=list(pageLength=20,dom="t"))  
+datatable(OUT_PIW, rownames = FALSE, class = 'cell-border stripe') 
 ```
 
-
-
-### Questions?
-
-Contact your school's organizer:
-
-[Alexander Fisher (Duke)](mailto:alexander.fisher@duke.edu), [Elijah Meyer (NC State)](mailto:esmeyer2@ncsu.edu), [Mario Giacomazzo (UNC)](mailto:mgiacoma@email.unc.edu).
-</section>
-
-<!-- Include the animation script -->
-
-```{=html}
-<script src="scripts.js"></script>
-```
