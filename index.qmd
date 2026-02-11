@@ -270,12 +270,17 @@ for(i in 1:dim(UB2)[2]){
 OUT_PIW = tibble(Team = pi_teams,`%`=round(`%`*100,2),DQ=DQ,PIW=round(eval,2)) |> arrange(PIW) |> mutate(Rank = round(min_rank(PIW))) |> select(Rank,everything())
 ```
 
+Scoreboard updated on `r date()`.
+
+
 ### Leaderboard: Prediction Intervals
 
 ```{r,echo=FALSE}
 datatable(OUT_PIW, rownames = FALSE, class = 'cell-border stripe',
           options=list(pageLength=20,dom="t"))  
 ```
+
+Scoreboard updated on `r date()`.
 
 
 
