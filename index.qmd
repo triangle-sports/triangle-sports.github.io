@@ -175,6 +175,12 @@ datatable(OUT_SPREAD, rownames = FALSE, class = 'cell-border stripe',
 
 ```
 Scoreboard updated on `r date()`.
+<br> 
+<br>
+Please help check the actual point spreads [here](https://github.com/triangle-sports/triangle-sports.github.io/blob/main/predictions/tsa_pt_spread_actual_2026.csv). Also, you should be able to calculate your own $MAE$ to confirm accuracy of $MAE$. 
+<br>
+<br>
+Contact [Mario Giacomazzo (UNC)](mailto:mgiacoma@email.unc.edu) if you notice an error in the actual point spreads. 
 
 
 ```{r,echo=FALSE, message = FALSE,warning=FALSE}
@@ -279,7 +285,12 @@ datatable(OUT_PIW, rownames = FALSE, class = 'cell-border stripe',
 ```
 
 Scoreboard updated on `r date()`.
-
+<br> 
+<br>
+Please help check the actual point spreads [here](https://github.com/triangle-sports/triangle-sports.github.io/blob/main/predictions/tsa_pt_spread_actual_2026.csv). Also, you should be able to calculate your own coverage percentage and $PIW$ to verify our cacluations are correct.
+<br>
+<br>
+Contact [Mario Giacomazzo (UNC)](mailto:mgiacoma@email.unc.edu) if you notice an error in the percentage or the $PIW$.
 
 
 ### Questions?
