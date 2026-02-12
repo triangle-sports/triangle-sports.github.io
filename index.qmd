@@ -74,6 +74,7 @@ pt12 = read_csv("predictions/tsa_pt_spread_CMMT_2026 Caleb Han.csv")[1:78,1:4]
 pt13 = read_csv("predictions/tsa_pt_spread_Definitely_Not_Overfit_2026 Sean.csv")[1:78,1:4]
 pt14 = read_csv("predictions/tsa_pt_spread_DerrickWhiteEnjoyer_2026 Nathan Honea.csv")[1:78,1:4]
 pt15 = read_csv("predictions/tsa_pt_spread_devig_to_ball_knowledge_2026 Ethan Yountz.csv")[1:78,1:4]
+pt16 = read_csv("predictions/tsa_pt_spread_Levin's_Lucky_Layups_2026.csv")[1:78,1:4]
 pt17 = read_csv("predictions/tsa_pt_spread_fleiAnalytics_2026 Max Fleischer.csv")[1:78,1:4]
 pt18 = read_csv("predictions/tsa_pt_spread_Freaky_Forecasts_2026 Eddy Ding.csv")[1:78,1:4]
 pt19 = read_csv("predictions/tsa_pt_spread_Fuqua_Devils_2026 ruiting shao.csv")[1:78,1:4]
@@ -103,7 +104,7 @@ pt40 = read_csv("predictions/tsa_pt_spread_BIOS_Bros_2026 Jonah Prober.csv")[1:7
 pt_teams = c("UNCSigmaChiF24", "Pandalytics", "Ball in the Family", "arjun", "Ball Knower",
           "Baracuda Boys","Beat Dook","Buzzer Beaters", "Caleb Goated Wilson","Caleb's Hammer",
           "CalebTruthers","CMMT","Definitely Not Overfit","DerrickWhiteEnjoyer","devig to ball knowledge",
-          "fleiAnalytics","Freaky Forecasts", "Fuqua Devils","Gaussian Eliminators",
+          "Levin's Lucky Layups" , "fleiAnalytics","Freaky Forecasts", "Fuqua Devils","Gaussian Eliminators",
           "Grayson Alpha","Healthy Kids","Heels Excel","HTN Heaven","I2A",
           "Lobryjakar","MIDSTERS","MillerAndSons","(Money)ball is life","Mustard",
           "Naman","Not Cute Anymore","One Ram Band","RedReckoning","Henri Febre",
@@ -125,6 +126,7 @@ SPREAD=join_all(list(dplyr::rename(pt1,pt_spread_1=pt_spread),
                      dplyr::rename(pt13,pt_spread_13=pt_spread),
                      dplyr::rename(pt14,pt_spread_14=pt_spread),
                      dplyr::rename(pt15,pt_spread_15=pt_spread),
+                     dplyr::rename(pt16,pt_spread_16=pt_spread),
                      dplyr::rename(pt17,pt_spread_17=pt_spread),
                      dplyr::rename(pt18,pt_spread_18=pt_spread),
                      dplyr::rename(pt19,pt_spread_19=pt_spread),
@@ -172,11 +174,7 @@ datatable(OUT_SPREAD, rownames = FALSE, class = 'cell-border stripe',
           options=list(pageLength=40,dom="t")) 
 
 ```
-
-<br>
-<br>
-<br>
-<br>
+Scoreboard updated on `r date()`.
 
 
 ```{r,echo=FALSE, message = FALSE,warning=FALSE}
@@ -270,7 +268,7 @@ for(i in 1:dim(UB2)[2]){
 OUT_PIW = tibble(Team = pi_teams,`%`=round(`%`*100,2),DQ=DQ,PIW=round(eval,2)) |> arrange(PIW) |> mutate(Rank = round(min_rank(PIW))) |> select(Rank,everything())
 ```
 
-Scoreboard updated on `r date()`.
+
 
 
 ### Leaderboard: Prediction Intervals
