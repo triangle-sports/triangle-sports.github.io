@@ -1,0 +1,64 @@
+---
+title: "Resubmissions"
+format: 
+  html:
+    toc: true
+    toc-depth: 2
+css: styles2.css
+---
+
+
+In this competition, you have the opportunity to submit updated predictions & prediction intervals to help improve your chances of winning the Triangle Sports Analytics Competition 2026!
+
+These new submissions are **due February 23rd at 11:59pm**.
+
+### Why make a resubmission? 
+
+:::: year-box
+
+Updating your estimates is crucial to align predictions with real-world changes! 
+
+-- Did a serious injury happen? Sorry UNC... 
+
+-- Is a team underperforming? Sorry NC State... 
+
+-- Would your model before more precise with more/new data? 
+
+Making these changes can help minimize the MSE of your predictions, and help improve your coverage for those who created prediction intervals!
+
+Instructions for submitting resubmissions are nearly identical to how you submitted your original predictions. *Please use the updated templates that have games from Feburary 24th through March 7th*. **They are linked below in the instructions**. 
+
+Please use the dropbox link **in the instructions below**. 
+
+Please submit a short paragraph on how you updated your predictions! **The dropbox link is in the instructions below**.
+
+For a more detailed description on how to submit your predictions, please see the [Task](https://triangle-sports.github.io/task.html) tab. 
+::::
+
+### Instructions
+
+:::: year-box
+
+1.  Download a copy of the NEW Google Sheet with games starting Feburary 24th [here](https://docs.google.com/spreadsheets/d/1DK41rQLsPnx6EhzLxRmX1Iz1MN4q93iiwPj6iZp1oR4/edit?usp=sharing). Click `File`, `Download`, `Comma Separated Values (.csv)` to download your prediction spreadsheet as a `csv` to your computer.
+
+If you participated in the *Optional (advanced) objective: prediction intervals*, you can find and download your interval sheet [here](https://docs.google.com/spreadsheets/d/1VTz7hSipofPBbp9BbJwFFYOuQ4kBrKM-D91opIOYn5A/edit?usp=sharing).
+
+2.  **Only edit cells that contain NA.** All the information in the first three columns should not be altered at all. The games should remain in their original order. Your predictions may not be considered if you alter the information in these first three columns. Keep them in the games in their original order.
+
+3.  Rename the original file to include your **team name**. Do this by replacing the word "template" in the original file name. For example, if your team name is *Shot Callers*, then your file name should be "tsa_pt_spread_Shot_Callers_2026". Upload your file as a `csv` to the dropbox link [here](https://www.dropbox.com/request/fSRLWh0Rc8fw2kg3mT3O).
+
+Optional: Upload your prediction interval submissions as a `csv` (ex. tsa_**pi**_Shot_Callers_2026) to the dropbox link [here](https://www.dropbox.com/request/fSRLWh0Rc8fw2kg3mT3O).
+
+'**Resubmissions are due by 11:59pm on February 23rd, 2026.** Submissions after midnight will **not be considered**.
+
+<!-- https://www.dropbox.com/request/fSRLWh0Rc8fw2kg3mT3O new resub dropbox -->
+
+<!-- https://www.dropbox.com/request/ETp2QrgoKWwK8JtxpFbe -->
+
+4.  Submit a paragraph write-up detailing *how* you updated your predictions! Did you change your model? Did you use more recent data? Anything else? Please upload this as a `.pdf` or `.docx` document [here](https://www.dropbox.com/request/fSRLWh0Rc8fw2kg3mT3O). Be sure to rename your file to the name of your team. 
+::::
+
+#### **Submissions are due 11:59pm on February 23rd at 11:59pm, 2026.**
+
+
+
