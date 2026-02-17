@@ -99,6 +99,7 @@ pt37 = read_csv("predictions/tsa_pt_spread_Trust_Me_Bro_Analytics_2026 Jason Per
 pt38 = read_csv("predictions/tsa_pt_spread_Twilight_Wolfpack_Analytics_2026 Ameen Ahmed.csv")[1:78,1:4]
 pt39 = read_csv("predictions/tsa_pt_spread_Roll_the_Dice_2026 Ford Love.csv")[1:78,1:4]
 pt40 = read_csv("predictions/tsa_pt_spread_BIOS_Bros_2026 Jonah Prober.csv")[1:78,1:4]
+pt41 = read_csv("predictions/tsa_pt_spread_FIBA_Analytics_2026 Daniel Marin (1)(1).csv")[1:78,1:4]
 
 #Vector of Team Names for Point Spread
 pt_teams = c("UNCSigmaChiF24", "Pandalytics", "Ball in the Family", "arjun", "Ball Knower",
@@ -108,7 +109,8 @@ pt_teams = c("UNCSigmaChiF24", "Pandalytics", "Ball in the Family", "arjun", "Ba
           "Grayson Alpha","Healthy Kids","Heels Excel","HTN Heaven","I2A",
           "Lobryjakar","MIDSTERS","MillerAndSons","(Money)ball is life","Mustard",
           "Naman","Not Cute Anymore","One Ram Band","RedReckoning","Henri Febre",
-          "Torvik Tryhard","Trust Me Bro Analytics","Twilight Wolfpack Analytics","Roll the Dice","BIOS Bros")
+          "Torvik Tryhard","Trust Me Bro Analytics","Twilight Wolfpack Analytics","Roll the Dice","BIOS Bros",
+          "FIBA Analytics")
 
 #Merge Datasets
 SPREAD=join_all(list(dplyr::rename(pt1,pt_spread_1=pt_spread),
@@ -150,7 +152,8 @@ SPREAD=join_all(list(dplyr::rename(pt1,pt_spread_1=pt_spread),
                      dplyr::rename(pt37,pt_spread_37=pt_spread),
                      dplyr::rename(pt38,pt_spread_38=pt_spread),
                      dplyr::rename(pt39,pt_spread_39=pt_spread),
-                     dplyr::rename(pt40,pt_spread_40=pt_spread)),
+                     dplyr::rename(pt40,pt_spread_40=pt_spread),
+                     dplyr::rename(pt41,pt_spread_41=pt_spread)),
                 by=c("Date","Away","Home"),type="left")
 
 SPREAD2 = SPREAD[,-(1:3)]
@@ -171,7 +174,7 @@ OUT_SPREAD = tibble(Team = pt_teams,MAE=round(eval,4)) |> arrange(MAE) |> mutate
 
 ```{r,echo=FALSE}
 datatable(OUT_SPREAD, rownames = FALSE, class = 'cell-border stripe',
-          options=list(pageLength=40,dom="t")) 
+          options=list(pageLength=45,dom="t")) 
 
 ```
 Scoreboard updated on `r date()`.
@@ -203,12 +206,13 @@ pi15 = read_csv("predictions/tsa_pi_Naman_2026 Naman Saboo.csv")[1:78,1:5]
 pi16 = read_csv("predictions/tsa_pi_Not_Cute_Anymore_2026 Hung-Chun Lu.csv")[1:78,1:5]
 pi17 = read_csv("predictions/tsa_pi_Torvik_Tryhard_2026 Aaron J. Reed.csv")[1:78,1:5]
 pi18 = read_csv("predictions/tsa_pi_Twilight_Wolfpack_Analytics_2026 Ameen Ahmed.csv")[1:78,1:5]
+pi19 = read_csv("predictions/tsa_pi_Grayson_Alpha_2026 - Sheet1.csv")[1:78,1:5]
 
 #Vector of Team Names for Prediction Interval
 pi_teams = c("Arjun", "Baracuda Boys","BIOS Bros","Caleb Goated Wilson","CalebTruthers",
              "Definitely Not Overfit","devig to ball knowledge","FIBA Analytics","Freaky Forecasts","Fuqua Devils",
              "Healthy Kids","MIDSTERS","MillerAndSons","Mustard","Naman",
-             "Not Cute Anymore","Torvik Tryhard","Twilight Wolfpack Analytics")
+             "Not Cute Anymore","Torvik Tryhard","Twilight Wolfpack Analytics","Grayson Alpha")
 
 #Merge Datasets
 LB=join_all(list(dplyr::rename(pi1[,1:4],ci_lb_1=ci_lb),
@@ -228,7 +232,8 @@ LB=join_all(list(dplyr::rename(pi1[,1:4],ci_lb_1=ci_lb),
                      dplyr::rename(pi15[,1:4],ci_lb_15=ci_lb),
                      dplyr::rename(pi16[,1:4],ci_lb_16=ci_lb),
                      dplyr::rename(pi17[,1:4],ci_lb_17=ci_lb),
-                     dplyr::rename(pi18[,1:4],ci_lb_18=ci_lb)),
+                     dplyr::rename(pi18[,1:4],ci_lb_18=ci_lb),
+                     dplyr::rename(pi19[,1:4],ci_lb_19=ci_lb)),
                 by=c("Date","Away","Home"),type="left")
 
 UB=join_all(list(dplyr::rename(pi1[,c(1,2,3,5)],ci_ub_1=ci_ub),
@@ -248,7 +253,8 @@ UB=join_all(list(dplyr::rename(pi1[,c(1,2,3,5)],ci_ub_1=ci_ub),
                      dplyr::rename(pi15[,c(1,2,3,5)],ci_ub_15=ci_ub),
                      dplyr::rename(pi16[,c(1,2,3,5)],ci_ub_16=ci_ub),
                      dplyr::rename(pi17[,c(1,2,3,5)],ci_ub_17=ci_ub),
-                     dplyr::rename(pi18[,c(1,2,3,5)],ci_ub_18=ci_ub)),
+                     dplyr::rename(pi18[,c(1,2,3,5)],ci_ub_18=ci_ub),
+                     dplyr::rename(pi19[,c(1,2,3,5)],ci_ub_19=ci_ub)),
                 by=c("Date","Away","Home"),type="left")
 
 LB2=LB[,-c(1:3)]
