@@ -267,7 +267,7 @@ DQ=rep(NA,dim(UB2)[2])
 eval=rep(NA,dim(UB2)[2])
 
 for(i in 1:dim(UB2)[2]){
-  check = mean(actual$pt_spread>LB2[,i] & actual$pt_spread<UB2[,i],na.rm=T)
+  check = mean(actual$pt_spread>=LB2[,i] & actual$pt_spread<=UB2[,i],na.rm=T)
   `%`[i]=check
   if (check < 0.7){
     DQ[i]="Yes"
