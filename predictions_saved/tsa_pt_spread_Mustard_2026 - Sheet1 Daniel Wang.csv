@@ -1,0 +1,89 @@
+"Date","Away","Home","pt_spread","team_name","team_members","email"
+"2/7/2026","Syracuse","Virginia",26.2674634577604,"Mustard","Daniel Wang","djwang@ncsu.edu"
+"2/7/2026","Louisville","Wake Forest",-7.96399760194943,NA,NA,NA
+"2/7/2026","Virginia Tech","NC State",11.602389046638,NA,NA,NA
+"2/7/2026","Miami","Boston College",-5.64261645682549,NA,NA,NA
+"2/7/2026","SMU","Pitt",-2.22756621960214,NA,NA,NA
+"2/7/2026","Florida State","Notre Dame",-0.0181816992352664,NA,NA,NA
+"2/7/2026","Duke","North Carolina",-23.6114246904989,NA,NA,NA
+"2/7/2026","Clemson","California",0.424998685446198,NA,NA,NA
+"2/7/2026","Georgia Tech","Stanford",10.8117496724552,NA,NA,NA
+"2/9/2026","NC State","Louisville",5.93750327720648,NA,NA,NA
+"2/10/2026","Virginia","Florida State",-13.0673691565018,NA,NA,NA
+"2/10/2026","North Carolina","Miami",-2.81517220137544,NA,NA,NA
+"2/10/2026","Notre Dame","SMU",8.5919160352464,NA,NA,NA
+"2/10/2026","Duke","Pitt",-39.0090105643331,NA,NA,NA
+"2/11/2026","Virginia Tech","Clemson",11.5061815908464,NA,NA,NA
+"2/11/2026","California","Syracuse",-5.93481574943715,NA,NA,NA
+"2/11/2026","Stanford","Boston College",-2.44543206982746,NA,NA,NA
+"2/11/2026","Wake Forest","Georgia Tech",-1.8080156094496,NA,NA,NA
+"2/14/2026","Clemson","Duke",32.6101716116557,NA,NA,NA
+"2/14/2026","Georgia Tech","Notre Dame",7.32334115516251,NA,NA,NA
+"2/14/2026","California","Boston College",-8.0581541450319,NA,NA,NA
+"2/14/2026","Florida State","Virginia Tech",5.32588233951083,NA,NA,NA
+"2/14/2026","Pitt","North Carolina",19.4846427351051,NA,NA,NA
+"2/14/2026","SMU","Syracuse",-1.33854433091567,NA,NA,NA
+"2/14/2026","Miami","NC State",10.2608601810934,NA,NA,NA
+"2/14/2026","Stanford","Wake Forest",3.25743652080686,NA,NA,NA
+"2/14/2026","Baylor","Louisville",16.0143834808693,NA,NA,NA
+"2/14/2026","Ohio State","Virginia",21.4901207903486,NA,NA,NA
+"2/16/2026","Syracuse","Duke",46.2941023981883,NA,NA,NA
+"2/17/2026","Boston College","Florida State",11.2363758355825,NA,NA,NA
+"2/17/2026","North Carolina","NC State",3.35863111844714,NA,NA,NA
+"2/17/2026","Louisville","SMU",-6.11792660480252,NA,NA,NA
+"2/17/2026","Virginia Tech","Miami",5.42858572681538,NA,NA,NA
+"2/18/2026","Clemson","Wake Forest",-6.01734373022219,NA,NA,NA
+"2/18/2026","Virginia","Georgia Tech",-20.4088920108996,NA,NA,NA
+"2/21/2026","Wake Forest","Virginia Tech",6.7723327231882,NA,NA,NA
+"2/21/2026","Florida State","Clemson",12.7450070690864,NA,NA,NA
+"2/21/2026","North Carolina","Syracuse",-10.421507123877,NA,NA,NA
+"2/21/2026","Notre Dame","Pitt",2.27729295437346,NA,NA,NA
+"2/21/2026","Miami","Virginia",18.6611285352588,NA,NA,NA
+"2/21/2026","Georgia Tech","Louisville",22.0331837952114,NA,NA,NA
+"2/21/2026","Boston College","SMU",11.635996449052,NA,NA,NA
+"2/21/2026","Stanford","California",9.69977893647524,NA,NA,NA
+"2/21/2026","Michigan","Duke",5.29713310207645,NA,NA,NA
+"2/23/2026","Louisville","North Carolina",2.9650361881588,NA,NA,NA
+"2/24/2026","Duke","Notre Dame",-37.1992466574358,NA,NA,NA
+"2/24/2026","Wake Forest","Boston College",-1.61581172936351,NA,NA,NA
+"2/24/2026","NC State","Virginia",12.4873252154363,NA,NA,NA
+"2/24/2026","Miami","Florida State",1.5067025174862,NA,NA,NA
+"2/25/2026","Pitt","Stanford",9.3852292854608,NA,NA,NA
+"2/25/2026","SMU","California",8.68332827979229,NA,NA,NA
+"2/28/2026","Virginia","Duke",24.1136958016987,NA,NA,NA
+"2/28/2026","Florida State","Georgia Tech",-3.25446599312697,NA,NA,NA
+"2/28/2026","NC State","Notre Dame",-8.77233936284245,NA,NA,NA
+"2/28/2026","Boston College","Miami",13.8167301793671,NA,NA,NA
+"2/28/2026","Pitt","California",14.9979513606652,NA,NA,NA
+"2/28/2026","Syracuse","Wake Forest",7.66658705631037,NA,NA,NA
+"2/28/2026","SMU","Stanford",3.07060620458785,NA,NA,NA
+"2/28/2026","Louisville","Clemson",2.14040298954357,NA,NA,NA
+"2/28/2026","Virginia Tech","North Carolina",12.3308147894616,NA,NA,NA
+"3/2/2026","Duke","NC State",-24.3398504333225,NA,NA,NA
+"3/3/2026","Wake Forest","Virginia",22.6879332627208,NA,NA,NA
+"3/3/2026","Clemson","North Carolina",4.91169005988603,NA,NA,NA
+"3/3/2026","Syracuse","Louisville",19.7176415195306,NA,NA,NA
+"3/3/2026","Boston College","Virginia Tech",12.4752013138225,NA,NA,NA
+"3/4/2026","California","Georgia Tech",-8.25035802511798,NA,NA,NA
+"3/4/2026","Miami","SMU",1.90632313095573,NA,NA,NA
+"3/4/2026","Stanford","Notre Dame",0.598648343978163,NA,NA,NA
+"3/4/2026","Florida State","Pitt",-1.82794560613261,NA,NA,NA
+"3/7/2026","Notre Dame","Boston College",1.04297644746519,NA,NA,NA
+"3/7/2026","Georgia Tech","Clemson",20.0865299234842,NA,NA,NA
+"3/7/2026","Virginia Tech","Virginia",20.0026574008034,NA,NA,NA
+"3/7/2026","SMU","Florida State",3.68743624780128,NA,NA,NA
+"3/7/2026","Louisville","Miami",-3.93719287448745,NA,NA,NA
+"3/7/2026","Stanford","NC State",13.4580445680914,NA,NA,NA
+"3/7/2026","California","Wake Forest",-2.35528555439758,NA,NA,NA
+"3/7/2026","Pitt","Syracuse",4.97607874995728,NA,NA,NA
+"3/7/2026","North Carolina","Duke",31.7855384130405,NA,NA,NA
+"","","",NA,NA,NA,NA
+"","","",NA,NA,NA,NA
+"","","",NA,NA,NA,NA
+"","","",NA,NA,NA,NA
+"","","",NA,NA,NA,NA
+"","","",NA,NA,NA,NA
+"","","",NA,NA,NA,NA
+"","","",NA,NA,NA,NA
+"","","",NA,NA,NA,NA
+"","","",NA,NA,NA,NA
