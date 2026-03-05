@@ -19,6 +19,21 @@ css: styles3.css
     }
   </style>
   
+# 2026
+
+## Point spread
+
+1. Coming very soon
+2. Coming very soon
+3. Coming very soon
+
+
+## Prediction intervals  
+
+1. Coming very soon
+2. Coming very soon
+3. Coming very soon
+  
 # 2025
 
 ::: {.year-box}
