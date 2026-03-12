@@ -23,16 +23,28 @@ css: styles3.css
 
 ## Point spread
 
-1. Coming very soon
-2. Coming very soon
-3. Coming very soon
+1. **devig to ball knowledge** 
+    - University of North Carolina
+    - MAE = 8.629
+2. **Not Cute Anymore** 
+    - Duke University
+    - MAE = 8.6956
+3. **DerrickWhiteEnjoyer** 
+    - North Carolina State University
+    - MAE = 8.8083
 
 
 ## Prediction intervals  
 
-1. Coming very soon
-2. Coming very soon
-3. Coming very soon
+1. **devig to ball knowledge** 
+    - University of North Carolina 
+    - PIW=22.45   
+2. **CalebTruthers** 
+    - University of North Carolina 
+    - PIW = 22.77
+3. **Arjun** 
+    - University of North Carolina 
+    - PIW = 22.79
   
 # 2025
 
